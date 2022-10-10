@@ -1,0 +1,49 @@
+html,
+/* GENERAL */
+
+:root {
+  --bg-color-light: #f8eded;
+  --bg-color-dark: ;
+  --font-color-dark: #383636;
+  --font-color-light: ;
+  --color-white: #ffffff;
+  --font-titles: 'Italiana', serif;
+  --font-text: 'Forum', cursive;
+}
+
+/* font 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     */
+
+body {
+  background-color: var(--bg-color-light);
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  font-family: var(--font-text);
+  font-size: 18px;
+  color: var(--font-color-dark);
+}
+
+.bg-main {
+  color: var(--bg-color-light);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
