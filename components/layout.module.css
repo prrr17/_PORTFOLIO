@@ -1,5 +1,8 @@
 /* COMPONENT-LEVEL STYLES */
-
+.bg-main {
+    background-color: var(--bg-color-light);
+}
+  
 .container {
     max-width: 36rem;
     padding: 0 1rem;
