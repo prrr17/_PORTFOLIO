@@ -1,8 +1,8 @@
 .success {
-    color: green;
+    color: 'success';
   }
   .error {
-    color: red;
+    color: 'warning';
   }
 
   

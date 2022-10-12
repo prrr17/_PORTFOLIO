@@ -44,3 +44,11 @@ img {
   max-width: 100%;
   display: block;
 }
+
+ul{
+  list-style-type: none; 
+}
+
+p{
+  font-family: 'Italiana', sans-serif;
+}

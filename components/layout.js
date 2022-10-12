@@ -11,7 +11,7 @@ export const siteTitle = "Paula's Portfolio";
 
 export default function Layout({ children, home }) {
   return (
-    <div className='bg-main'>
+    <div className='bg-secondary'>
       <div className={styles.container}>
         <Head>
           <link rel='icon' href='/public/p_logo.ico' />
@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
           <meta name='og:title' content={siteTitle} />
           <meta name='twitter:card' /*en el futuro*/ content='summary_large_image' />
         </Head>        
-           
+       <Header/>   
             
         <main>{children}</main>
         {!home && (

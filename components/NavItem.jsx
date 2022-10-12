@@ -7,7 +7,7 @@ export default function NavItem() {
       <Link href='/'>
         <a alt='home'>
           {/* <img src='/../public/p_logo.svg' alt='logo' /> */}
-          {/* <pLogo></pLogo> */}
+          <pLogo></pLogo>
         </a>
       </Link>
 
