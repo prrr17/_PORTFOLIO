@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
+// import { AnimatePresence } from 'framer-motion'
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
@@ -25,8 +25,15 @@ export default function Layout({ children, home }) {
           <meta name='og:title' content={siteTitle} />
           <meta name='twitter:card' /*en el futuro*/ content='summary_large_image' />
         </Head>        
-       <Header/>   
-            
+       <Header/> 
+       {/* <AnimatePresence
+                exitBeforeEnter
+                initial={false}
+                onExitComplete={() => window.scrollTo(0, 0)}
+            >
+                <Component {...pageProps} canonical={url} key={url} />
+            </AnimatePresence>  
+             */}
         <main>{children}</main>
         {!home && (
           <div className={styles.backToHome}>

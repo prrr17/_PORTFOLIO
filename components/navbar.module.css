@@ -1,71 +1,85 @@
-header {
-    background-color: var (--bg-color-light);
-  }
-  
-  header::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-  
-  /*change this*/
-  .p-logo {
-    float: left;
-    margin: 0.4em 0;
-  }
-  
-  nav {
-    float: right;
-  }
-  
-  /*change this*/
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  /*change this*/
-  nav li {
-    display: inline-block;
-    margin-left: 3em;
-    line-height: 3em;
-    padding-top: 1.75em;
-    list-style: none;
-    position: relative; /* Required so that position: absolute in nav a::before works. */
-  }
-  
-  /*change this*/
-  nav a {
-    color: var(--font-color-dark);
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all ease-in-out 200ms;
-  }
-  
-  /*add dot animation + wheen selected??*/
-  nav a:hover {
-    -webkit-text-stroke: 0.5px var(--font-color-dark);
-    color: #fff;
-  }
-  
-  /*change this*/
-  nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: #ddd;
-  
-    position: absolute;
-    top: 0;
-    width: 0%; /* As we don't want to see this initially. */
-  
-    transition: all ease-in-out 200ms;
-  }
+.header {
+  z-index: 9999999;
+  background-color: secondary;
+  color: primary;
+  font-family: 'italiana', sans-serif;
+}
 
-  /*change this*/
-  
-  nav a:hover::before {
-    width: 100%; /* As we want to see it on mouse hover. */
-  }
+.PLogo {
+  height: 10px;
+  width: auto;
+}
+
+.navBar {
+  background-color: rgba(var(--bg-color-light)) !important;
+  height: inherit;
+  font-size: large;
+}
+
+
+.header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.navBar {
+  float: right;
+}
+
+/*change this*/
+.navBar a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: none;
+  transition: all ease-in-out 200ms;
+
+}
+
+/*change this*/
+/* .navBarLinks {
+  display: inline;
+  margin-left: 3em;
+  line-height: 3em;
+  padding-top: 1.75em;
+  list-style: none;
+  position: relative; /* Required so that position: absolute in nav a::before works. 
+} */
+
+
+/*add dot animation + when selected??*/
+ .navBar a:hover {
+  -webkit-text-stroke: 1.5px var(--font-color-dark);
+  color: light;
+} 
+
+/*change this*/
+.navBar a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: light;
+  position: absolute;
+  top: 0;
+  width: 0%; /* As we don't want to see this initially. */
+  border-radius: 100%;
+  transition: all ease-in-out 200ms;
+}
+
+/*change this*/
+
+.navBar a:hover::before {
+  width: 100%;
+} /* As we want to see it on mouse hover.  */
+
+
+/* .a:visited {
+  color: light;
+}  */
+
+.a:active {
+  -webkit-text-stroke: 0.5px var(--font-color-dark);
+  color: light;
+}

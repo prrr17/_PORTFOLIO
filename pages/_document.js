@@ -5,14 +5,14 @@ export default function Document() {
     <Html lang='eng'>
       <Head>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
         <link
           href='https://fonts.googleapis.com/css2?family=Forum&family=Italiana&display=swap'
           rel='stylesheet'
         />
-        <meta charset='utf-8' />
+        <meta charSet='utf-8' />
       </Head>
-      <body className='bg-main'>
+      <body className='bg-secondary'>
         <Main />
         <NextScript />
       </body>

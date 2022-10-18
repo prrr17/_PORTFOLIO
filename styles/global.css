@@ -23,6 +23,13 @@ body {
   /* font-family: var(--font-text); */
   font-size: 18px;
   color: var(--font-color-dark);
+
+  padding-top: 60px !important;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px; /* necessary? */
+  }
 }
 
 * {
@@ -37,7 +44,6 @@ a {
 a:hover {
   color: var(--font-color-light);
   border-color: var(--font-color-dark);
-  text-decoration: underline;
 }
 
 img {
@@ -45,10 +51,19 @@ img {
   display: block;
 }
 
-ul{
-  list-style-type: none; 
+ul {
+  list-style-type: none;
 }
 
-p{
+p {
   font-family: 'Italiana', sans-serif;
+}
+
+body::selection {
+  background-color: primary;
+  color: secondary;
+}
+
+button {
+  border: none;
 }

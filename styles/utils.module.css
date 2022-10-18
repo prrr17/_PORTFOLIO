@@ -1,6 +1,8 @@
-.page{
-  height: 100vh;
+.allPages {
+  margin-top: 60px;
 }
+
+/* Not working? */
 
 /* RELATED TO h1 */
 .heading3Xl {
@@ -48,22 +50,10 @@
   line-height: 1.5;
 }
 
-.textDescriptions{
+.textDescriptions {
   font-family: 'Forum', serif;
   font-size: 1.2rem;
   line-height: 1.5;
-}
-
-.borderCircle {
-  border-radius: 9999px;
-}
-
-.colorInherit {
-  color: inherit;
-}
-
-.padding1px {
-  padding-top: 1px;
 }
 
 .list {
@@ -79,12 +69,59 @@
 .verticalText {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  }
+}
 
-  /* HOME PAGE */
-  .bigMoon {
-    height: 100%;
-    display: block;
-  }
+/* LANDING PAGE */
 
+.underLine:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 50%;
+  border-bottom: 1px solid var(--font-color-dark);
+}
 
+/* HOME PAGE */
+
+.bigMoon {
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0 0.75rem white);
+}
+
+.bigMoon:hover {
+  filter: drop-shadow(0 0 9rem white);
+}
+
+button.bigMoon {
+  border-radius: 50%;
+  position: relative;
+  width: fit-content;
+}
+
+/*FIND ME*/
+/*SM ICONS*/
+.iconContainer {
+  width: 20px;
+  height: auto;
+}
+
+.icon {
+  width: 20px;
+  height: auto;
+  padding: 5px;
+  margin: 5px;
+}
+
+.icon:nth-child(2) {
+  display: none;
+}
+
+.iconContainer:hover icon:nth-child(1) {
+  display: none;
+}
+
+.iconContainer:hover icon:nth-child(2) {
+  display: block;
+}
