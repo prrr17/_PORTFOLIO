@@ -14,18 +14,16 @@ export default function NavItem() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='d-flex me-auto'> 
+          <Nav className='d-flex me-auto justify-content-center w-100'> 
           {/* doesnt work */}
             <Nav.Link href='#about'><a alt ='go to about page'>about</a></Nav.Link>
-            
-            <Nav.Link href='/andCo'><a alt ='&co go to others page'>&co</a></Nav.Link>
 
             <Nav.Link href='/designs' ><a alt ='go to designs page'>designs</a></Nav.Link>
 
-            <Nav.Link href='/andCo'><a alt ='&co go to others page'>&co</a></Nav.Link>
+            <Nav.Link href='/andCo'><a className="text-decoration-none" alt ='&co go to others page'>&co</a></Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href='#findme'><a id='findmeLinkNavBar' alt='find me go to contact page'>find me</a>
+            <Nav.Link href='#findme'><a id='findmeLinkNavBar' alt='find me go to contact page' className="text-nowrap">find me</a>
             </Nav.Link>           
           </Nav>          
         </Navbar.Collapse>

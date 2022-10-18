@@ -34,6 +34,8 @@
   list-style: none;
   font-style: none;
   transition: all ease-in-out 200ms;
+  text-decoration: none;
+  color: var(--font-color-dark);
 
 }
 
