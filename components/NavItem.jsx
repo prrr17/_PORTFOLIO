@@ -1,77 +1,92 @@
-import Link from 'next/link';
-import PLogo from '../public/p_logo.svg';
-import styles from './navbar.module.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
+import { GoPrimitiveDot } from 'react-icons/go';
+import PLogo from '../public/p_logo.svg';
+import LightSwitch from '../public/LightSwitch.svg';
+import styles from './navbar.module.scss';
 
 export default function NavItem() {
   return (
-    <Navbar collapseOnSelect expand='lg' className={styles.navBar} fixed='top'>
-      <Container>
+    <Navbar
+      collapseOnSelect
+      expand='sm'
+      className={`mx-5 ${styles.navBar}`}
+      fixed='top'
+    >
+      <div>
+        {' '}
         <Navbar.Brand href='/'>
-          <PLogo width='10rem' height='inherit'></PLogo>
+          <a className=''>
+            <PLogo width='10rem' height='inherit'></PLogo>
+          </a>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-        <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='d-flex me-auto justify-content-center w-100'> 
+        <div className={`${styles.dotBox}`}>
+          <GoPrimitiveDot className={`${styles.P} ${styles.underDot}`} />
+        </div>
+      </div>
+      <Navbar.Toggle
+        className={styles.navbarTogglerIcon}
+        aria-controls='responsive-navbar-nav'
+      />
+      <Navbar.Collapse className={styles.burgerMenu} id='responsive-navbar-nav'>
+        <Nav className='d-flex me-auto justify-content-center w-100'>
           {/* doesnt work */}
-            <Nav.Link href='#about'><a alt ='go to about page'>about</a></Nav.Link>
+          <div className=''>
+            <Nav.Link href='#about'>
+              <a alt='go to about page'>about</a>
+            </Nav.Link>
+            <div className={`d-flex justify-content-center ${styles.dotBox}`}>
+              <GoPrimitiveDot className={styles.underDot} />
+            </div>
+          </div>
 
-            <Nav.Link href='/designs' ><a alt ='go to designs page'>designs</a></Nav.Link>
+          <div>
+            <Nav.Link href='/designs'>
+              <a alt='go to designs page'>designs</a>
+            </Nav.Link>
+            <div className={`d-flex justify-content-center ${styles.dotBox}`}>
+              <GoPrimitiveDot className={styles.underDot} />
+            </div>
+          </div>
 
-            <Nav.Link href='/andCo'><a className="text-decoration-none" alt ='&co go to others page'>&co</a></Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href='#findme'><a id='findmeLinkNavBar' alt='find me go to contact page' className="text-nowrap">find me</a>
-            </Nav.Link>           
-          </Nav>          
-        </Navbar.Collapse>
-      </Container>
+          <div>
+            <Nav.Link href='/andCo'>
+              <a className='text-decoration-none' alt='&co go to others page'>
+                &co
+              </a>
+            </Nav.Link>
+            <div className={`d-flex justify-content-center ${styles.dotBox}`}>
+              <GoPrimitiveDot className={styles.underDot} />
+            </div>
+          </div>
+        </Nav>
+        <Nav className='d-flex'>
+          <div>
+            {' '}
+            <Nav.Link href='#findme'>
+              <a
+                id='findmeLinkNavBar'
+                alt='find me go to contact page'
+                className='text-nowrap d-flex'
+              >
+                find me
+              </a>
+            </Nav.Link>{' '}
+            <div className={`d-flex justify-content-center ${styles.dotBox}`}>
+              <GoPrimitiveDot className={styles.underDot} />
+            </div>
+          </div>
+        </Nav>
+      </Navbar.Collapse>
+      <Nav.Link href='#'>
+        <a
+          id='lightSwitch'
+          alt='switch into dark mode'
+          className='text-nowrap d-flex justify-content-center align-items-center pb-3 ps-4'
+        >
+          <LightSwitch />{' '}
+        </a>
+      </Nav.Link>{' '}
     </Navbar>
   );
 }
-
-// <nav className={styles.navBar}>
-//   <div className='row'>
-//     <div className='col-4'>
-//       <Link className={styles.navBarLinks} href='/'>
-//         <a alt='home' className='PLogo'>
-//           {/* <PLogo></PLogo> */}
-//         </a>
-//       </Link>
-//     </div>
-//     <ul className={styles.navBarList}>
-//       <div className='col-1'>
-//         <Link className={styles.navBarLinks} href='#about'>
-//           <a id='aboutLinkNavBar' alt='about'>
-//             about
-//           </a>
-//         </Link>
-//       </div>
-//       <div className='col-2'>
-//         <Link className={styles.navBarLinks} href='/designs'>
-//           <a id='designsLinkNavBa' alt='designs'>
-//             designs
-//           </a>
-//         </Link>
-//       </div>
-//       <div className='col-1'>
-//         <Link className={styles.navBarLinks} href='/AndCo'>
-//           <a id='AndCoLinkNavBa' alt='others'>
-//             &co
-//           </a>
-//         </Link>
-//       </div>
-//       <div className='col-4'>
-//         <Link className={styles.navBarLinks} href='#findme'>
-//           <a id='findmeLinkNavBa' alt='findme'>
-//             find me
-//           </a>
-//         </Link>
-//       </div>
-//     </ul>
-//   </div>
-// </nav>
-//);
-//}

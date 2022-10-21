@@ -1,4 +1,8 @@
 .allPages {
+  margin-top: 6rem;
+}
+
+.page {
   margin-top: 60px;
 }
 
@@ -23,6 +27,7 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  overflow: hidden;
 }
 
 /* RELATED TO h3 */
@@ -41,6 +46,11 @@
   font-size: 1.5rem;
   line-height: 1.4;
   margin: 1rem 0;
+  color: var(--font-color-dark);
+}
+.headingLg a:hover {
+  color: var(--font-color-dark);
+  -webkit-text-stroke: 1.5px var(--font-color-dark);
 }
 
 /* RELATED TO h5 */
@@ -73,55 +83,83 @@
 
 /* LANDING PAGE */
 
-.underLine:after {
-  content: '';
-  position: absolute;
-  bottom: 0px;
-  left: 25%;
-  width: 50%;
-  border-bottom: 1px solid var(--font-color-dark);
-}
-
 /* HOME PAGE */
-
 .bigMoon {
-  justify-content: center;
-  align-items: center;
-  filter: drop-shadow(0 0 0.75rem white);
+  filter: drop-shadow(0 0 20px rgba(252, 255, 200, 0.9));
+  background-color: rgba(255, 249, 235, 0.3);
 }
 
 .bigMoon:hover {
-  filter: drop-shadow(0 0 9rem white);
-}
-
-button.bigMoon {
-  border-radius: 50%;
-  position: relative;
-  width: fit-content;
+  filter: drop-shadow(0 0 5rem white);
 }
 
 /*FIND ME*/
 /*SM ICONS*/
 .iconContainer {
-  width: 20px;
+  width: inherit;
   height: auto;
 }
 
 .icon {
-  width: 20px;
+  width: 5rem;
   height: auto;
-  padding: 5px;
-  margin: 5px;
+  align-items: center;
+  justify-content: flex-end;
+  transform: scale(0.6);
+  margin: -1rem;
+
 }
 
 .icon:nth-child(2) {
   display: none;
 }
 
-.iconContainer:hover icon:nth-child(1) {
+.iconContainer:hover .icon:nth-child(1) {
   display: none;
 }
 
-.iconContainer:hover icon:nth-child(2) {
+.iconContainer:hover .icon:nth-child(2) {
   display: block;
 }
+
+.underlineVD {
+  color: primary;
+  top: -8rem;
+  position: relative;
+  left: 8rem;
+  width: 120%;
+}
+
+.arrowDown {
+  position: sticky;
+  right: 100%;
+  margin-left: -2%;
+  margin-top: 6rem;
+  bottom: 3rem;
+  color: primary;
+}
+
+.secondArrowDown {
+  position: relative;
+  left: 1.7%;
+  margin-top: -4rem;
+  top: 0.2rem;
+  margin-bottom: -0.3rem;
+  color: primary;
+}
+
+/* Redo with media queries */
+
+
+/* GO BACK */
+a.backChevron{
+  text-decoration: none;
+  color: var(--font-color-dark);
+}
+
+a.backChevron:hover + .goBackText{
+  text-decoration: dashed;
+  color: var(--font-color-light);
+}
+
+// No va

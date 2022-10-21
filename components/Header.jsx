@@ -1,9 +1,10 @@
 import NavItem from './NavItem';
-import styles from './navbar.module.css'
+import styles from './navbar.module.scss';
 
 export default function Header() {
   return (
-    <section className={`header ${styles.header}`}>
-  <NavItem />
-  </section>);
+    <section className={`header d-flex ${styles.header}`}>
+      <NavItem />
+    </section>
+  );
 }

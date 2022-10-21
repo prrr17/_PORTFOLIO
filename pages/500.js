@@ -1,4 +1,4 @@
-import utilStyles from '../styles/utils.module.css';
+import utilStyles from '../styles/utils.module.scss';
 
 export default function Custom500() {
   return (<div className='container-fluid p-4 text-center bg-light'>

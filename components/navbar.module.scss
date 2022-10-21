@@ -1,0 +1,87 @@
+.header {
+  z-index: 9999999;
+  background-color: secondary;
+  color: primary;
+  font-family: 'italiana', 'Gill Sans', 'TeX Gyre Adventor', sans-serif;
+}
+
+.PLogo {
+  height: inherit;
+  width: auto;
+}
+
+.navBar {
+  height: 5rem;
+  font-size: large;
+  filter: blur(2px);
+  backdrop-filter: blur(1px);
+}
+
+.navBar:hover {
+  filter: none;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: none;
+}
+
+/*change this*/
+.navBar a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: none;
+  transition: all ease-in-out 200ms;
+  text-decoration: none;
+  color: var(--font-color-dark);
+}
+
+.underDot {
+  visibility: hidden;
+  justify-self: center;
+}
+
+.P {
+  margin-left: 2em;
+  margin-right: auto;
+  margin-top: -2em;
+}
+
+.navBar a:active + .dotBox .underDot {
+  background-color: yellow;
+  text-shadow: 2px 2px 2px #27ae60;
+}
+
+.navBar a:hover + .dotBox .underDot {
+  visibility: visible;
+}
+
+/*add dot animation + when selected??*/
+.navBar a:hover {
+  -webkit-text-stroke: 1.5px var(--font-color-dark);
+  color: var(--font-color-light);
+  text-shadow: -1px -2px 10px white, 1px 1px 1px black;
+}
+
+.burgerMenu {
+  width: 100%;
+  border: none;
+}
+
+// Check this out
+.burgerMenu:active {
+  background-color: var(--bg-color-light);
+  opacity: 0.8;
+  backdrop-filter: blur(1px);
+  filter: none;
+}
+
+.navbarTogglerIcon {
+  border: none;
+}
+
+.navbarTogglerIcon.close {
+  transform: rotate(180deg);
+}
+
+.navbarTogglerIcon::selection {
+  border: none;
+}

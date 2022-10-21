@@ -15,8 +15,8 @@ const MyButton = React.forwardRef(({ onClick, href }, ref) => {
 
 function Test() {
   return (
-    <Link href="/" passHref>
-      <MyButton />
+    <Link  href="/" passHref><a className ='d-flex'>
+      <MyButton className ='justify-content-end' /></a>
     </Link>
   )
 }

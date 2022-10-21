@@ -1,6 +1,8 @@
 [] Check the icons– size etc.
-[] Navbar — horiz, spacing...
-[] Navbar – PLogo
+[x] Navbar — horiz, spacing...
+[] NavBar center dot
+[] NavBar height??
+[x] Navbar – PLogo
 [] Cols & lines
 [x] PDF
 [] Center Learn more page 1
@@ -10,8 +12,12 @@
 [] arrows
 [x] designs & &co coming soon
 [] backToHome ??? 
-[] change icons on hover (Moon) -> https://codepen.io/gg-1414/pen/pojXPKP
+[] animations
+[] change icons on hover (Moon, SM) -> https://codepen.io/gg-1414/pen/pojXPKP
 [] Check fir t¡dark theme config https://github.com/james-wallis/wallis.dev/blob/master/pages/_app.tsx#L61
+
+[] Toggle burger menu
 
 AFTER IT'S LIVE
 [] Create dark theme button on navbar
+[] https://css-tricks.com/zooming-images-in-a-grid-layout/ Zooming pics and co
