@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import PLogo from '../public/p_logo.svg'
+import PaulaLogo from '../public/paula_logo.svg'
 
 
 // `onClick`, `href`, and `ref` need to be passed to the DOM element
@@ -8,15 +8,15 @@ import PLogo from '../public/p_logo.svg'
 const MyButton = React.forwardRef(({ onClick, href }, ref) => {
   return (
     <a href={href} onClick={onClick} ref={ref}>
-    <PLogo width='10rem' height='inherit'></PLogo>
+    <PaulaLogo width='10rem' height='inherit'></PaulaLogo>
     </a>
   )
 })
 
 function Test() {
   return (
-    <Link  href="/" passHref><a className ='d-flex'>
-      <MyButton className ='justify-content-end' /></a>
+    <Link  href="/" passHref><a className ='d-flex justify-content-end pt-3'>
+      <MyButton className ='button' /></a>
     </Link>
   )
 }

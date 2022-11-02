@@ -13,7 +13,7 @@ import utilStyles from '../styles/utils.module.scss';
 const SMIcons = () => {
   return (
     <div className='d-flex justify-content-end pe-2 pt-2 align-content-end'>
-      <ul className='socialMedia-list'>
+      <ul className='socialMedia-list mb-0'>
         <div className={utilStyles.iconContainer}>
           <Link
             className='socialMediaLinks py-2'
@@ -22,11 +22,11 @@ const SMIcons = () => {
             <a target='_blank' alt='Instagram link @inpaulasmind'>
               <IgOn
                 viewBox='-10 -10 100 100'
-                className={`rounded-circle  ${utilStyles.icon}`}
+                className={`rounded-circle ${utilStyles.icon}`}
               ></IgOn>
               <IgOff
                 viewBox='-10 -10 100 100'
-                className={utilStyles.icon}
+                className={`rounded-circle ${utilStyles.icon}`}
               ></IgOff>
             </a>
           </Link>
@@ -39,9 +39,9 @@ const SMIcons = () => {
             <a target='_blank' alt='GitHub link @prrr17'>
               <GhOn
                 viewBox='-10 -10 100 100'
-                className={utilStyles.icon}
+                className={`rounded-circle ${utilStyles.icon}`}
               ></GhOn>
-              <GhOff className={utilStyles.icon}></GhOff>
+              <GhOff className={`rounded-circle ${utilStyles.icon}`}></GhOff>
             </a>
           </Link>
         </div>
@@ -57,11 +57,11 @@ const SMIcons = () => {
             >
               <InOn
                 viewBox='-10 -10 100 100'
-                className={utilStyles.icon}
+                className={`rounded-circle ${utilStyles.icon}`}
               ></InOn>
               <InOff
                 viewBox='-10 -10 100 100'
-                className={utilStyles.icon}
+                className={`rounded-circle ${utilStyles.icon}`}
               ></InOff>
             </a>
           </Link>
@@ -75,11 +75,11 @@ const SMIcons = () => {
             <a alt='Behance @paulardb'>
               <BeOn
                 viewBox='-10 -10 100 100'
-                className={utilStyles.icon}
+                className={`rounded-circle ${utilStyles.icon}`}
               ></BeOn>
               <BeOff
                 viewBox='-10 -10 100 100'
-                className={utilStyles.icon}
+                className={`rounded-circle ${utilStyles.icon}`}
               ></BeOff>
             </a>
           </Link>

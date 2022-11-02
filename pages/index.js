@@ -9,6 +9,7 @@ import ProfilePic from '../public/images/profile.jpeg';
 import Test from '../components/Test';
 import 'animate.css';
 import SMIcons from '../components/SMIcons';
+import Blobs from '../components/Blobs';
 
 export default function Home() {
   return (
@@ -18,12 +19,13 @@ export default function Home() {
         <link rel='icon' href='/p_logo.ico' />
       </Head>
 
-      <div className={` mt-5 ${utilStyles.allPages}`}>
+      <div className={`mt-5 ${utilStyles.allPages}`}>
         <section
           className={`min-vh-100 mt-5 ${utilStyles.page}`}
           alt='landing page'
           id='landing'
         >
+        <Blobs></Blobs>
           <div className='justify-content-center align-items-center'>
             <div className='row'>
               <div className='col-md-6'></div>
@@ -122,16 +124,19 @@ export default function Home() {
           alt='about page'
         >
           <div className='container-fluid'>
-            <div
-              className='row mt-5 pt-5 border-bottom border-primary'
-              id='upper'
-            >
-              <div className='col-sm-5 border-end  border-primary' id='imPaula'>
+            <div className='row mt-5 pt-5' id='upper'>
+              <div
+                className='col-sm-5 border-bottom border-end border-primary'
+                id='imPaula'
+              >
                 <h3 className={`text-end text-wrap ${utilStyles.headingXl}`}>
                   Hi, I am Paula
                 </h3>
               </div>
-              <div className='col-sm-7' id='paulaDescription'>
+              <div
+                className='col-sm-7 border-bottom border-primary'
+                id='paulaDescription'
+              >
                 <h4 className={`d-flex ${utilStyles.headingLg}`}>
                   Social butterfly with daily metamorphoses
                 </h4>
@@ -251,49 +256,64 @@ export default function Home() {
         </section>
 
         <section
-          className={`min-vh-100 pt-5 ${utilStyles.page}`}
+          className={`min-vh-100 pt-5 ps-5 ms-2 ${utilStyles.page}`}
           id='findme'
           alt='find me contact page'
         >
-          <div className='container mx-lg-5 mx-md-4 grid'>
+          <div className='container pt-5 mx-lg-5 mx-md-4'>
             <div className='row'>
-              <div className='col-sm-4 border-bottom border-primary'>
+              <div className='col-sm-4'>
                 <p className={utilStyles.headingXl}></p>
               </div>
-              <div className={`col-sm-2 border-bottom border-primary`}>
+              <div className={`col-sm-2`}>
                 <p className={utilStyles.headingXl}></p>
               </div>
-              <div
-                className={`col-sm-6  border-primary border-bottom border-end text-end`}
-              >
+              <div className={`col-sm-6  border-primary border-end text-end`}>
                 <h3 className={`me-5 ${utilStyles.headingXl}`}>Contact me</h3>
               </div>
             </div>
             <div className='row'>
-              <div className='col-sm-4 border-bottom border-end border-primary text-end'>
-                <div className='vh-40 border-bottom boder-primary'>
-                  <p className={`${utilStyles.headingLg}`}>
-                    Paula Romero de Blas
-                  </p>
-                  <p className={` ${utilStyles.headingMd}`}>/pawla/</p>
-                  <p className={` ${utilStyles.textDescriptions}`}>
-                    Paula Romero de Blas
-                  </p>
+              {' '}
+              {/* row that contains 2 tables */}
+              <div className='col-xs-12 col-md-6'>
+                {/*COL 1 for the email*/}
+                <div className='row '>
+                  {' '}
+                  {/* row that has name and hi*/}
+                  <div className='col-xs-12 col-sm-6 border-top border-end border-primary text-end py-3'>
+                    {/*1 COL for the name*/}
+                    <div className=''>
+                      <p className={`${utilStyles.headingLg}`}>
+                        Paula Romero de Blas
+                      </p>
+                      <p className={` ${utilStyles.headingMd}`}>/pawla/</p>
+                      <p className={` ${utilStyles.textDescriptions}`}>
+                        she/her/hers
+                      </p>
+                    </div>
+                  </div>
+                  <div className='col-xs-12 col-sm-6 border-top border-end border-primary d-flex justify-content-center align-items-center py-5'>
+                    {' '}
+                    {/*COL for the email*/}
+                    <p
+                      className={`align-self-center mb-0 ${utilStyles.textDescriptions}`}
+                    >
+                      hi@paulardb.design
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div
-                className={`col-sm-2 border-bottom border-end border-primary`}
-              >
-                <div className='min-vh-60 border-bottom boder-primary'>
-                  <p
-                    className={`align-self-center justify-self-center ${utilStyles.textDescriptions}`}
+                <div className='row border-top border-primary'>
+                  {/*row with nothing and SM*/}
+                  <div className={`col-sm-6 border-end border-primary`}></div>
+                  <div
+                    className={`col-sm-6 border-end border-primary text-end text-align-center`}
                   >
-                    hi@paulardb.design
-                  </p>
+                    {' '}
+                    <SMIcons />
+                  </div>
                 </div>
-                <SMIcons />
               </div>
-              <div className='col-sm-6 ps-0 pe-5 pb-0 border-end border-bottom border-primary d-flex'>
+              <div className='border-top border-primary-xs col-xs-12 col-md-6 ps-0 pe-5 pb-0 border-end border-bottom border-primary d-flex'>
                 <Image
                   className='img-fluid'
                   src={ProfilePic}

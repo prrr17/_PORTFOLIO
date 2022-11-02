@@ -10,7 +10,7 @@ export default function NavItem() {
     <Navbar
       collapseOnSelect
       expand='sm'
-      className={`mx-5 ${styles.navBar}`}
+      className={`px-5 ${styles.navBar}`}
       fixed='top'
     >
       <div>
