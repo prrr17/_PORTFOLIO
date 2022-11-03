@@ -1,3 +1,10 @@
+//variables
+$breakpoint-iPadMini: 768px;
+$breakpoint-iPhone12: 390px;
+$breakpoint-iPadV: 820px;
+$breakpoint-iPadH: 1180px;
+$breakpoint-MacBook13: 1920px;
+
 .allPages {
   margin-top: 6rem;
 }
@@ -13,7 +20,6 @@
   font-family: 'Italiana', sans-serif;
   font-size: 10rem;
   line-height: 5rem;
-  font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
   padding-bottom: 10rem;
@@ -84,6 +90,7 @@
 .verticalText {
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  font-size: 1.7rem;
 }
 
 /* LANDING PAGE */
@@ -91,11 +98,15 @@
 /* HOME PAGE */
 .bigMoon {
   filter: drop-shadow(0 0 20px rgba(252, 255, 200, 0.9));
-  background-color: rgba(255, 249, 235, 0.3);
+  background: radial-gradient( rgba(255, 249, 235, 0.9));
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
 }
 
 .bigMoon:hover {
   filter: drop-shadow(0 0 5rem white);
+  background: radial-gradient(white, rgba(255, 255, 255, 0) 75%);
+  opacity: 0.7;
 }
 
 /*FIND ME*/
@@ -127,6 +138,24 @@
   display: block;
 }
 
+//START PAGE
+
+//do this
+.uxWord {
+  @media (min-width: $breakpoint-iPhone12) {
+    left: 2%;
+ ;
+  }
+  @media (min-width: $breakpoint-iPadMini) {
+    left: 45%;
+;
+  }
+  @media (min-width: $breakpoint-MacBook13) {
+    left: 48%;
+;
+  }
+}
+
 .underlineVD {
   color: primary;
   top: -8rem;
@@ -134,15 +163,71 @@
   left: 8rem;
   width: 120%;
   opacity: 100%;
+  @media (min-width: $breakpoint-iPhone12) {
+  }
+}
+
+.lineVertical {
+  width: 2px;
+  height: 70vh;
+  margin-left: 20px;
+  margin-top: 35px;
+  top: 4px;
+  float: left;
+  background: var(--font-color-dark);
+}
+
+.lineVertical2 {
+  width: 2px;
+  height: 50vh;
+  background: var(--font-color-dark);
+  top: 20vh;
 }
 
 .arrowDown {
   position: sticky;
   right: 100%;
-  margin-left: -2%;
-  margin-top: 6rem;
+  margin-left: -2.4%;
+  margin-top: 5rem;
   bottom: 3rem;
-  color: primary;
+  @media (max-width: $breakpoint-iPadMini) {
+    margin-left: 2%;
+  }
+}
+
+.arrowDown:before {
+  position: absolute;
+  left: -3.3px;
+  bottom: 0px;
+  border: 1rem solid var(--font-color-dark);
+  border-width: 0.1em 0.1em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.5em;
+  transform: rotate(135deg);
+  vertical-align: top;
+  width: 0.5em;
+  @media (min-width: $breakpoint-iPhone12) {
+    left: -3px;
+  }
+}
+
+.findOutBox {
+  position: absolute;
+  left: 2%;
+  margin-top: -25vh;
+  @media (min-width: $breakpoint-iPhone12) {
+    left: 2%;
+    margin-top: -25vh;
+  }
+  @media (min-width: $breakpoint-iPadMini) {
+    left: 45%;
+    margin-top: -30vh;
+  }
+  @media (min-width: $breakpoint-MacBook13) {
+    left: 48%;
+    margin-top: -17vh;
+  }
 }
 
 .secondArrowDown {
@@ -154,7 +239,7 @@
   color: primary;
 }
 
-/* Redo with media queries */
+/* Redo arrows with media queries */
 
 /* GO BACK */
 a.backChevron {
@@ -169,29 +254,39 @@ a.backChevron:hover + .goBackText {
 
 // No va
 
-/*Blobs*/
-.wrapper{
-  z-index: 99;
-  perspective-origin: 50% 50%;
+/*BLOBS redo*/
+$particleSize: 20vmin;
+$animationDuration: 6s;
+$amount: 20;
+.wrapper .blob {
+  width: $particleSize;
+  height: $particleSize;
+  border-radius: $particleSize;
+  backface-visibility: hidden;
+  position: absolute;
+  animation-name: move;
+  animation-duration: $animationDuration;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  $colors: (#ffff, var(--color-white));
+  @for $i from 1 through $amount {
+    &:nth-child(#{$i}) {
+      color: nth($colors, random(length($colors)));
+      top: random(100) * 10%;
+      left: random(100) * 100%;
+      animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+      animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+      transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+      $x: if(random() > 0.5, -1, 1);
+      box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+    }
+  }
 }
 
-.blob {
-  translate: 100px;
-  width: inherit;
-  height: auto;
-  background-position: 20px;
-  transform-style: preserve-3d;
-
-  .wrapper:hover & {
-    scale: 2;
-    translate: 100px 50px;
-  }
-
-  @supports not (scale: 1) {
-    .wrapper:hover & {
-      transform: scale(2);
-      transform: translate(0, 50px);
-    }
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
 

@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-
-import { BsChevronDown } from 'react-icons/bs';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
 import BrightMoon from '../public/images/BrightMoon.svg';
@@ -20,20 +18,26 @@ export default function Home() {
       </Head>
 
       <div className={`mt-5 ${utilStyles.allPages}`}>
+        <div className='background'>
+          {' '}
+          <Blobs />
+        </div>
+
         <section
-          className={`min-vh-100 mt-5 ${utilStyles.page}`}
+          className={`min-vh-100 align-items-center mt-5 ${utilStyles.page}`}
           alt='landing page'
           id='landing'
         >
-        <Blobs></Blobs>
           <div className='justify-content-center align-items-center'>
             <div className='row'>
-              <div className='col-md-6'></div>
+              <div className='col-md-6'>
+                <h3 className={`${utilStyles.headingXl} text-end pe-5`}></h3>
+              </div>
               <div className='col-md-6'>
                 <div className=' pe-5'>
                   {' '}
                   <h3
-                    className={` ${utilStyles.headingXl} text-end pe-5`}
+                    className={`${utilStyles.uxWord} ${utilStyles.headingXl} text-end pe-5`}
                     id='uxWord'
                     alt='ux'
                   >
@@ -43,7 +47,7 @@ export default function Home() {
               </div>
             </div>
             <div className='row g-0'>
-              <div className='col-md-6 '>
+              <div className='col-md-6'>
                 {' '}
                 <div className=''>
                   <h1
@@ -54,23 +58,25 @@ export default function Home() {
                   <hr className={utilStyles.underlineVD}></hr>
                 </div>
               </div>
-              <div className='col-md-6 border-start border-primary'>
-                <h1 className={` ${utilStyles.heading3Xl}`}>Designer</h1>
+              <div className='col-md-6'>
+                <div
+                  class={`${utilStyles.arrowDown} ${utilStyles.lineVertical}`}
+                ></div>
+                <div>
+                  {' '}
+                  <h1 className={`pt-n5 ms-3 ${utilStyles.heading3Xl}`}>
+                    Designer
+                  </h1>
+                </div>
               </div>
             </div>
-            <div className='row g-0'>
-              <div className='col-md-6'></div>
-              <div
-                className={`col-md-6 border-start border-primary text-end text-wrap ${utilStyles.headingXL}`}
-              >
+            <div className='row pb-4'>
+              <div className={utilStyles.findOutBox}>
                 <p
-                  className={`mt-5 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText}`}
+                  className={`mt-n5 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText}`}
                 >
                   find out more
                 </p>{' '}
-                <div>
-                  <BsChevronDown className={utilStyles.arrowDown} />
-                </div>
               </div>
             </div>
           </div>
@@ -81,37 +87,42 @@ export default function Home() {
           id='home'
         >
           <div className='row g-0' id='presentationGrid'>
-            <div className='col-sm-6 d-flex justify-content-center'>
+            <div className='col-sm-6 d-flex justify-content-center position-relative'>
               <button
-                className={`align-items-center justify-content-center rounded-circle ${utilStyles.bigMoon} animate__animated animate__flash `}
+                className={`align-items-center justify-content-center rounded-circle ${utilStyles.bigMoon} animate__animated animate__flash`}
               >
                 {/* not convinced */}
                 <BrightMoon
                   width='inherit'
                   height='inherit'
-                  viewBox={'0 0 120 120'}
+                  viewBox={'0 0 150 150'}
                 ></BrightMoon>
               </button>
             </div>
             <div className='col-sm-6'>
-              <div className='row-3'>
+              <div className='row'>
                 <h2
                   className={`ms-4 pb-3 border-bottom border-primary text-md-wrap animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.heading2Xl}`}
                 >
                   Hi, this is Paula
                 </h2>
               </div>
-              <div className={`row-3 px-4 text-wrap ${utilStyles.headingXL}`}>
+              <div className={`row px-4 text-wrap ${utilStyles.headingXL}`}>
                 <p className='description pb-5 mb-5'>I do this and that.</p>
               </div>
-              <div className={`row-6 text-wrap ${utilStyles.headingXL}`}>
-                <p
-                  className={`text-end border-start border-primary h-50 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText}`}
-                >
-                  find out more
-                </p>
-                <div>
-                  <BsChevronDown className={utilStyles.secondArrowDown} />
+
+              <div className={`row text-wrap ${utilStyles.headingXL}`}>
+                <div className='col-md-1 d-flex g-0'>
+                  <div
+                    class={`ms-5 ${utilStyles.arrowDown} ${utilStyles.lineVertical2}`}
+                  ></div>
+                </div>
+                <div className='col-md-11 g-0'>
+                  <p
+                    className={`text-end h-50 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText}`}
+                  >
+                    find out more
+                  </p>
                 </div>
               </div>
             </div>

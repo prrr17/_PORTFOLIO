@@ -39,17 +39,6 @@
   justify-self: center;
 }
 
-.P {
-  margin-left: 2em;
-  margin-right: auto;
-  margin-top: -2em;
-}
-
-.navBar a:active + .dotBox .underDot {
-  background-color: yellow;
-  text-shadow: 2px 2px 2px #27ae60;
-}
-
 .navBar a:hover + .dotBox .underDot {
   visibility: visible;
 }
@@ -60,6 +49,7 @@
   color: var(--font-color-light);
   text-shadow: -1px -2px 10px white, 1px 1px 1px black;
 }
+
 
 .burgerMenu {
   width: 100%;
