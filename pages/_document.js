@@ -1,9 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
+
 export default function Document() {
   return (
     <Html lang='eng'>
       <Head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
         <link
@@ -12,7 +14,10 @@ export default function Document() {
         />
         <meta charSet='utf-8' />
       </Head>
-      <body className='bg-secondary'>
+      <body
+        className='bg-secondary'
+    
+      >
         <Main />
         <NextScript />
       </body>

@@ -3,7 +3,9 @@ $breakpoint-iPadMini: 768px;
 $breakpoint-iPhone12: 390px;
 $breakpoint-iPadV: 820px;
 $breakpoint-iPadH: 1180px;
+$breakpoint-NestHubMax: 1280px;
 $breakpoint-MacBook13: 1920px;
+
 
 .allPages {
   margin-top: 6rem;
@@ -94,65 +96,18 @@ $breakpoint-MacBook13: 1920px;
 }
 
 /* LANDING PAGE */
-
-/* HOME PAGE */
-.bigMoon {
-  filter: drop-shadow(0 0 20px rgba(252, 255, 200, 0.9));
-  background: radial-gradient( rgba(255, 249, 235, 0.9));
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-}
-
-.bigMoon:hover {
-  filter: drop-shadow(0 0 5rem white);
-  background: radial-gradient(white, rgba(255, 255, 255, 0) 75%);
-  opacity: 0.7;
-}
-
-/*FIND ME*/
-/*SM ICONS*/
-.iconContainer {
-  width: inherit;
-  height: auto;
-}
-
-.icon {
-  width: 5rem;
-  height: auto;
-  align-items: center;
-  justify-content: flex-end;
-  transform: scale(0.6);
-  margin: -1rem;
-  padding-bottom: 0.25em;
-}
-
-.icon:nth-child(2) {
-  display: none;
-}
-
-.iconContainer:hover .icon:nth-child(1) {
-  display: none;
-}
-
-.iconContainer:hover .icon:nth-child(2) {
-  display: block;
-}
-
 //START PAGE
 
 //do this
 .uxWord {
   @media (min-width: $breakpoint-iPhone12) {
     left: 2%;
- ;
   }
   @media (min-width: $breakpoint-iPadMini) {
     left: 45%;
-;
   }
   @media (min-width: $breakpoint-MacBook13) {
     left: 48%;
-;
   }
 }
 
@@ -167,20 +122,22 @@ $breakpoint-MacBook13: 1920px;
   }
 }
 
-.lineVertical {
+.lineVertical,
+.lineVertical2 {
   width: 2px;
-  height: 70vh;
+  background: var(--font-color-dark);
+}
+
+.lineVertical {
+  height: 55vh;
   margin-left: 20px;
   margin-top: 35px;
   top: 4px;
   float: left;
-  background: var(--font-color-dark);
 }
 
 .lineVertical2 {
-  width: 2px;
   height: 50vh;
-  background: var(--font-color-dark);
   top: 20vh;
 }
 
@@ -224,8 +181,12 @@ $breakpoint-MacBook13: 1920px;
     left: 45%;
     margin-top: -30vh;
   }
+  @media (min-width: $breakpoint-NestHubMax) {
+    left: 46%;
+    margin-top: -30vh;
+  }
   @media (min-width: $breakpoint-MacBook13) {
-    left: 48%;
+    left: 47%;
     margin-top: -17vh;
   }
 }
@@ -240,6 +201,54 @@ $breakpoint-MacBook13: 1920px;
 }
 
 /* Redo arrows with media queries */
+
+/* HOME PAGE */
+.bigMoon {
+  filter: drop-shadow(0 0 20px rgba(252, 255, 200, 0.9));
+  background: radial-gradient(white, rgba(255, 249, 235, 0.9));
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bigMoon:hover {
+  filter: drop-shadow(0 0 5rem white);
+  background: radial-gradient(white, rgba(255, 255, 255, 0) 75%);
+  opacity: 0.7;
+}
+
+/*FIND ME*/
+/*SM ICONS*/
+.iconContainer {
+  width: inherit;
+  height: auto;
+}
+
+.icon {
+  width: 5rem;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
+  transform: scale(0.6);
+  margin: -1rem;
+  padding-bottom: 0.25em;
+}
+
+.icon:nth-child(2) {
+  display: none;
+}
+
+.iconContainer:hover .icon:nth-child(1) {
+  display: none;
+}
+
+.iconContainer:hover .icon:nth-child(2) {
+  display: block;
+}
+
+
 
 /* GO BACK */
 a.backChevron {

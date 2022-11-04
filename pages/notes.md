@@ -5,8 +5,10 @@
 [x] Navbar – PLogo
 [x] Cols & lines
 [x] PDF
+[] Size About page!
+[x] Find out why so much padding (?) on the right (NavBar???) -> fix with hidden overflow-x
 [] UX word media q.
-[] Center Learn more page 1
+[x] Center Learn more page 1
 [] For  the  Moon https://stackoverflow.com/questions/65169431/how-to-set-the-next-image-component-to-100-height ??
 [] night mode
 [] landing page -> grid? how?

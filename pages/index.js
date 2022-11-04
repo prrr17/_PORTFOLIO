@@ -73,7 +73,7 @@ export default function Home() {
             <div className='row pb-4'>
               <div className={utilStyles.findOutBox}>
                 <p
-                  className={`mt-n5 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText}`}
+                  className={`mt-n5 animate__animated animate__fadeInDown animate__delay-1.5s ${utilStyles.verticalText}`}
                 >
                   find out more
                 </p>{' '}
