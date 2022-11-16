@@ -1,5 +1,6 @@
 import Head from 'next/head';
 // import { AnimatePresence } from 'framer-motion'
+import { useEffect } from 'react'
 import styles from './layout.module.scss';
 import utilStyles from '../styles/utils.module.scss';
 import Link from 'next/link';
@@ -10,12 +11,27 @@ const name = "Paula's Portfolio";
 export const siteTitle = "Paula's Portfolio";
 
 export default function Layout({ children, home }) {
+
+  useEffect(() => {
+    // To avoid FOUC
+    if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+        document.documentElement.classList.add('dark')
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+})
+
   return (
     <div className='bg-secondary'>
       <div className={styles.container}>
         <Head>
           <link rel='icon' href='/public/p_logo.ico' />
           <meta name='description' content='Portfolio ' />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta
             property='og:image'
             content={`https://og-image.vercel.app/${encodeURI(

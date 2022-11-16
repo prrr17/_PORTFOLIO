@@ -6,20 +6,28 @@ $breakpoint-iPadH: 1180px;
 $breakpoint-NestHubMax: 1280px;
 $breakpoint-MacBook13: 1920px;
 
-
 .allPages {
   margin-top: 6rem;
+  margin-right: 0px;
+  width: 100vw;
 }
 
 .page {
   margin-top: 60px;
+  margin-bottom: 10%;
+  max-height: 100vh;
+  
 }
 
 /* Not working? */
 
 /* RELATED TO h1 */
 .heading3Xl {
-  font-family: 'Italiana', sans-serif;
+  @media (max-width: $breakpoint-iPadMini) {
+    font-size: 8rem;
+    line-height: 3rem;
+    letter-spacing: -0.05rem;
+  }
   font-size: 10rem;
   line-height: 5rem;
   letter-spacing: -0.05rem;
@@ -29,7 +37,6 @@ $breakpoint-MacBook13: 1920px;
 
 /* RELATED TO h2 */
 .heading2Xl {
-  font-family: 'Italiana', sans-serif;
   font-size: 5rem;
   line-height: 5rem;
   font-weight: 800;
@@ -40,7 +47,6 @@ $breakpoint-MacBook13: 1920px;
 
 /* RELATED TO h3 */
 .headingXl {
-  font-family: 'Italiana', sans-serif;
   font-size: 2rem;
   line-height: 1.5;
   font-weight: 800;
@@ -50,15 +56,9 @@ $breakpoint-MacBook13: 1920px;
 
 /* RELATED TO h4 */
 .headingLg {
-  font-family: 'Italiana', sans-serif;
   font-size: 1.5rem;
   line-height: 1.4;
   margin: 1rem 0;
-  // color: var(--font-color-dark);
-}
-
-.headingLg a {
-  color: var(--font-color-dark);
 }
 
 .headingLg a:hover {
@@ -68,7 +68,6 @@ $breakpoint-MacBook13: 1920px;
 
 /* RELATED TO h5 */
 .headingMd {
-  font-family: 'Italiana', sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -80,7 +79,6 @@ $breakpoint-MacBook13: 1920px;
 }
 
 .list {
-  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -171,23 +169,41 @@ $breakpoint-MacBook13: 1920px;
 
 .findOutBox {
   position: absolute;
-  left: 2%;
+  left: 0.25%;
   margin-top: -25vh;
   @media (min-width: $breakpoint-iPhone12) {
-    left: 2%;
+    left: 0.5%;
     margin-top: -25vh;
   }
   @media (min-width: $breakpoint-iPadMini) {
-    left: 45%;
-    margin-top: -30vh;
+    left: 49%;
+    margin-top: -24vh;
   }
   @media (min-width: $breakpoint-NestHubMax) {
     left: 46%;
     margin-top: -30vh;
   }
   @media (min-width: $breakpoint-MacBook13) {
-    left: 47%;
+    left: 49vw;
     margin-top: -17vh;
+  }
+}
+
+.findOutBox2 {
+  position: absolute;
+  left: 8%;
+  margin-top: -55vh;
+  @media (min-width: $breakpoint-iPadMini) {
+    left: 55%;
+    margin-top: 5vh;
+  }
+  @media (min-width: $breakpoint-NestHubMax) {
+    left: 52%;
+    margin-top: 5vh;
+  }
+  @media (min-width: $breakpoint-MacBook13) {
+    left: 53%;
+    margin-top: 5vh;
   }
 }
 
@@ -219,6 +235,16 @@ $breakpoint-MacBook13: 1920px;
   opacity: 0.7;
 }
 
+/*ABOUT PAGE*/
+
+.profilePicBox{
+  // max-height: inherit;
+}
+
+// .profilePic{
+// max-width: 20%;
+// }
+
 /*FIND ME*/
 /*SM ICONS*/
 .iconContainer {
@@ -247,8 +273,6 @@ $breakpoint-MacBook13: 1920px;
 .iconContainer:hover .icon:nth-child(2) {
   display: block;
 }
-
-
 
 /* GO BACK */
 a.backChevron {

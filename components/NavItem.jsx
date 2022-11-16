@@ -16,7 +16,7 @@ export default function NavItem() {
       <div>
         {' '}
         <Navbar.Brand href='/'>
-          <a className=''>
+          <a className='' alt='Paula logo'>
             <PLogo width='10rem' height='inherit'></PLogo>
           </a>
         </Navbar.Brand>

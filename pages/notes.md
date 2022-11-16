@@ -8,6 +8,7 @@
 [] Size About page!
 [x] Find out why so much padding (?) on the right (NavBar???) -> fix with hidden overflow-x
 [] UX word media q.
+[] Change sizes with viewport https://developer.mozilla.org/en-US/docs/Web/CSS/clamp and https://piccalil.li/tutorial/fluid-typography-with-css-clamp/
 [x] Center Learn more page 1
 [] For  the  Moon https://stackoverflow.com/questions/65169431/how-to-set-the-next-image-component-to-100-height ??
 [] night mode
