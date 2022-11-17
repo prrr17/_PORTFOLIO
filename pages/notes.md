@@ -6,7 +6,7 @@
 [x] Cols & lines
 [x] PDF
 [] Size About page!
-[x] Find out why so much padding (?) on the right (NavBar???) -> fix with hidden overflow-x
+[] Find out why so much padding (?) on the right (NavBar???) -> fix with hidden overflow-x ??
 [] UX word media q.
 [] Change sizes with viewport https://developer.mozilla.org/en-US/docs/Web/CSS/clamp and https://piccalil.li/tutorial/fluid-typography-with-css-clamp/
 [x] Center Learn more page 1
@@ -19,7 +19,7 @@
 [] animations
 [] change icons on hover (Moon, SM) -> https://codepen.io/gg-1414/pen/pojXPKP
 [] Check for the dark theme config https://github.com/james-wallis/wallis.dev/blob/master/pages/_app.tsx#L61
-
+[] Line under navbar?
 [] Toggle burger menu
 
 AFTER IT'S LIVE

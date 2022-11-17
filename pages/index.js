@@ -273,11 +273,11 @@ export default function Home() {
           </section>
 
           <section
-            className={`max-vh-100 pt-5 ps-5 ms-2 ${utilStyles.page}`}
+            className={`max-vh-100 pt-5 mt-5 ps-5 ms-2  ${utilStyles.page}`}
             id='findme'
             alt='find me contact page'
           >
-            <div className='container pt-5 mx-lg-5 mx-md-4'>
+            <div className='container pt-5 mt-5 mx-lg-5 mx-md-4'>
               <div className='row'>
                 <div className='col-sm-4'>
                   <p className={utilStyles.headingXl}></p>
