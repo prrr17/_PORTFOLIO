@@ -6,15 +6,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fontsource/abhaya-libre": "^4.5.9",
+    "@fontsource/italiana": "^4.5.11",
     "@svgr/webpack": "^6.4.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.2",
     "classnames": "^2.3.2",
     "next": "latest",
+    "nextjs-fonts": "^0.22.0",
     "react": "17.0.2",
     "react-bootstrap": "^2.5.0",
     "react-dom": "17.0.2",
     "react-icons": "^4.6.0",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "use-fit-text": "^2.4.0"
   }
 }

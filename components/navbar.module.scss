@@ -41,6 +41,12 @@
   justify-self: center;
 }
 
+.P {
+  position: relative;
+  left: 2rem;
+  top: -1rem;
+}
+
 .navBar a:hover + .dotBox .underDot {
   visibility: visible;
 }
@@ -51,7 +57,6 @@
   color: var(--font-color-light);
   text-shadow: -1px -2px 10px white, 1px 1px 1px black;
 }
-
 
 .burgerMenu {
   width: 10%;
@@ -87,7 +92,7 @@
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
-  position: absolute;
+  //position: absolute;
   top: 1rem;
   left: 1rem;
 }
