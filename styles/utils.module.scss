@@ -1,19 +1,21 @@
 //variables
 $breakpoint-iPhone12: 390px;
-$breakpoint-iPadMini: 768px;
+$breakpoint-iPadAir: 820px;
 $breakpoint-NestHubMax: 1280px;
 $breakpoint-MacBook13: 1920px;
 
 .allPages {
   margin-top: 6rem;
   margin-right: 0px;
-  max-width: 100vw;
+  max-width: 100%;
+  display: block;
 }
 
 .page {
   padding-top: 2rem;
   margin-top: 2rem;
-  min-height: 100vh;
+  // min-height: 100vh;
+  // max-width: 100%;
 }
 
 /* Not working? */
@@ -22,12 +24,7 @@ $breakpoint-MacBook13: 1920px;
 
 /* RELATED TO h1 */
 .heading3Xl {
-  @media (max-width: $breakpoint-iPadMini) {
-    font-size: 6rem;
-    line-height: 1rem;
-    letter-spacing: -0.05rem;
-  }
-  font-size: 11.089rem;
+  font-size: var(--step-5);
   line-height: 5rem;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
@@ -36,7 +33,7 @@ $breakpoint-MacBook13: 1920px;
 
 /* RELATED TO h2 */
 .heading2Xl {
-  font-size: 6.854rem;
+  font-size: var(--step-4);
   line-height: 5rem;
   font-weight: 800;
   letter-spacing: -0.05rem;
@@ -46,7 +43,7 @@ $breakpoint-MacBook13: 1920px;
 
 /* RELATED TO h3 */
 .headingXl {
-  font-size: 4.236rem;
+  font-size: var(--step-3);
   line-height: 1.4;
   font-weight: 800;
   letter-spacing: -0.05rem;
@@ -55,31 +52,26 @@ $breakpoint-MacBook13: 1920px;
 
 /* RELATED TO h4 */
 .headingLg {
-  font-size: 2.618rem;
+  font-size: var(--step-2);
   line-height: 1.4;
   margin: 1rem 0;
 }
 
 /* RELATED TO h5 */
 .headingMd {
-  font-size: 1.618rem;
+  font-size: var(--step-1);
   line-height: 1.5;
-}
-
-.headingMd a:hover {
-  color: var(--font-color-dark);
-  -webkit-text-stroke: 1.5px var(--font-color-dark);
 }
 
 /* RELATED TO h6 */
 .headingSm {
-  font-size: 1rem;
+  font-size: var(--step-0);
   line-height: 1.2;
 }
 
 .textDescriptions {
   font-family: 'Abhaya Libre', serif;
-  font-size: 1.618rem;
+  font-size: var(--step-1);
   line-height: 1.5;
 }
 
@@ -102,16 +94,23 @@ $breakpoint-MacBook13: 1920px;
 //START PAGE
 
 .underlineVD {
-  @media (max-width: $breakpoint-iPadMini) {
-    width: 20rem;
-    right: 6rem;
-  }
   color: primary;
   top: -8rem;
   position: relative;
-  right: -27rem;
+  @media (max-width: $breakpoint-iPhone12) {
+    width: 20rem;
+    right: -2rem;
+  }
+  
+  @media (max-width: $breakpoint-iPadAir) {
+    width: 20rem;
+    right: -11rem;
+  }
+
+  right: -20rem;
   width: 38rem;
   opacity: 100%;
+ 
 }
 
 .lineVertical,
@@ -139,8 +138,11 @@ $breakpoint-MacBook13: 1920px;
   margin-left: -2.4%;
   margin-top: 5rem;
   bottom: 3rem;
-  @media (max-width: $breakpoint-iPadMini) {
-    margin-left: 2%;
+  @media (max-width: $breakpoint-iPadAir) {
+    margin-left: 7%;
+  }
+  @media (max-width: $breakpoint-iPhone12) {
+    margin-left: 3%;
   }
 }
 
@@ -162,17 +164,15 @@ $breakpoint-MacBook13: 1920px;
 }
 
 .findOutBox {
-  position: absolute;
+  position: relative;
   left: 0.25%;
   margin-top: -25vh;
+
   @media (min-width: $breakpoint-iPhone12) {
-    left: 0.5%;
+    left: 7%;
     margin-top: -25vh;
   }
-  @media (min-width: $breakpoint-iPadMini) {
-    left: 49%;
-    margin-top: -24vh;
-  }
+ 
   @media (min-width: $breakpoint-NestHubMax) {
     left: 46%;
     margin-top: -30vh;
@@ -184,15 +184,15 @@ $breakpoint-MacBook13: 1920px;
 }
 
 .findOutBox2 {
-  position: absolute;
-  left: 8%;
-  margin-top: -55vh;
-  @media (min-width: $breakpoint-iPadMini) {
-    left: 55%;
-    margin-top: 5vh;
+  position: relative;
+  left: 13%;
+  margin-top: 3vh;
+  @media (min-width: $breakpoint-iPadAir) {
+    left: 5%;
+    margin-top: 3vh;
   }
   @media (min-width: $breakpoint-NestHubMax) {
-    left: 52%;
+    left: -1%;
     margin-top: 5vh;
   }
   @media (min-width: $breakpoint-MacBook13) {
@@ -244,6 +244,67 @@ $breakpoint-MacBook13: 1920px;
 // max-width: 20%;
 // }
 
+//from https://www.30secondsofcode.org/css/s/hover-underline-animation
+
+.headingMd a {
+  display: inline-block;
+  position: relative;
+  text-underline-offset: 0.4rem;
+}
+
+.headingMd a:hover {
+  color: var(--font-color-dark);
+  -webkit-text-stroke: 1.5px var(--font-color-dark);
+}
+
+.headingMd a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--font-color-dark);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.headingMd a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.textDescriptions a {
+  display: inline-block;
+  position: relative;
+  text-underline-offset: 0.4rem;
+}
+
+.textDescriptions a:hover {
+  color: var(--font-color-dark);
+  -webkit-text-stroke: 1.5px var(--font-color-dark);
+}
+
+.textDescriptions
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--font-color-dark);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.textDescriptions a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 /*FIND ME*/
 /*SM ICONS*/
 .iconContainer {
@@ -284,8 +345,7 @@ a.backChevron:hover + .goBackText {
   color: var(--font-color-light);
 }
 
-.mail{
- 
+.mail {
 }
 
 // No va
