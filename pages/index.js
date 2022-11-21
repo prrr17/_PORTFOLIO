@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
 import BrightMoon from '../public/images/BrightMoon.svg';
@@ -24,20 +25,16 @@ export default function Home() {
         </div>
 
         <section
-          className={`mx-auto mt-5 ${utilStyles.page}`}
+          className={`mx-auto mt-3 ${utilStyles.page}`}
           alt='landing page'
           id='landing'
         >
           <div className='row'>
-            <div className='col-md-6'>
-              <h3 className={`${utilStyles.headingXl} text-end pe-5`}></h3>
-            </div>
-            <div className='col-md-6'>
-              <div className={`${utilStyles.uxBox}`}>
+            <div className='col'>
+              <div className={`text-center text-lg-end ${utilStyles.uxBox}`}>
                 {' '}
                 <h4
-                  className={`${utilStyles.headingLg} text-md-end me-5`}
-                  id='uxWord'
+                  className={` ${utilStyles.headingLg} ${utilStyles.uxWord}`}
                   alt='ux'
                 >
                   UX
@@ -46,23 +43,22 @@ export default function Home() {
             </div>
           </div>
           <div className='mx-auto row g-0'>
-            <div className='col-lg-6 col-md-12'>
+            <div className='col-lg-6 col-12 pr-3'>
               {' '}
               <h1
-                className={`ps-1 text-md-end ${utilStyles.heading3Xl} ${utilStyles}`}
-              >
-                Visual
+                className={`text-lg-end ${utilStyles.heading3Xl} ${utilStyles.visualText}`}
+              ><span className={`ms-0 ps-0 ${utilStyles.underV}`}>
+                Visual&nbsp;</span>
               </h1>
-              <hr className={`mx-auto ${utilStyles.underlineVD}`}></hr>
             </div>
-            <div className='col-lg-6 col-md-12'>
+            <div className='col-lg-6 col-12 mh-100'>
               <div
-                class={`${utilStyles.arrowDown} ${utilStyles.lineVertical}`}
+                className={`${utilStyles.arrowDown} ${utilStyles.lineVertical}`}
               ></div>
               <div>
                 {' '}
-                <h1 className={`pt-n5 ms-3 ${utilStyles.heading3Xl}`}>
-                  Designer
+                <h1 className={` ${utilStyles.heading3Xl} ${utilStyles.designerText}`}>
+                  <span className={utilStyles.underD}>Desi</span>gner
                 </h1>
               </div>
             </div>
@@ -115,7 +111,7 @@ export default function Home() {
               <div className={`row text-wrap ${utilStyles.headingXL}`}>
                 <div className='col-md-1 d-flex g-0'>
                   <div
-                    class={`ms-5 ${utilStyles.arrowDown} ${utilStyles.lineVertical2}`}
+                    className={`ms-5 ${utilStyles.arrowDown} ${utilStyles.lineVertical2}`}
                   ></div>
                 </div>
                 <div className='col-md-11 g-0'>
@@ -242,14 +238,15 @@ export default function Home() {
                 <p className={`${utilStyles.textDescriptions}`}>
                   On a more personal side, I am quite Aristotelian in looking
                   for the "
-                  <a
-                    className={`fw-bold text-decoration-none ${utilStyles.textDescriptions}`}
-                    href='https://en.wikipedia.org/wiki/Golden_mean_(philosophy)'
-                    alt='"golden Mean" on Wikipedia'
-                    target='_blank'
-                  >
-                    Golden Mean
-                  </a>
+                  <Link href='https://en.wikipedia.org/wiki/Golden_mean_(philosophy)'>
+                    <a
+                      className={`fw-bold ${utilStyles.textDescriptions}`}
+                      alt='"golden Mean" on Wikipedia'
+                      target='_blank'
+                    >
+                      Golden Mean
+                    </a>
+                  </Link>
                   " in life —you can't spend the day in front of a screen (can
                   you?), so my other usual activities often involve socializing
                   with close people enjoying a beer/coffee and a conversation,
@@ -259,14 +256,15 @@ export default function Home() {
                 </p>
                 <p className={` ${utilStyles.textDescriptions}`}>
                   Let's create something meaningful (and beautiful){' '}
-                  <a
-                    className={`fw-bold text-decoration-none ${utilStyles.textDescriptions}`}
-                    href='#findme'
-                    rel='noopener noreferrer'
-                    alt='link to my contact page'
-                  >
-                    together
-                  </a>{' '}
+                  <Link href='#findme'>
+                    <a
+                      className={`fw-bold ${utilStyles.textDescriptions}`}
+                      rel='noopener noreferrer'
+                      alt='link to my contact page'
+                    >
+                      together
+                    </a>
+                  </Link>
                   🌻
                 </p>
               </div>
@@ -284,25 +282,28 @@ export default function Home() {
               >
                 <h5 className={`${utilStyles.headingMd}`}>
                   Check out my{' '}
-                  <a
-                    className={`fw-bold text-decoration-none ${utilStyles.headingMd}`}
-                    href='/Romero-de-Blas_Paula-cv.pdf'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    resume
-                  </a>{' '}
+                 
+                   
+                    <a  href='Romero-de-Blas_Paula-cv.pdf'
+                      className={`fw-bold ${utilStyles.headingMd}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      resume
+                    </a>
+                 {' '}
                 </h5>
                 <h5 className={`${utilStyles.headingMd}`}>
                   Contact{' '}
-                  <a
-                    className={`fw-bold text-decoration-none ${utilStyles.headingMd}`}
-                    href='#findme'
-                    alt='link to contact-me page'
-                    color='primary'
-                  >
-                    me
-                  </a>{' '}
+                  <Link href='#findme'>
+                    <a
+                      className={`fw-bold ${utilStyles.headingMd}`}
+                      alt='link to contact-me page'
+                      color='primary'
+                    >
+                      me
+                    </a>
+                  </Link>
                 </h5>
               </div>
 
@@ -333,7 +334,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section
+          <section
           className={`max-vh-100 pt-5 mt-5 ms-2 ${utilStyles.page}`}
           id='findme'
           alt='find me contact page'
@@ -370,7 +371,15 @@ export default function Home() {
                     <p
                       className={`align-self-center mb-0 ${utilStyles.textDescriptions} ${utilStyles.mail}`}
                     >
-                      hi@paulardb.design
+                      <Link href='mailto:                      hi@paulardb.design'>
+                        <a
+                          alt='open email provider to email'
+                          rel='noopener noreferrer'
+                          target='_blank'
+                        >
+                          hi@paulardb.design
+                        </a>
+                      </Link>
                     </p>
                   </div>
                 </div>

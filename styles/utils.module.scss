@@ -1,21 +1,23 @@
 //variables
 $breakpoint-iPhone12: 390px;
+$breakpoint-mobileL: 425px;
+$breakpoint-bootstrapsm: 576px;
+$breakpoint-bootstrapmd: 768px;
 $breakpoint-iPadAir: 820px;
+$breakpoint-bootstraplg: 992px;
 $breakpoint-NestHubMax: 1280px;
 $breakpoint-MacBook13: 1920px;
 
 .allPages {
   margin-top: 6rem;
   margin-right: 0px;
-  max-width: 100%;
+  max-width: 100vw;
   display: block;
 }
 
 .page {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  // min-height: 100vh;
-  // max-width: 100%;
+  padding-top: 6rem;
+  margin-top: 6rem;
 }
 
 /* Not working? */
@@ -93,24 +95,34 @@ $breakpoint-MacBook13: 1920px;
 /* LANDING PAGE */
 //START PAGE
 
-.underlineVD {
-  color: primary;
-  top: -8rem;
-  position: relative;
-  @media (max-width: $breakpoint-iPhone12) {
-    width: 20rem;
-    right: -2rem;
+.designerText,
+.visualText {
+  @media (max-width: $breakpoint-mobileL) {
+    font-size: var(--step-4);
   }
-  
-  @media (max-width: $breakpoint-iPadAir) {
-    width: 20rem;
-    right: -11rem;
+  @media (max-width: $breakpoint-bootstrapmd) {
+    font-size: var(--step-4);
   }
+}
 
-  right: -20rem;
-  width: 38rem;
-  opacity: 100%;
- 
+.visualText {
+  @media (max-width: $breakpoint-bootstrapmd) {
+    padding-bottom: 2rem;
+  }
+}
+
+.underV, .underD {
+  display: inline-block;
+  line-height: 0.85;
+  position: relative;
+  border-bottom: 1.5px solid var(--font-color-dark);
+}
+
+.uxWord{
+  display: inline-block;
+  line-height: 0.85;
+  position: relative;
+  border-bottom: 1.5px solid;
 }
 
 .lineVertical,
@@ -120,29 +132,30 @@ $breakpoint-MacBook13: 1920px;
 }
 
 .lineVertical {
-  height: 55vh;
-  margin-left: 20px;
+  height: 70vh;
+  margin-left: 3%;
   margin-top: 35px;
   top: 4px;
   float: left;
+  @media (max-width: $breakpoint-bootstraplg) {
+    height: 75vh;
+    top: -3rem;
+  }
 }
 
 .lineVertical2 {
-  height: 50vh;
+  height: 60vh;
   top: 20vh;
 }
 
 .arrowDown {
   position: sticky;
   right: 100%;
-  margin-left: -2.4%;
-  margin-top: 5rem;
+  margin-left: 2%;
+  margin-top: -2rem;
   bottom: 3rem;
-  @media (max-width: $breakpoint-iPadAir) {
-    margin-left: 7%;
-  }
-  @media (max-width: $breakpoint-iPhone12) {
-    margin-left: 3%;
+  @media (min-width: $breakpoint-bootstraplg) {
+    margin-left: 0rem;
   }
 }
 
@@ -158,47 +171,34 @@ $breakpoint-MacBook13: 1920px;
   transform: rotate(135deg);
   vertical-align: top;
   width: 0.5em;
-  @media (min-width: $breakpoint-iPhone12) {
-    left: -3px;
-  }
 }
 
 .findOutBox {
-  position: relative;
-  left: 0.25%;
+  position: absolute;
+  left: 3%;
   margin-top: -25vh;
-
-  @media (min-width: $breakpoint-iPhone12) {
-    left: 7%;
-    margin-top: -25vh;
-  }
- 
-  @media (min-width: $breakpoint-NestHubMax) {
-    left: 46%;
-    margin-top: -30vh;
-  }
-  @media (min-width: $breakpoint-MacBook13) {
+@media (min-width: $breakpoint-bootstraplg) {
     left: 49vw;
-    margin-top: -17vh;
+    margin-top: -24vh;
   }
 }
 
 .findOutBox2 {
-  position: relative;
-  left: 13%;
-  margin-top: 3vh;
-  @media (min-width: $breakpoint-iPadAir) {
-    left: 5%;
-    margin-top: 3vh;
-  }
-  @media (min-width: $breakpoint-NestHubMax) {
-    left: -1%;
-    margin-top: 5vh;
-  }
-  @media (min-width: $breakpoint-MacBook13) {
+  position: absolute;
+  left: 12%;
+  margin-top: 10%;
+  @media (min-width: $breakpoint-bootstrapmd) {
     left: 53%;
-    margin-top: 5vh;
+    margin-top: 1rem;
   }
+  // @media (min-width: $breakpoint-NestHubMax) {
+  //   left: 52%;
+  //   margin-top: 5vh;
+  // }
+  // @media (min-width: $breakpoint-MacBook13) {
+  //   left: 53%;
+  //   margin-top: 5vh;
+  // }
 }
 
 .secondArrowDown {
@@ -211,11 +211,10 @@ $breakpoint-MacBook13: 1920px;
 }
 
 .uxBox {
-  margin-right: 6rem;
-  padding-right: 6rem;
+  margin-right: 5rem;
+  padding-bottom: -5rem;
+  padding-right: 5rem;
 }
-
-/* Redo arrows with media queries */
 
 /* HOME PAGE */
 .bigMoon {
@@ -286,8 +285,7 @@ $breakpoint-MacBook13: 1920px;
   -webkit-text-stroke: 1.5px var(--font-color-dark);
 }
 
-.textDescriptions
-a::after {
+.textDescriptions a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -343,9 +341,6 @@ a.backChevron {
 a.backChevron:hover + .goBackText {
   text-decoration: dashed;
   color: var(--font-color-light);
-}
-
-.mail {
 }
 
 // No va

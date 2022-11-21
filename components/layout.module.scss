@@ -1,8 +1,16 @@
+//variables
+$breakpoint-bootstrapmd: 768px;
+$breakpoint-bootstraplg: 992px;
+
+
 /* COMPONENT-LEVEL STYLES */
 .container {
     width: 100vw;
-    padding: 10vh 1rem;
-    margin: 10vh auto 0;
+    padding: 5vh 1rem;
+    margin: 5vh auto 5vh;
+    @media (min-width: $breakpoint-bootstrapmd) {
+      margin: 5vh auto 0;
+    }
   }
   
   .header {

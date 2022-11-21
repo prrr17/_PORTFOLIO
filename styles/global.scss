@@ -16,6 +16,7 @@ html,
   --step-5: clamp(9.70rem, calc(9.31rem + 1.98vw), 12.48rem);
 }
 
+
 /* font 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -51,7 +52,7 @@ body {
 
 a {
   color: var(--font-color-dark) !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
