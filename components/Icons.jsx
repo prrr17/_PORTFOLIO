@@ -3,8 +3,8 @@ import IgOn from '../public/IgOn.svg';
 import IgOff from '../public/IgOff.svg';
 import BeOn from '../public/BeOn.svg';
 import BeOff from '../public/BeOff.svg';
-import InOn from '../public/inOn.svg';
-import InOff from '../public/inOff.svg';
+import InOn from '../public/InOn.svg';
+import InOff from '../public/InOff.svg';
 import GhOn from '../public/GhOn.svg';
 import GhOff from '../public/GhOff.svg';
 

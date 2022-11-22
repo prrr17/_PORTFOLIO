@@ -4,8 +4,8 @@ import IgOn from '../public/IgOn.svg';
 import IgOff from '../public/IgOff.svg';
 import BeOn from '../public/BeOn.svg';
 import BeOff from '../public/BeOff.svg';
-import InOn from '../public/inOn.svg';
-import InOff from '../public/inOff.svg';
+import InOn from '../public/InOn.svg';
+import InOff from '../public/InOff.svg';
 import GhOn from '../public/GhOn.svg';
 import GhOff from '../public/GhOff.svg';
 import utilStyles from '../styles/utils.module.scss';
@@ -15,11 +15,12 @@ const SMIcons = () => {
     <div className='d-flex justify-content-end pe-2 pt-2 align-content-end'>
       <ul className='socialMedia-list mb-0'>
         <div className={utilStyles.iconContainer}>
-          <Link
-            className='socialMediaLinks py-2'
-            href='https://www.instagram.com/inpaulasmind/'
-          >
-            <a target='_blank' alt='Instagram link @inpaulasmind'>
+          <Link href='https://www.instagram.com/inpaulasmind/'>
+            <a
+              className='socialMediaLinks py-2'
+              target='_blank'
+              alt='Instagram link @inpaulasmind'
+            >
               <IgOn
                 viewBox='-10 -10 100 100'
                 className={`rounded-circle ${utilStyles.icon}`}
@@ -32,26 +33,27 @@ const SMIcons = () => {
           </Link>
         </div>
         <div className={utilStyles.iconContainer}>
-          <Link
-            className='socialMediaLinks py-2'
-            href='https://github.com/prrr17/'
-          >
-            <a target='_blank' alt='GitHub link @prrr17'>
+          <Link href='https://github.com/prrr17/'>
+            <a
+              className='socialMediaLinks py-2'
+              target='_blank'
+              alt='GitHub link @prrr17'
+            >
               <GhOn
                 viewBox='-10 -10 100 100'
                 className={`rounded-circle ${utilStyles.icon}`}
               ></GhOn>
-              <GhOff className={`rounded-circle ${utilStyles.icon}`}></GhOff>
+              <GhOff
+                viewBox='-10 -10 100 100'
+                className={`rounded-circle ${utilStyles.icon}`}
+              ></GhOff>
             </a>
           </Link>
         </div>
         <div className={utilStyles.iconContainer}>
-          <Link
-            className='socialMediaLinks py-2'
-            href='https://www.linkedin.com/in/paula-romero-de-blas/'
-          >
+          <Link href='https://www.linkedin.com/in/paula-romero-de-blas/'>
             <a
-              className={utilStyles.iconContainerLink}
+              className='socialMediaLinks py-2'
               target='_blank'
               alt='LinkedIn link @paula-romero-de-blas'
             >
@@ -67,12 +69,12 @@ const SMIcons = () => {
           </Link>
         </div>
         <div className={utilStyles.iconContainer}>
-          <Link
-            className='socialMediaLinks'
-            href='https://www.behance.net/paulardb'
-            target='_blank'
-          >
-            <a alt='Behance @paulardb'>
+          <Link href='https://www.behance.net/paulardb'>
+            <a
+              className='socialMediaLinks'
+              target='_blank'
+              alt='Behance @paulardb'
+            >
               <BeOn
                 viewBox='-10 -10 100 100'
                 className={`rounded-circle ${utilStyles.icon}`}

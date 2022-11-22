@@ -305,10 +305,6 @@ $breakpoint-MacBook13: 1920px;
 
 /*FIND ME*/
 /*SM ICONS*/
-.iconContainer {
-  width: inherit;
-  height: auto;
-}
 
 .icon {
   width: 5rem;
@@ -322,6 +318,11 @@ $breakpoint-MacBook13: 1920px;
 
 .icon:nth-child(2) {
   display: none;
+}
+
+.iconContainer {
+  width: inherit;
+  height: auto;
 }
 
 .iconContainer:hover .icon:nth-child(1) {
