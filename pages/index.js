@@ -79,6 +79,7 @@ export default function Home() {
           alt='home page'
           id='home'
         >
+        <Blobs />
           <div className='row g-0' id='presentationGrid'>
             <div className='col-sm-6 d-flex mx-auto position-relative'>
               <button
@@ -133,6 +134,7 @@ export default function Home() {
           id='about'
           alt='about page'
         >
+        <Blobs />
           <div className='container-fluid'>
             <div className='row mt-5 pt-5' id='upper'>
               <div
@@ -306,7 +308,6 @@ export default function Home() {
                   </Link>
                 </h5>
               </div>
-
               <div className='d-flex flex-column justify-content-center col-sm-2 pt-4'>
                 <h5 className={`text-end text-wrap ${utilStyles.headingMd}`}>
                   IT Skills
@@ -321,7 +322,7 @@ export default function Home() {
                 </ul>
               </div>
               <div
-                className={`d-flex flex-column  col-sm-2 pt-3 ${utilStyles.textDescriptions}`}
+                className={`d-flex flex-column col-sm-2 pt-3 ${utilStyles.textDescriptions}`}
               >
                 <ul className='pt-4'>
                   <li>HTML</li>
@@ -335,10 +336,11 @@ export default function Home() {
         </section>
 
           <section
-          className={`max-vh-100 pt-5 mt-5 ms-2 ${utilStyles.page}`}
+          className={`min-vh-100 pt-5 mt-5 ms-2 ${utilStyles.page}`}
           id='findme'
           alt='find me contact page'
         >
+        <Blobs />
           <div className='container pt-5 mt-5 mx-lg-5 mx-md-4'>
             <div className={`row border-primary border-end text-end`}>
               <h3 className={`me-5 text-end ${utilStyles.headingXl}`}>
