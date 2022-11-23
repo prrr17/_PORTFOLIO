@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
       <div className={styles.container}>
         <Head>
           <link rel='icon' href='/public/p_logo.ico' />
-          <meta name='description' content='Portfolio ' />
+          <meta name='description' content='Portfolio' />
           <meta
             name='viewport'
             content='width=device-width, initial-scale=1.0'
@@ -39,13 +39,12 @@ export default function Layout({ children, home }) {
           />
           <meta name='og:title' content={siteTitle} />
           <meta
-            name='twitter:card' /*en el futuro*/
+            name='twitter:card'
             content='summary_large_image'
           />
           <meta property='og:url' content='https://www.paulardb.design/' />
           <meta property='og:type' content='website' />
           <meta property='og:description' content='Check out my Portfolio' />
-          <meta property='og:image' content={'url of image'} />
         </Head>
         <Header />
         {/* <AnimatePresence
