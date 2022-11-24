@@ -73,17 +73,18 @@ export default function Home() {
           </div>
           <div className='row pb-4'>
             <div className={utilStyles.findOutBox}>
+            <a href="#home">
               <p
                 className={`animate__animated animate__fadeInDown animate__delay-1.5s ${utilStyles.verticalText}`}
               >
                 find out more
-              </p>{' '}
+              </p>{' '}</a>
             </div>
           </div>
         </section>
 
         <section
-          className={`${utilStyles.scrollingPage}`}
+          className={`mb-4 ${utilStyles.scrollingPage}`}
           alt='home page'
           id='home'
         >
@@ -127,11 +128,12 @@ export default function Home() {
                 </div>
                 <div className='col-md-11 g-0'>
                   <div className={utilStyles.findOutBox2}>
+                  <a href="#about">
                     <p
                       className={`text-end h-50 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText}`}
                     >
                       find out more
-                    </p>
+                    </p></a>
                   </div>
                 </div>
               </div>
@@ -146,7 +148,7 @@ export default function Home() {
         >
           <Blobs />
           <div className='container-fluid'>
-            <div className='row mt-5 pt-5' id='upper'>
+            <div className='row mt-1 pt-2' id='upper'>
               <div
                 className='col-sm-5 border-bottom border-end border-primary'
                 id='imPaula'
@@ -267,12 +269,15 @@ export default function Home() {
                     :) — and getting more and more interested in coding and UX
                     design. I want to bring people and technology closer, from a
                     human-centered perspective, forever following an
-                    esthetically pleasing approach. On a more personal side, I
-                    my other usual activities often involve socializing with
-                    close people enjoying our free time and a beer/coffee,
-                    walking through cities and nature, learning something new,
-                    reading (almost) everything that falls into my hands, eat
-                    and cook yummy healthy food, the sea, yoga and exercising.
+                    esthetically pleasing approach.{' '}
+                  </p>{' '}
+                  <p>
+                    On a more personal side, I my other usual activities often
+                    involve socializing with close people enjoying our free time
+                    and a beer/coffee, walking through cities and nature,
+                    learning something new, reading (almost) everything that
+                    falls into my hands, eat and cook yummy healthy food, the
+                    sea, yoga and exercising.
                   </p>
                   <p>
                     Let's create something meaningful (and beautiful){' '}
