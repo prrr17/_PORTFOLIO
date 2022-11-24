@@ -84,6 +84,8 @@ $breakpoint-bootstraplg: 992px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-size: 1.7rem;
+  font-family: 'Italiana', sans-serif;
+  color: var(--font-color-dark);
 }
 
 /* LANDING PAGE */
@@ -104,14 +106,15 @@ $breakpoint-bootstraplg: 992px;
   }
 }
 
-.underV, .underD {
+.underV,
+.underD {
   display: inline-block;
   line-height: 0.85;
   position: relative;
   border-bottom: 1.5px solid var(--font-color-dark);
 }
 
-.uxWord{
+.uxWord {
   display: inline-block;
   line-height: 0.85;
   position: relative;
@@ -125,7 +128,7 @@ $breakpoint-bootstraplg: 992px;
 }
 
 .lineVertical {
-  height: 70vh;
+  height: 80vh;
   margin-left: 3%;
   margin-top: 35px;
   top: 4px;
@@ -170,7 +173,7 @@ $breakpoint-bootstraplg: 992px;
   position: absolute;
   left: 3%;
   margin-top: -25vh;
-@media (min-width: $breakpoint-bootstraplg) {
+  @media (min-width: $breakpoint-bootstraplg) {
     left: 49vw;
     margin-top: -24vh;
   }
@@ -230,9 +233,7 @@ $breakpoint-bootstraplg: 992px;
 
 //from https://www.30secondsofcode.org/css/s/hover-underline-animation
 
-
-
-.underlined  {
+.underlined {
   display: inline-block;
   position: relative;
   text-underline-offset: 0.4rem;

@@ -54,16 +54,19 @@ export default function Home() {
                 </span>
               </h1>
             </div>
-            <div className='col-lg-6 col-12 mh-100'>
+            <div className='col-lg-6 col-12'>
               <div
                 className={`${utilStyles.arrowDown} ${utilStyles.lineVertical}`}
               ></div>
               <div>
                 {' '}
                 <h1
-                  className={` ${utilStyles.heading3Xl} ${utilStyles.designerText}`}
+                  className={`${utilStyles.heading3Xl} ${utilStyles.designerText}`}
                 >
-                  <span className={utilStyles.underD}>Desi</span>gner
+                  <span className={`text-nowrap ${utilStyles.underD}`}>
+                    Desi
+                  </span>
+                  gner
                 </h1>
               </div>
             </div>
@@ -80,12 +83,12 @@ export default function Home() {
         </section>
 
         <section
-          className={`mt-1 ${utilStyles.scrollingPage}`}
+          className={`${utilStyles.scrollingPage}`}
           alt='home page'
           id='home'
         >
           <Blobs />
-          <div className='row g-0' id='presentationGrid'>
+          <div className='mt-md-4 pt-md-5 row g-0' id='presentationGrid'>
             <div className='col-sm-6 d-flex mx-auto position-relative'>
               <button
                 className={`align-items-center mx-auto rounded-circle ${utilStyles.bigMoon} animate__animated animate__flash`}
@@ -99,19 +102,21 @@ export default function Home() {
               </button>
             </div>
             <div className='col-sm-6'>
-              <div className='row ms-4 border-bottom border-primary mx-2'>
+              <div className='row ms-md-4 border-bottom border-primary mx-2'>
                 <h3
                   className={`text-md-wrap animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.headingXl}`}
                 >
                   Hi, this is Paula
                 </h3>
               </div>
-              <div
-                className={`row px-4 pt-4 text-wrap ${utilStyles.headingXL}`}
-              >
-                <h4 className='description ms-3 pb-5 mb-5'>
-                  I do this and that.
-                </h4>
+              <div className={`row px-4 pt-4  text-wrap`}>
+                <h5 className={`pb-5 mb-5 ms-2 ${utilStyles.headingMd}`}>
+                  <span>Do you like what you see? </span>
+                  <span>
+                    I have designed and coded this portfolio website from
+                    scratch…{' '}
+                  </span>
+                </h5>
               </div>
 
               <div className={`row text-wrap ${utilStyles.headingXL}`}>
@@ -223,57 +228,66 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='col-sm-7 border-primary py-4 ps-4' id='statement'>
-                <p className={` ${utilStyles.textDescriptions}`}>Hey there,</p>
-                <p className={` ${utilStyles.textDescriptions}`}>
-                  Happy to see you here :){' '}
-                </p>
-                <p className={` ${utilStyles.textDescriptions}`}>
-                  My name is Paula and, at uni, I studied sciences (of the sea)
-                  and then English. Somewhat later on, I realized that I was
-                  missing some creative expression to fill my days. Since I was
-                  little, I connected with myself by drawing and creating
-                  fictitious scenarios, both on paper and on other virtual
-                  canvases —you know, classic city-kid afternoon activity—;
-                  leading to eventually falling for art, design and fashion
-                  —which have always stimulated me ever since. In these last few
-                  years, I found myself amongst people who are professionally
-                  involved in web/app development and design related tasks,
-                  which inspired and motivated me a to make a career change,
-                  pivoting towards these fields.
-                </p>
-                <p className={`${utilStyles.textDescriptions}`}>
-                  On a more personal side, I am quite Aristotelian in looking
-                  for the "
-                  <Link href='https://en.wikipedia.org/wiki/Golden_mean_(philosophy)'>
-                    <a
-                      className={`fw-bold ${utilStyles.textDescriptions}`}
-                      alt='"golden Mean" on Wikipedia'
-                      target='_blank'
-                    >
-                      Golden Mean
-                    </a>
-                  </Link>
-                  " in life —you can't spend the day in front of a screen (can
-                  you?), so my other usual activities often involve socializing
-                  with close people enjoying a beer/coffee and a conversation,
-                  walking through cities and nature, learning something new,
-                  reading (almost) everything that falls into my hands, eat and
-                  cook yummy healthy food, the sea, yoga, and exercising.{' '}
-                </p>
-                <p className={` ${utilStyles.textDescriptions}`}>
-                  Let's create something meaningful (and beautiful){' '}
-                  <Link href='#findme'>
-                    <a
-                      className={`fw-bold ${utilStyles.textDescriptions}`}
-                      rel='noopener noreferrer'
-                      alt='link to my contact page'
-                    >
-                      together
-                    </a>
-                  </Link>
-                  🌻
-                </p>
+              <div
+                className={`col-sm-7 border-primary py-4 ps-4`}
+                id='statement'
+              >
+                <div className={utilStyles.textDescriptions}>
+                  <p>Hey there,</p>
+                  <p>Happy to see you here :) </p>
+                  <p>
+                    Hi there, Happy to see you here :) My name is Paula, nice to
+                    meet you! Let’s see, let me tell you a bit about myself… I
+                    have always been a curious person, so I decided to give
+                    explanation to things myself by studying sciences —marine
+                    sciences and oceanography at uni, to be precise —Then…{' '}
+                  </p>
+                  <p>
+                    As far as I can remember, I have never stopped been
+                    passionated about art, fashion, design, drawing and all
+                    those means of visual expression. I am an empathetic human
+                    who loves being social. And I am a scientist, I enjoy
+                    researching and testing theories—
+                  </p>
+                  <p>
+                    So… At some point, I realized that my most creative part was
+                    numbing, something was missing —I decided to take action— I
+                    started reading more books about design, took a couple of
+                    courses —you can check my cv{' '}
+                    <Link href='Romero-de-Blas_Paula-cv.pdf'>
+                      <a
+                        className={`fw-bold ${utilStyles.textDescriptions}`}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        alt='link to my cv/resume as a pdf'
+                      >
+                        here
+                      </a>
+                    </Link>{' '}
+                    :) — and getting more and more interested in coding and UX
+                    design. I want to bring people and technology closer, from a
+                    human-centered perspective, forever following an
+                    esthetically pleasing approach. On a more personal side, I
+                    my other usual activities often involve socializing with
+                    close people enjoying our free time and a beer/coffee,
+                    walking through cities and nature, learning something new,
+                    reading (almost) everything that falls into my hands, eat
+                    and cook yummy healthy food, the sea, yoga and exercising.
+                  </p>
+                  <p>
+                    Let's create something meaningful (and beautiful){' '}
+                    <Link href='#findme'>
+                      <a
+                        className={`fw-bold ${utilStyles.textDescriptions}`}
+                        rel='noopener noreferrer'
+                        alt='link to my contact page'
+                      >
+                        together
+                      </a>
+                    </Link>
+                    🌻
+                  </p>
+                </div>
               </div>
             </div>
             <div className='row'>
@@ -293,6 +307,7 @@ export default function Home() {
                     href='Romero-de-Blas_Paula-cv.pdf'
                     target='_blank'
                     rel='noopener noreferrer'
+                    alt='link to my cv/resume as a pdf'
                   >
                     {' '}
                     Check out my{' '}
@@ -304,7 +319,7 @@ export default function Home() {
                 <h5 className={`${utilStyles.headingMd}`}>
                   <Link href='#findme'>
                     <a alt='link to contact-me page' color='primary'>
-                      Let's {' '}
+                      Let's{' '}
                       <span className={`fw-bold ${utilStyles.underlined}`}>
                         connect
                       </span>
@@ -362,10 +377,10 @@ export default function Home() {
                   <div className='col-xs-12 col-sm-5 col-lg-7 border-top border-end border-primary text-end py-3'>
                     {/*1 COL for the name*/}
                     <div className=''>
-                      <p className={`${utilStyles.headingLg}`}>
+                      <h5 className={`${utilStyles.headingLg}`}>
                         Paula Romero de Blas
-                      </p>
-                      <p className={`${utilStyles.headingMd}`}>/pawla/</p>
+                      </h5>
+                      <h5 className={`${utilStyles.headingMd}`}>/pawla/</h5>
                       <p className={` ${utilStyles.textDescriptions}`}>
                         she/her/hers
                       </p>
