@@ -1,12 +1,8 @@
 //variables
-$breakpoint-iPhone12: 390px;
 $breakpoint-mobileL: 425px;
 $breakpoint-bootstrapsm: 576px;
 $breakpoint-bootstrapmd: 768px;
-$breakpoint-iPadAir: 820px;
 $breakpoint-bootstraplg: 992px;
-$breakpoint-NestHubMax: 1280px;
-$breakpoint-MacBook13: 1920px;
 
 .allPages {
   margin-top: 6rem;
@@ -19,8 +15,6 @@ $breakpoint-MacBook13: 1920px;
   padding-top: 6rem;
   margin-top: 6rem;
 }
-
-/* Not working? */
 
 // Font sizes calculated via https://type-scale.com/  using the golden ratio
 
@@ -93,7 +87,6 @@ $breakpoint-MacBook13: 1920px;
 }
 
 /* LANDING PAGE */
-//START PAGE
 
 .designerText,
 .visualText {
@@ -191,14 +184,6 @@ $breakpoint-MacBook13: 1920px;
     left: 53%;
     margin-top: 1rem;
   }
-  // @media (min-width: $breakpoint-NestHubMax) {
-  //   left: 52%;
-  //   margin-top: 5vh;
-  // }
-  // @media (min-width: $breakpoint-MacBook13) {
-  //   left: 53%;
-  //   margin-top: 5vh;
-  // }
 }
 
 .secondArrowDown {

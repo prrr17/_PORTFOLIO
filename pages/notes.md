@@ -25,3 +25,8 @@
 AFTER IT'S LIVE
 [] Create dark theme button on navbar
 [] https://css-tricks.com/zooming-images-in-a-grid-layout/ Zooming pics and co
+
+
+
+TO DEPLOY -> terminal
+    npx vercel --prod

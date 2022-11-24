@@ -9,6 +9,7 @@ import Test from '../components/Test';
 import 'animate.css';
 import SMIcons from '../components/SMIcons';
 import Blobs from '../components/Blobs';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         <link rel='icon' href='/p_logo.ico' />
       </Head>
 
-      <div className={`mt-5 ${utilStyles.allPages}`}>
+      <div className={`mt-5 w-100 ${utilStyles.allPages}`}>
         <div className='background'>
           {' '}
           <Blobs />
@@ -301,14 +302,12 @@ export default function Home() {
                   </a>{' '}
                 </h5>
                 <h5 className={`${utilStyles.headingMd}`}>
-                  
                   <Link href='#findme'>
-                    <a
-                      
-                      alt='link to contact-me page'
-                      color='primary'
-                    >Contact <span className={`fw-bold ${utilStyles.underlined}`}>
-                      me</span>
+                    <a alt='link to contact-me page' color='primary'>
+                      Let's {' '}
+                      <span className={`fw-bold ${utilStyles.underlined}`}>
+                        connect
+                      </span>
                     </a>
                   </Link>
                 </h5>
@@ -341,14 +340,14 @@ export default function Home() {
         </section>
 
         <section
-          className={`min-vh-100 pt-5 mt-5 ms-2 ${utilStyles.scrollingPage}`}
+          className={`min-vh-100 w-100 pt-5 mt-5 ps-2 mx-auto ${utilStyles.scrollingPage}`}
           id='findme'
           alt='find me contact page'
         >
           <Blobs />
-          <div className='container pt-5 mt-5 mx-lg-5 mx-md-4'>
+          <div className='container pt-4 mx-lg-5 mx-md-4'>
             <div className={`row border-primary border-end text-end`}>
-              <h3 className={`me-5 text-end ${utilStyles.headingXl}`}>
+              <h3 className={`pe-5 text-end ${utilStyles.headingXl}`}>
                 Contact me
               </h3>
             </div>
@@ -415,6 +414,7 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <Footer />
     </Layout>
   );
 }
