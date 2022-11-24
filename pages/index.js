@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         <section
-          className={`mx-auto mt-3 ${utilStyles.page}`}
+          className={`mx-auto mt-3 ${utilStyles.scrollingPage}`}
           alt='landing page'
           id='landing'
         >
@@ -47,8 +47,10 @@ export default function Home() {
               {' '}
               <h1
                 className={`text-lg-end ${utilStyles.heading3Xl} ${utilStyles.visualText}`}
-              ><span className={`ms-0 ps-0 ${utilStyles.underV}`}>
-                Visual&nbsp;</span>
+              >
+                <span className={`ms-0 ps-0 ${utilStyles.underV}`}>
+                  Visual&nbsp;
+                </span>
               </h1>
             </div>
             <div className='col-lg-6 col-12 mh-100'>
@@ -57,7 +59,9 @@ export default function Home() {
               ></div>
               <div>
                 {' '}
-                <h1 className={` ${utilStyles.heading3Xl} ${utilStyles.designerText}`}>
+                <h1
+                  className={` ${utilStyles.heading3Xl} ${utilStyles.designerText}`}
+                >
                   <span className={utilStyles.underD}>Desi</span>gner
                 </h1>
               </div>
@@ -75,11 +79,11 @@ export default function Home() {
         </section>
 
         <section
-          className={`mt-1 ${utilStyles.page}`}
+          className={`mt-1 ${utilStyles.scrollingPage}`}
           alt='home page'
           id='home'
         >
-        <Blobs />
+          <Blobs />
           <div className='row g-0' id='presentationGrid'>
             <div className='col-sm-6 d-flex mx-auto position-relative'>
               <button
@@ -130,11 +134,11 @@ export default function Home() {
         </section>
 
         <section
-          className={`me-md-5 ${utilStyles.page}`}
+          className={`me-md-5 ${utilStyles.scrollingPage}`}
           id='about'
           alt='about page'
         >
-        <Blobs />
+          <Blobs />
           <div className='container-fluid'>
             <div className='row mt-5 pt-5' id='upper'>
               <div
@@ -283,27 +287,28 @@ export default function Home() {
                 id='info'
               >
                 <h5 className={`${utilStyles.headingMd}`}>
-                  Check out my{' '}
-                 
-                   
-                    <a  href='Romero-de-Blas_Paula-cv.pdf'
-                      className={`fw-bold ${utilStyles.headingMd}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
+                  {' '}
+                  <a
+                    href='Romero-de-Blas_Paula-cv.pdf'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    {' '}
+                    Check out my{' '}
+                    <span className={`fw-bold ${utilStyles.underlined}`}>
                       resume
-                    </a>
-                 {' '}
+                    </span>
+                  </a>{' '}
                 </h5>
                 <h5 className={`${utilStyles.headingMd}`}>
-                  Contact{' '}
+                  
                   <Link href='#findme'>
                     <a
-                      className={`fw-bold ${utilStyles.headingMd}`}
+                      
                       alt='link to contact-me page'
                       color='primary'
-                    >
-                      me
+                    >Contact <span className={`fw-bold ${utilStyles.underlined}`}>
+                      me</span>
                     </a>
                   </Link>
                 </h5>
@@ -335,12 +340,12 @@ export default function Home() {
           </div>
         </section>
 
-          <section
-          className={`min-vh-100 pt-5 mt-5 ms-2 ${utilStyles.page}`}
+        <section
+          className={`min-vh-100 pt-5 mt-5 ms-2 ${utilStyles.scrollingPage}`}
           id='findme'
           alt='find me contact page'
         >
-        <Blobs />
+          <Blobs />
           <div className='container pt-5 mt-5 mx-lg-5 mx-md-4'>
             <div className={`row border-primary border-end text-end`}>
               <h3 className={`me-5 text-end ${utilStyles.headingXl}`}>

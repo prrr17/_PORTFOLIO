@@ -51,9 +51,7 @@ export default function NavItem() {
 
           <div>
             <Nav.Link href='/andCo'>
-              <a className='text-decoration-none' alt='&co go to others page'>
-                &co
-              </a>
+              <a alt='&co go to others page'>&co</a>
             </Nav.Link>
             <div className={`d-flex justify-content-center ${styles.dotBox}`}>
               <GoPrimitiveDot className={styles.underDot} />

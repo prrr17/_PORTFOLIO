@@ -15,7 +15,7 @@ $breakpoint-MacBook13: 1920px;
   display: block;
 }
 
-.page {
+.scrollingPage {
   padding-top: 6rem;
   margin-top: 6rem;
 }
@@ -245,18 +245,20 @@ $breakpoint-MacBook13: 1920px;
 
 //from https://www.30secondsofcode.org/css/s/hover-underline-animation
 
-.headingMd a {
+
+
+.underlined  {
   display: inline-block;
   position: relative;
   text-underline-offset: 0.4rem;
 }
 
-.headingMd a:hover {
+.underlined:hover {
   color: var(--font-color-dark);
   -webkit-text-stroke: 1.5px var(--font-color-dark);
 }
 
-.headingMd a::after {
+.underlined::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -269,7 +271,7 @@ $breakpoint-MacBook13: 1920px;
   transition: transform 0.25s ease-out;
 }
 
-.headingMd a:hover::after {
+.underlined:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
