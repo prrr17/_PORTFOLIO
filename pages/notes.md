@@ -27,11 +27,11 @@ AFTER IT'S LIVE
 [] https://css-tricks.com/zooming-images-in-a-grid-layout/ Zooming pics and co
 
 Dark mode 
-    [] lines from cols, rows
+    [x] lines from cols, rows
     [x] Moon
     [x] Switch – bg
-    [] P logo? https://stackoverflow.com/questions/65676689/next-js-how-can-i-change-the-color-of-svg-in-next-image
-    []  Icons
+    [x] P logo
+    [x]  Icons
 
 TO DEPLOY -> terminal
     npx vercel --prod

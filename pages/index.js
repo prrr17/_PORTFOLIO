@@ -85,7 +85,7 @@ export default function Home() {
         </section>
 
         <section
-          className={`mb-4 ${utilStyles.scrollingPage}`}
+          className={`mb-4 pb-3 ${utilStyles.scrollingPage}`}
           alt='home page'
           id='home'
         >
@@ -145,7 +145,7 @@ export default function Home() {
         </section>
 
         <section
-          className={`me-md-5 ${utilStyles.scrollingPage}`}
+          className={`me-md-5 pb-3 ${utilStyles.scrollingPage}`}
           id='about'
           alt='about page'
         >
