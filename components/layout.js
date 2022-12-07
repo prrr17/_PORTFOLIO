@@ -10,21 +10,21 @@ const name = "Paula's Portfolio";
 export const siteTitle = "Paula's Portfolio";
 
 export default function Layout({ children, home }) {
-  useEffect(() => {
-    // To avoid FOUC
-    if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  });
+  // useEffect(() => {
+  //   // To avoid FOUC
+  //   if (
+  //     localStorage.theme === 'dark' ||
+  //     (!('theme' in localStorage) &&
+  //       window.matchMedia('(prefers-color-scheme: dark)').matches)
+  //   ) {
+  //     document.documentElement.classList.add('dark');
+  //   } else {
+  //     document.documentElement.classList.remove('dark');
+  //   }
+  // });
 
   return (
-    <div className='bg-secondary'>
+    <div className=''>
       <div className={styles.container}>
         <Head>
           <link rel='icon' href='/public/p_logo.ico' />

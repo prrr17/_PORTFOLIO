@@ -3,13 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
-import BrightMoon from '../public/images/BrightMoon.svg';
 import ProfilePic from '../public/images/profile.jpeg';
 import Test from '../components/Test';
 import 'animate.css';
 import SMIcons from '../components/SMIcons';
 import Blobs from '../components/Blobs';
 import Footer from '../components/Footer';
+import BigMoonSwitch from '../components/BigMoonSwitch';
 
 export default function Home() {
   return (
@@ -73,12 +73,13 @@ export default function Home() {
           </div>
           <div className='row pb-4'>
             <div className={utilStyles.findOutBox}>
-            <a href="#home">
-              <p
-                className={`animate__animated animate__fadeInDown animate__delay-1.5s ${utilStyles.verticalText}`}
-              >
-                find out more
-              </p>{' '}</a>
+              <a href='#home'>
+                <p
+                  className={`animate__animated animate__fadeInDown animate__delay-1.5s ${utilStyles.verticalText}`}
+                >
+                  find out more
+                </p>{' '}
+              </a>
             </div>
           </div>
         </section>
@@ -92,18 +93,19 @@ export default function Home() {
           <div className='mt-md-4 pt-md-5 row g-0' id='presentationGrid'>
             <div className='col-sm-6 d-flex mx-auto position-relative'>
               <button
-                className={`align-items-center mx-auto rounded-circle ${utilStyles.bigMoon} animate__animated animate__flash`}
+                className={`align-items-center mx-auto
+               rounded-circle ${utilStyles.bigMoon} animate__animated animate__flash`}
               >
                 {/* not convinced */}
-                <BrightMoon
+                <BigMoonSwitch
                   width='inherit'
                   height='inherit'
-                  viewBox={'0 0 150 150'}
-                ></BrightMoon>
+                  // objectFit='contain'
+                ></BigMoonSwitch>
               </button>
             </div>
             <div className='col-sm-6'>
-              <div className='row ms-md-4 border-bottom border-primary mx-2'>
+              <div className='row ms-md-4 border-bottom mx-2'>
                 <h3
                   className={`text-md-wrap animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.headingXl}`}
                 >
@@ -115,7 +117,7 @@ export default function Home() {
                   <span>Do you like what you see? </span>
                   <span>
                     I have designed and coded this portfolio website from
-                    scratch…{' '}
+                    scratch{' '}
                   </span>
                 </h5>
               </div>
@@ -128,12 +130,13 @@ export default function Home() {
                 </div>
                 <div className='col-md-11 g-0'>
                   <div className={utilStyles.findOutBox2}>
-                  <a href="#about">
-                    <p
-                      className={`text-end h-50 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText}`}
-                    >
-                      find out more
-                    </p></a>
+                    <a href='#about'>
+                      <p
+                        className={`text-end h-50 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText}`}
+                      >
+                        find out more
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -149,29 +152,20 @@ export default function Home() {
           <Blobs />
           <div className='container-fluid'>
             <div className='row mt-1 pt-2' id='upper'>
-              <div
-                className='col-sm-5 border-bottom border-end border-primary'
-                id='imPaula'
-              >
+              <div className='col-sm-5 border-bottom border-end ' id='imPaula'>
                 <h3 className={`text-end text-wrap ${utilStyles.headingXl}`}>
                   Hi, I am Paula
                 </h3>
               </div>
-              <div
-                className='col-sm-7 border-bottom border-primary'
-                id='paulaDescription'
-              >
+              <div className='col-sm-7 border-bottom' id='paulaDescription'>
                 <h4 className={`d-flex pt-4 ${utilStyles.headingLg}`}>
                   Social butterfly with daily metamorphoses
                 </h4>
               </div>
             </div>
 
-            <div className='row border-bottom border-primary' id='mid'>
-              <div
-                className='col-sm-5 border-end  border-primary'
-                id='photoAndLife'
-              >
+            <div className='row border-bottom' id='mid'>
+              <div className='col-sm-5 border-end  ' id='photoAndLife'>
                 <div
                   className={` ${utilStyles.profilePicBox} py-4 pe-3 float-end`}
                 >
@@ -183,10 +177,7 @@ export default function Home() {
                 </div>
                 <div className='col-sm-7' id='bornAndPlaces'>
                   <div className='row'>
-                    <div
-                      className='col-sm-11 border-left border-primary'
-                      id='born'
-                    >
+                    <div className='col-sm-11 border-left' id='born'>
                       <h5
                         className={`text-end text-wrap ${utilStyles.headingMd}`}
                       >
@@ -197,7 +188,7 @@ export default function Home() {
                       className={`col-sm-1 ${utilStyles.textDescriptions}`}
                       id='places'
                     >
-                      <ul className='border-start border-primary'>
+                      <ul className='border-start'>
                         <li>California</li>
                         <li>Italy</li>
                         <li>Canarias</li>
@@ -209,12 +200,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='row'>
-                    <div
-                      className='col-sm-11 d-block border-left border-primary'
-                      id='born'
-                    >
+                    <div className='col-sm-11 d-block border-left' id='born'>
                       <h5
-                        className={` text-end text-wrap mx-sm-auto ${utilStyles.headingMd}`}
+                        className={`text-end text-wrap mx-sm-auto ${utilStyles.headingMd}`}
                       >
                         Currently in
                       </h5>
@@ -223,7 +211,7 @@ export default function Home() {
                       className={`col-sm-1 ${utilStyles.textDescriptions}`}
                       id='places'
                     >
-                      <ul className='border-start border-primary'>
+                      <ul className='border-start '>
                         <li>Thailand</li>
                       </ul>
                     </div>
@@ -231,7 +219,7 @@ export default function Home() {
                 </div>
               </div>
               <div
-                className={`col-sm-7 border-primary py-4 ps-4`}
+                className={`col-sm-7 py-4 ps-4`}
                 id='statement'
               >
                 <div className={utilStyles.textDescriptions}>
@@ -303,7 +291,7 @@ export default function Home() {
 
             <div className='row' id='bottom'>
               <div
-                className='col-sm-5 border-primary border-end pt-4'
+                className='col-sm-5 border-end pt-4'
                 id='info'
               >
                 <h5 className={`${utilStyles.headingMd}`}>
@@ -323,7 +311,7 @@ export default function Home() {
                 </h5>
                 <h5 className={`${utilStyles.headingMd}`}>
                   <Link href='#findme'>
-                    <a alt='link to contact-me page' color='primary'>
+                    <a alt='link to contact-me page'>
                       Let's{' '}
                       <span className={`fw-bold ${utilStyles.underlined}`}>
                         connect
@@ -338,7 +326,7 @@ export default function Home() {
                 </h5>
               </div>
               <div className={`col-sm-2 pt-5 ${utilStyles.textDescriptions}`}>
-                <ul className='justify-content-center border-start border-primary'>
+                <ul className='justify-content-center border-start'>
                   {' '}
                   <li>Figma</li>
                   <li>Procreate</li>
@@ -366,7 +354,7 @@ export default function Home() {
         >
           <Blobs />
           <div className='container pt-4 mx-lg-5 mx-md-4'>
-            <div className={`row border-primary border-end text-end`}>
+            <div className={`row border-end text-end`}>
               <h3 className={`pe-5 text-end ${utilStyles.headingXl}`}>
                 Contact me
               </h3>
@@ -379,7 +367,7 @@ export default function Home() {
                 <div className='row '>
                   {' '}
                   {/* row that has name and hi*/}
-                  <div className='col-xs-12 col-sm-5 col-lg-7 border-top border-end border-primary text-end py-3'>
+                  <div className='col-xs-12 col-sm-5 col-lg-7 border-top border-end text-end py-3'>
                     {/*1 COL for the name*/}
                     <div className=''>
                       <h5 className={`${utilStyles.headingLg}`}>
@@ -391,7 +379,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className='col-xs-12 col-sm-7 col-lg-5 border-top border-end border-primary d-flex justify-content-center align-items-center py-5'>
+                  <div className='col-xs-12 col-sm-7 col-lg-5 border-top border-end d-flex justify-content-center align-items-center py-5'>
                     {' '}
                     {/*COL for the email*/}
                     <p
@@ -409,20 +397,20 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className='row border-top border-primary'>
+                <div className='row border-top '>
                   {/*row with nothing and SM*/}
                   <div
-                    className={`col-lg-7 col-sm-5 border-end border-primary`}
+                    className={`col-lg-7 col-sm-5 border-end`}
                   ></div>
                   <div
-                    className={`col-lg-5 col-sm-7 border-end border-primary text-end text-align-center`}
+                    className={`col-lg-5 col-sm-7 border-end text-end text-align-center`}
                   >
                     {' '}
                     <SMIcons />
                   </div>
                 </div>
               </div>
-              <div className='border-top border-primary-xs col-xs-12 col-md-5 ps-0 pe-5 pb-0 border-end border-bottom border-primary d-flex'>
+              <div className='border-top col-xs-12 col-md-5 ps-0 pe-5 pb-0 border-end border-bottom d-flex'>
                 <Image
                   className='img-fluid'
                   src={ProfilePic}

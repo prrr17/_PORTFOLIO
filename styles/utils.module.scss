@@ -85,7 +85,7 @@ $breakpoint-bootstraplg: 992px;
   text-orientation: mixed;
   font-size: 1.7rem;
   font-family: 'Italiana', sans-serif;
-  color: var(--font-color-dark);
+  color: var(--font-color);
 }
 
 /* LANDING PAGE */
@@ -111,7 +111,7 @@ $breakpoint-bootstraplg: 992px;
   display: inline-block;
   line-height: 0.85;
   position: relative;
-  border-bottom: 1.5px solid var(--font-color-dark);
+  border-bottom: 1.5px solid var(--font-color);
 }
 
 .uxWord {
@@ -124,7 +124,7 @@ $breakpoint-bootstraplg: 992px;
 .lineVertical,
 .lineVertical2 {
   width: 2px;
-  background: var(--font-color-dark);
+  background: var(--font-color);
 }
 
 .lineVertical {
@@ -159,7 +159,7 @@ $breakpoint-bootstraplg: 992px;
   position: absolute;
   left: -3.3px;
   bottom: 0px;
-  border: 1rem solid var(--font-color-dark);
+  border: 1rem solid var(--font-color);
   border-width: 0.1em 0.1em 0 0;
   content: '';
   display: inline-block;
@@ -189,7 +189,6 @@ $breakpoint-bootstraplg: 992px;
     margin-top: 1rem;
   }
   scroll-behavior: smooth;
-
 }
 
 .secondArrowDown {
@@ -198,7 +197,7 @@ $breakpoint-bootstraplg: 992px;
   margin-top: -4rem;
   top: 0.2rem;
   margin-bottom: -0.3rem;
-  color: primary;
+  color: var(--font-color);
 }
 
 .uxBox {
@@ -211,11 +210,8 @@ $breakpoint-bootstraplg: 992px;
 .bigMoon {
   filter: drop-shadow(0 0 5rem rgba(252, 255, 200, 0.9));
   background: radial-gradient(white, rgba(255, 255, 255, 0) 5%);
+
   position: static;
-  // top: 20vh;
-  // bottom: 20vh;
-  // left: 0;
-  // right: 0;
 }
 
 .bigMoon:hover {
@@ -223,6 +219,7 @@ $breakpoint-bootstraplg: 992px;
   background: radial-gradient(white, rgba(255, 255, 255, 0) 55%);
   opacity: 0.7;
 }
+
 
 /*ABOUT PAGE*/
 
@@ -243,8 +240,8 @@ $breakpoint-bootstraplg: 992px;
 }
 
 .underlined:hover {
-  color: var(--font-color-dark);
-  -webkit-text-stroke: 1.5px var(--font-color-dark);
+  color: var(--font-color);
+  -webkit-text-stroke: 1.5px var(--font-color);
 }
 
 .underlined::after {
@@ -255,7 +252,7 @@ $breakpoint-bootstraplg: 992px;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--font-color-dark);
+  background-color: var(--font-color);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -272,8 +269,8 @@ $breakpoint-bootstraplg: 992px;
 }
 
 .textDescriptions a:hover {
-  color: var(--font-color-dark);
-  -webkit-text-stroke: 1.5px var(--font-color-dark);
+  color: var(--font-color);
+  -webkit-text-stroke: 1.5px var(--font-color);
 }
 
 .textDescriptions a::after {
@@ -284,7 +281,7 @@ $breakpoint-bootstraplg: 992px;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--font-color-dark);
+  background-color: var(--font-color);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -305,6 +302,7 @@ $breakpoint-bootstraplg: 992px;
   transform: scale(0.6);
   margin: -1rem;
   padding-bottom: 0.25em;
+  color: var(--font-color);
 }
 
 .icon:nth-child(2) {
@@ -327,12 +325,12 @@ $breakpoint-bootstraplg: 992px;
 /* GO BACK */
 a.backChevron {
   text-decoration: none;
-  color: var(--font-color-dark);
+  color: var(--font-color);
 }
 
 a.backChevron:hover + .goBackText {
   text-decoration: dashed;
-  color: var(--font-color-light);
+  color: var(--font-color);
 }
 
 // No va
@@ -388,3 +386,4 @@ $amount: 20;
 .blob4 {
   transition: all 1.5s;
 }
+

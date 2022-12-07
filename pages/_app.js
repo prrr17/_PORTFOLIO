@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { ThemeProvider } from 'next-themes';
 import '@fontsource/italiana';
 import '@fontsource/abhaya-libre/400.css';
 import '../styles/global.scss';
@@ -14,7 +15,9 @@ export default function App({ Component, pageProps }) {
           content='width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0'
         />
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }

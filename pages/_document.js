@@ -8,7 +8,7 @@ export default function Document() {
         <meta charSet='utf-8' />
       </Head>
       <body
-        className='bg-secondary'
+        className=''
     
       >
         <Main />

@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import { GoPrimitiveDot } from 'react-icons/go';
 import PLogo from '../public/p_logo.svg';
 import LightSwitch from '../public/LightSwitch.svg';
+import ThemeToggle from './ThemeToggle';
 import styles from './navbar.module.scss';
 
 export default function NavItem() {
@@ -78,12 +79,10 @@ export default function NavItem() {
       </Navbar.Collapse>
       <Nav.Link href='#'>
         <a
-          id='lightSwitch'
-          alt='switch into dark mode'
+          id='ThemeSwitch'
+          alt='switch between light and dark mode'
           className='text-nowrap d-flex justify-content-center align-items-center pb-3 ps-4'
-        >
-          <LightSwitch />{' '}
-        </a>
+        ><ThemeToggle /> </a>
       </Nav.Link>{' '}
     </Navbar>
   );
