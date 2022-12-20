@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
 import ProfilePic from '../public/images/profile.jpeg';
+import Avatar from '../public/images/Avatar1.jpg';
 import Test from '../components/Test';
 import 'animate.css';
 import SMIcons from '../components/SMIcons';
@@ -218,32 +219,29 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div
-                className={`col-sm-7 py-4 ps-4`}
-                id='statement'
-              >
+              <div className={`col-sm-7 py-4 ps-4`} id='statement'>
                 <div className={utilStyles.textDescriptions}>
                   <p>Hey there,</p>
                   <p>Happy to see you here :) </p>
                   <p>
-                    Hi there, Happy to see you here :) My name is Paula, nice to
-                    meet you! Let’s see, let me tell you a bit about myself… I
-                    have always been a curious person, so I decided to give
+                    My name is Paula, nice to
+                    meet you! Let’s see, let me tell you a bit about myself… Since I
+                    have always been a curious person, I decided to give
                     explanation to things myself by studying sciences —marine
-                    sciences and oceanography at uni, to be precise —Then…{' '}
+                    sciences and oceanography, to be precise—at uni. However…{' '}
                   </p>
                   <p>
                     As far as I can remember, I have never stopped been
                     passionated about art, fashion, design, drawing and all
                     those means of visual expression. I am an empathetic human
-                    who loves being social. And I am a scientist, I enjoy
+                    who loves being social. And, I am a scientist; I also enjoy
                     researching and testing theories—
                   </p>
                   <p>
-                    So… At some point, I realized that my most creative part was
-                    numbing, something was missing —I decided to take action— I
-                    started reading more books about design, took a couple of
-                    courses —you can check my cv{' '}
+                    Then... At some point, I realized that my most creative part
+                    was numbing, something was missing —I decided to take
+                    action— I started reading more books about design, took a
+                    couple of courses —you can check my cv{' '}
                     <Link href='Romero-de-Blas_Paula-cv.pdf'>
                       <a
                         className={`fw-bold ${utilStyles.textDescriptions}`}
@@ -255,18 +253,18 @@ export default function Home() {
                       </a>
                     </Link>{' '}
                     :) — and getting more and more interested in coding and UX
-                    design. I want to bring people and technology closer, from a
+                    design. I realized I want to bring people and technology closer, from a
                     human-centered perspective, forever following an
                     esthetically pleasing approach.{' '}
                   </p>{' '}
                   <p>
-                    On a more personal side, I my other usual activities often
+                    And if you want to know more personal stuff about me...Well, my usual activities often
                     involve socializing with close people enjoying our free time
                     and a beer/coffee, walking through cities and nature,
                     learning something new, reading (almost) everything that
                     falls into my hands, eat and cook yummy healthy food, the
                     sea, yoga and exercising.
-                  </p>
+                  </p><hr></hr>
                   <p>
                     Let's create something meaningful (and beautiful){' '}
                     <Link href='#findme'>
@@ -290,10 +288,7 @@ export default function Home() {
             </div>
 
             <div className='row' id='bottom'>
-              <div
-                className='col-sm-5 border-end pt-4'
-                id='info'
-              >
+              <div className='col-sm-5 border-end pt-4' id='info'>
                 <h5 className={`${utilStyles.headingMd}`}>
                   {' '}
                   <a
@@ -364,7 +359,7 @@ export default function Home() {
               {/* row that contains 2 tables */}
               <div className='col-xs-12 col-md-7'>
                 {/*COL 1 for the email*/}
-                <div className='row '>
+                <div className='row'>
                   {' '}
                   {/* row that has name and hi*/}
                   <div className='col-xs-12 col-sm-5 col-lg-7 border-top border-end text-end py-3'>
@@ -399,9 +394,7 @@ export default function Home() {
                 </div>
                 <div className='row border-top '>
                   {/*row with nothing and SM*/}
-                  <div
-                    className={`col-lg-7 col-sm-5 border-end`}
-                  ></div>
+                  <div className={`col-lg-7 col-sm-5 border-end`}></div>
                   <div
                     className={`col-lg-5 col-sm-7 border-end text-end text-align-center`}
                   >
@@ -413,7 +406,7 @@ export default function Home() {
               <div className='border-top col-xs-12 col-md-5 ps-0 pe-5 pb-0 border-end border-bottom d-flex'>
                 <Image
                   className='img-fluid'
-                  src={ProfilePic}
+                  src={Avatar}
                   alt='profile picture'
                 />
               </div>
