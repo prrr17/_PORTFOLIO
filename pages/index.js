@@ -224,11 +224,11 @@ export default function Home() {
                   <p>Hey there,</p>
                   <p>Happy to see you here :) </p>
                   <p>
-                    My name is Paula, nice to
-                    meet you! Let’s see, let me tell you a bit about myself… Since I
-                    have always been a curious person, I decided to give
-                    explanation to things myself by studying sciences —marine
-                    sciences and oceanography, to be precise—at uni. However…{' '}
+                    My name is Paula, nice to meet you! Let’s see, let me tell
+                    you a bit about myself… Since I have always been a curious
+                    person, I decided to give explanation to things myself by
+                    studying sciences —marine sciences and oceanography, to be
+                    precise—at uni. However…{' '}
                   </p>
                   <p>
                     As far as I can remember, I have never stopped been
@@ -253,18 +253,19 @@ export default function Home() {
                       </a>
                     </Link>{' '}
                     :) — and getting more and more interested in coding and UX
-                    design. I realized I want to bring people and technology closer, from a
-                    human-centered perspective, forever following an
-                    esthetically pleasing approach.{' '}
+                    design. I realized I want to bring people and technology
+                    closer, from a human-centered perspective, forever following
+                    an esthetically pleasing approach.{' '}
                   </p>{' '}
                   <p>
-                    And if you want to know more personal stuff about me...Well, my usual activities often
-                    involve socializing with close people enjoying our free time
-                    and a beer/coffee, walking through cities and nature,
-                    learning something new, reading (almost) everything that
-                    falls into my hands, eat and cook yummy healthy food, the
-                    sea, yoga and exercising.
-                  </p><hr></hr>
+                    And if you want to know more personal stuff about me...Well,
+                    my usual activities often involve socializing with close
+                    people enjoying our free time and a beer/coffee, walking
+                    through cities and nature, learning something new, reading
+                    (almost) everything that falls into my hands, eat and cook
+                    yummy healthy food, the sea, yoga and exercising.
+                  </p>{' '}
+                  <p className='text-center'>•</p>
                   <p>
                     Let's create something meaningful (and beautiful){' '}
                     <Link href='#findme'>
