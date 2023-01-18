@@ -71,18 +71,18 @@ const designs = () => {
                   <h2 className={`fw-bold ${utilStyles.underlined}`}>
                     This very Portfolio
                   </h2>
+                  <br></br>
                 </Nav.Link>
-
                 <h4> See how I created it</h4>
               </div>
             </div>
           </div>
           <div className='row border-bottom' id='mid'>
-            <div className='col-sm-6 border-end' id='Portfolio text'>
+            <div className='col-sm-6 border-end text-end' id='RandomizeText'>
               <div className='container mt-5'>
-                <h2>
-                  Project for the Front-End course — Randomize your trip app
-                </h2>
+                <h2>Project for the Front-End course </h2>
+                <h2>Randomize your trip app </h2>
+                <br></br>
                 <h4>
                   Check out the code at my{' '}
                   <Link href='https://github.com/prrr17/randomize-your-trip'>
@@ -102,7 +102,7 @@ const designs = () => {
               <div
                 className={` ${utilStyles.profilePicBox} py-4 pe-3 float-end`}
               >
-                <Nav.Link href='/'>
+                <button className='' onClick={()=>alert('Oops, not yet —Working on it!')}>
                   {' '}
                   <a className='' alt='link to to the project'>
                     <Image
@@ -111,7 +111,7 @@ const designs = () => {
                       alt='randomize your trip picture'
                     />
                   </a>
-                </Nav.Link>
+                </button>
               </div>
             </div>
           </div>
