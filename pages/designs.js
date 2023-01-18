@@ -73,7 +73,9 @@ const designs = () => {
                   </h2>
                   <br></br>
                 </Nav.Link>
-                <h4> See how I created it</h4>
+                <Nav.Link href='/portfoliodesign'>
+                  <h4> Check out how I created it</h4>
+                </Nav.Link>
               </div>
             </div>
           </div>
@@ -102,7 +104,10 @@ const designs = () => {
               <div
                 className={` ${utilStyles.profilePicBox} py-4 pe-3 float-end`}
               >
-                <button className='' onClick={()=>alert('Oops, not yet —Working on it!')}>
+                <button
+                  className=''
+                  onClick={() => alert('Oops, not yet —Working on it!')}
+                >
                   {' '}
                   <a className='' alt='link to to the project'>
                     <Image
