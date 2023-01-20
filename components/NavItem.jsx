@@ -32,7 +32,7 @@ export default function NavItem() {
         <Nav className='d-flex me-auto justify-content-center w-100'>
           {/* doesnt work */}
           <div className=''>
-            <Nav.Link href='#about'>
+            <Nav.Link href='/#about'>
               <a alt='go to about page'>about</a>
             </Nav.Link>
             <div className={`d-flex justify-content-center ${styles.dotBox}`}>
@@ -61,7 +61,7 @@ export default function NavItem() {
         <Nav className='d-flex'>
           <div>
             {' '}
-            <Nav.Link href='#findme'>
+            <Nav.Link href='/#findme'>
               <a
                 id='findmeLinkNavBar'
                 alt='find me go to contact page'
