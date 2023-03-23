@@ -10,6 +10,19 @@ const name = "Paula's Portfolio";
 export const siteTitle = "Paula's Portfolio";
 
 export default function Layout({ children, home }) {
+  // useEffect(() => {
+  //   // To avoid FOUC
+  //   if (
+  //     localStorage.theme === 'dark' ||
+  //     (!('theme' in localStorage) &&
+  //       window.matchMedia('(prefers-color-scheme: dark)').matches)
+  //   ) {
+  //     document.documentElement.classList.add('dark');
+  //   } else {
+  //     document.documentElement.classList.remove('dark');
+  //   }
+  // });
+
   return (
     <div className=''>
       <div className={styles.container}>
@@ -25,13 +38,23 @@ export default function Layout({ children, home }) {
             content={`/nextjs-blog/public/p_logo.ico`}
           />
           <meta name='og:title' content={siteTitle} />
-          <meta name='twitter:card' content='summary_large_image' />
+          <meta
+            name='twitter:card'
+            content='summary_large_image'
+          />
           <meta property='og:url' content='https://www.paulardb.design/' />
           <meta property='og:type' content='website' />
           <meta property='og:description' content='Check out my Portfolio' />
         </Head>
         <Header />
-
+        {/* <AnimatePresence
+                exitBeforeEnter
+                initial={false}
+                onExitComplete={() => window.scrollTo(0, 0)}
+            >
+                <Component {...pageProps} canonical={url} key={url} />
+            </AnimatePresence>  
+             */}
         <main>{children}</main>
         {!home && (
           <div className={styles.backToHome}>
