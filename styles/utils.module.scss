@@ -9,6 +9,7 @@ $breakpoint-bootstraplg: 992px;
   margin-right: 0px;
   max-width: 100vw;
   display: block;
+  overflow-x: hidden;
 }
 
 .scrollingPage {
@@ -69,6 +70,10 @@ $breakpoint-bootstraplg: 992px;
   font-family: 'Abhaya Libre', serif;
   font-size: var(--step-1);
   line-height: 1.5;
+}
+
+ .textDescriptions a {
+  text-shadow: 0px 0px 50px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff; 
 }
 
 .list {
@@ -387,3 +392,14 @@ $amount: 20;
   transition: all 1.5s;
 }
 
+/* Designs */
+.SwitchesSample {
+  max-width: 70%;
+  min-width: 70%;
+  align-self: center;
+}
+
+.reducedPic {
+  max-width: 40vw;
+  justify-content: center;
+}

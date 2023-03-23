@@ -2,7 +2,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { GoPrimitiveDot } from 'react-icons/go';
 import PLogo from '../public/p_logo.svg';
-import LightSwitch from '../public/LightSwitch.svg';
 import ThemeToggle from './ThemeToggle';
 import styles from './navbar.module.scss';
 
@@ -33,7 +32,7 @@ export default function NavItem() {
         <Nav className='d-flex me-auto justify-content-center w-100'>
           {/* doesnt work */}
           <div className=''>
-            <Nav.Link href='#about'>
+            <Nav.Link href='/#about'>
               <a alt='go to about page'>about</a>
             </Nav.Link>
             <div className={`d-flex justify-content-center ${styles.dotBox}`}>
@@ -62,7 +61,7 @@ export default function NavItem() {
         <Nav className='d-flex'>
           <div>
             {' '}
-            <Nav.Link href='#findme'>
+            <Nav.Link href='/#findme'>
               <a
                 id='findmeLinkNavBar'
                 alt='find me go to contact page'
@@ -82,7 +81,9 @@ export default function NavItem() {
           id='ThemeSwitch'
           alt='switch between light and dark mode'
           className='text-nowrap d-flex justify-content-center align-items-center pb-3 ps-4'
-        ><ThemeToggle /> </a>
+        >
+          <ThemeToggle />{' '}
+        </a>
       </Nav.Link>{' '}
     </Navbar>
   );

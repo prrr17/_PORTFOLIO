@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
 import ProfilePic from '../public/images/profile.jpeg';
+import Avatar from '../public/images/Avatar1.png';
 import Test from '../components/Test';
 import 'animate.css';
 import SMIcons from '../components/SMIcons';
@@ -196,6 +197,7 @@ export default function Home() {
                         <li>Greece</li>
                         <li>UK</li>
                         <li>Indonesia</li>
+                        <li>Thailand</li>
                       </ul>
                     </div>
                   </div>
@@ -211,39 +213,44 @@ export default function Home() {
                       className={`col-sm-1 ${utilStyles.textDescriptions}`}
                       id='places'
                     >
-                      <ul className='border-start '>
-                        <li>Thailand</li>
+                      <ul className='border-start'>
+                        <li>
+                          <Link href='https://goo.gl/maps/oSugQ2YA5uL9wEeQ9'>
+                            <a
+                              alt='open Google Maps with location'
+                              rel='noopener noreferrer'
+                              target='_blank'
+                            >
+                              Japan
+                            </a>
+                          </Link>
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                className={`col-sm-7 py-4 ps-4`}
-                id='statement'
-              >
+              <div className={`col-sm-7 py-4 ps-4`} id='statement'>
                 <div className={utilStyles.textDescriptions}>
                   <p>Hey there,</p>
-                  <p>Happy to see you here :) </p>
                   <p>
-                    Hi there, Happy to see you here :) My name is Paula, nice to
-                    meet you! Let’s see, let me tell you a bit about myself… I
-                    have always been a curious person, so I decided to give
-                    explanation to things myself by studying sciences —marine
-                    sciences and oceanography at uni, to be precise —Then…{' '}
+                    I'm Paula, and it's great to have you here! I'm a curious
+                    cat with a passion for visual design, a love the for sea,
+                    who happens to have a background in marine sciences and
+                    oceanography.{' '}
                   </p>
                   <p>
-                    As far as I can remember, I have never stopped been
-                    passionated about art, fashion, design, drawing and all
-                    those means of visual expression. I am an empathetic human
-                    who loves being social. And I am a scientist, I enjoy
-                    researching and testing theories—
+                    But I need to say, my heart beats for art, fashion, and all
+                    things design. That's why I've taken it upon myself to dive
+                    deep into the world of coding and (UX) design,
                   </p>
                   <p>
-                    So… At some point, I realized that my most creative part was
-                    numbing, something was missing —I decided to take action— I
-                    started reading more books about design, took a couple of
-                    courses —you can check my cv{' '}
+                    As a people person, I always put humans first in my design
+                    work. I believe that technology should be accessible and
+                    easy to use for everyone, and it is possible to do so
+                    without sacrificing aesthetics. That's why I've taken it
+                    upon myself to learn everything I can about coding, (UX)
+                    design, and more (check out my{' '}
                     <Link href='Romero-de-Blas_Paula-cv.pdf'>
                       <a
                         className={`fw-bold ${utilStyles.textDescriptions}`}
@@ -251,34 +258,36 @@ export default function Home() {
                         rel='noopener noreferrer'
                         alt='link to my cv/resume as a pdf'
                       >
-                        here
+                        CV here
                       </a>
                     </Link>{' '}
-                    :) — and getting more and more interested in coding and UX
-                    design. I want to bring people and technology closer, from a
-                    human-centered perspective, forever following an
-                    esthetically pleasing approach.{' '}
+                    :) !), so I can create beautiful designs that bring people
+                    and tech closer together, because I believe the best designs
+                    are those that make us go "Wow!" (and improve our lives at
+                    the same time).{' '}
                   </p>{' '}
                   <p>
-                    On a more personal side, I my other usual activities often
-                    involve socializing with close people enjoying our free time
-                    and a beer/coffee, walking through cities and nature,
-                    learning something new, reading (almost) everything that
-                    falls into my hands, eat and cook yummy healthy food, the
-                    sea, yoga and exercising.
-                  </p>
+                    When I'm not busy designing, you can find me hanging out
+                    with my closest peeps, enjoying a beer or coffee at a
+                    terrace, exploring new cities and nature, learning new
+                    things, devouring all kinds of reading materials, cooking up
+                    healthy and yummy meals, practicing yoga, and/or (hopefully)
+                    getting my ocean fix.
+                  </p>{' '}
+                  <p className='text-center'>•</p>
                   <p>
-                    Let's create something meaningful (and beautiful){' '}
+                    Let's{' '}
                     <Link href='#findme'>
                       <a
                         className={`fw-bold ${utilStyles.textDescriptions}`}
                         rel='noopener noreferrer'
                         alt='link to my contact page'
                       >
-                        together
+                        collaborate {' '}
                       </a>
                     </Link>
-                    🌻
+                    {' '} and create designs that will make the world a more
+                    beautiful, functional, and fun place to be 🌻.
                   </p>
                 </div>
               </div>
@@ -290,10 +299,7 @@ export default function Home() {
             </div>
 
             <div className='row' id='bottom'>
-              <div
-                className='col-sm-5 border-end pt-4'
-                id='info'
-              >
+              <div className='col-sm-5 border-end pt-4' id='info'>
                 <h5 className={`${utilStyles.headingMd}`}>
                   {' '}
                   <a
@@ -364,7 +370,7 @@ export default function Home() {
               {/* row that contains 2 tables */}
               <div className='col-xs-12 col-md-7'>
                 {/*COL 1 for the email*/}
-                <div className='row '>
+                <div className='row'>
                   {' '}
                   {/* row that has name and hi*/}
                   <div className='col-xs-12 col-sm-5 col-lg-7 border-top border-end text-end py-3'>
@@ -399,9 +405,7 @@ export default function Home() {
                 </div>
                 <div className='row border-top '>
                   {/*row with nothing and SM*/}
-                  <div
-                    className={`col-lg-7 col-sm-5 border-end`}
-                  ></div>
+                  <div className={`col-lg-7 col-sm-5 border-end`}></div>
                   <div
                     className={`col-lg-5 col-sm-7 border-end text-end text-align-center`}
                   >
@@ -413,7 +417,7 @@ export default function Home() {
               <div className='border-top col-xs-12 col-md-5 ps-0 pe-5 pb-0 border-end border-bottom d-flex'>
                 <Image
                   className='img-fluid'
-                  src={ProfilePic}
+                  src={Avatar}
                   alt='profile picture'
                 />
               </div>
