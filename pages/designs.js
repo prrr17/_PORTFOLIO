@@ -82,8 +82,21 @@ const designs = () => {
           <div className='row border-bottom' id='mid'>
             <div className='col-sm-6 border-end text-end' id='RandomizeText'>
               <div className='container mt-5'>
-                <h2>Project for the Front-End course </h2>
-                <h2>Randomize your trip app </h2>
+                <h2> Project for the Front-End course</h2>{' '}
+                <h2>
+                  {' '}
+                  <Link href='https://prrr17.github.io/randomize-your-trip/'>
+                    <a
+                      className={`fw-bold ${utilStyles.underlined}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      alt='link to the project repository'
+                    >
+                      {'\n'}
+                      Randomize your trip app
+                    </a>
+                  </Link>{' '}
+                </h2>
                 <br></br>
                 <h4>
                   Check out the code at my{' '}
@@ -98,24 +111,28 @@ const designs = () => {
                     </a>
                   </Link>
                 </h4>
+                <p className="pt-4">* This was a fun project, it is unfinished, hence ready to keep improving when I feel ready. Stay tuned :) </p>
               </div>
             </div>
             <div className='col-sm-6 border-end' id='FigmaSS'>
               <div
                 className={` ${utilStyles.profilePicBox} py-4 pe-3 float-end`}
               >
-                <button
-                  className=''
-                  onClick={() => alert('Oops, not yet —Working on it!')}
-                >
-                  {' '}
-                  <a className='' alt='link to to the project'>
-                    <Image
-                      className={`${utilStyles.profilePic} ms-0`}
-                      src={RandomizeSS}
-                      alt='randomize your trip picture'
-                    />
-                  </a>
+                <button>
+                  <Link href='https://prrr17.github.io/randomize-your-trip/'>
+                    <a
+                      className=''
+                      alt='link to to the project'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >
+                      <Image
+                        className={`${utilStyles.profilePic} ms-0`}
+                        src={RandomizeSS}
+                        alt='randomize your trip picture'
+                      />
+                    </a>
+                  </Link>
                 </button>
               </div>
             </div>

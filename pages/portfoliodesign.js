@@ -37,10 +37,10 @@ const portfoliodesign = () => {
                 Portfolio
               </h2>
             </div>
-            <div className='col-sm-6' id='cel1.2'>
+            <div className='col-sm-6 align-items-end' id='cel1.2'>
               <h4 className={utilStyles.headingLg}>
                 {' '}
-                This is my portfolio-conceptualization process
+                This is my portfolio conceptualization process
               </h4>
             </div>
           </div>
@@ -59,32 +59,32 @@ const portfoliodesign = () => {
                 <div className='container my-5'>
                   <p>
                     {' '}
-                    Firstly, there is a brainstorm, see what kind of colors,
-                    hues, fonts, shapes, match my personality and what I want to
-                    convey.
+                    First, I brainstorm to determine what colors, hues, fonts,
+                    and shapes best match my personality and convey the message
+                    I want to send. Online tools that generate palettes based on
+                    a couple of colors work wonders for this. Once I have a
+                    selection that I like, I tweak a few colors and see if they
+                    still fit. For this specific website, I decided to keep it
+                    more minimalist and didn't use all of the hues provided
+                    since the page is expected to showcase a few pictures and
+                    drawings, and too many colors would make it look visually
+                    cluttered.
                   </p>
                   <p>
-                    Online tools to create palettes based in a couple of colors
-                    work wonders. When I am convinced with the offer, I like to
-                    tweak a few colors and see if it still fits. In this
-                    especific case, I decided to keep it more minimalist. I
-                    didn't use all the hues given—at least for now—as the page
-                    is expected to collect a few pictures and drawings, it would
-                    feel visually cluttered.
-                  </p>
-                  <p>
-                    My brand is my signature, so why not literally? As you can
-                    see, my scribbled name is a constant across the pages (and
-                    it redirects you "home"!)
+                    My signature is my brand, so why not use it literally? As
+                    you can see, my scribbled name is a constant feature across
+                    the pages, and it redirects you back to the home page.
                   </p>
                   <p>
                     {' '}
-                    Choosing the fonts is one of my favorite parts, as a font
-                    can say so much more than the word that depicts. Italiana is
-                    a sans-serif elegant and sophisticated without being classic
-                    or old-school. Abhaya Libre is a rounder serif counterpart,
-                    based on the Sinhalese alphabet, for a readeable softer
-                    experience. Would you agree?
+                    Choosing fonts is one of my favorite parts of the design
+                    process, as a font can convey so much more than the word it
+                    represents. I chose Italiana, a sans-serif font that is
+                    elegant and sophisticated without being classic or
+                    old-fashioned. For a readable and softer experience, I chose
+                    Abhaya Libre, a rounder serif counterpart based on the
+                    Sinhalese alphabet. Do you agree that they complement each
+                    other well?
                   </p>
                 </div>
               </div>
@@ -93,12 +93,7 @@ const portfoliodesign = () => {
                   <div className='container my-5'>
                     <p>
                       {' '}
-                      As I think of functionalities and features I want for the
-                      page, I create new ideas and add them to the page. A few
-                      ideas came up for the light-dark switch, and after asking
-                      around for opinion in understability, concluding the most
-                      compact and clear is the one that you can actually switch
-                      :)
+                      As I think of the functionalities and features I want for the website, I generate new ideas and add them to the page. Several ideas were suggested for the light-dark switch, and after gathering opinions and feedback to ensure clarity and ease of use, we concluded that the most compact and clear option was the one that you can actually switch :) :)
                     </p>
                   </div>
                 </div>
@@ -116,10 +111,10 @@ const portfoliodesign = () => {
                 <div className='container my-5'>
                   <p>
                     {' '}
-                    For the moons design, I used the classic waxing and waning
-                    crescent moon emojis, the Twitter ones, and slightly modify
-                    them to the appropiate color scheme—as well as adding some
-                    haloes.
+                    To create the moon design, I used the classic waxing and
+                    waning crescent moon emojis from Twitter and slightly
+                    modified them to match the appropriate color scheme, as well
+                    as adding some haloes.
                   </p>
                 </div>
               </div>
@@ -133,10 +128,10 @@ const portfoliodesign = () => {
                   </p>
                   <p>
                     {' '}
-                    Oh, and in the end I decided the warm colors are more
-                    fitting than the black and white version of the same. Also,
-                    drawing is fun, so why not adding a playful Procreate-made
-                    version of myself to the mix.
+                    In the end, I decided that warm colors are more fitting than
+                    the black and white version of the same. Plus, drawing is
+                    fun, so I added a playful Procreate-made version of myself
+                    to the mix.
                   </p>
                 </div>
               </div>
@@ -149,10 +144,7 @@ const portfoliodesign = () => {
             <div className='col-sm-6 border-end' id='cel3.1'>
               <div className='text-end py-4 pe-3 float-end'>
                 <p>
-                  I started creating the holistic concept by the homepage look,
-                  using Figma. At first it was going to be based on round shapes
-                  and arches, but if found cleaner and easier to follow the use
-                  of straigh lines as a theme.
+                I began creating the holistic concept of the website by designing the homepage using Figma. At first, I planned to base it on round shapes and arches to convey a more organic, flowing feel. However, upon further consideration, I found that using straight lines as a theme resulted in a cleaner and more streamlined design that was easier to navigate and understand.
                 </p>
               </div>
             </div>
@@ -184,7 +176,9 @@ const portfoliodesign = () => {
               <div className='row border-bottom'>
                 <div className='container my-5'>
                   <p>
-                    This here is the Figma home frame, which is coded to a high similarity. The whole concept was desktop-first, and the responsibility was implemented when coding.
+                    Here is the Figma home frame, which is coded to a high
+                    degree of similarity. The whole concept was desktop-first,
+                    and I implemented the responsive design when coding.
                   </p>
                 </div>
               </div>
@@ -192,7 +186,7 @@ const portfoliodesign = () => {
                 <div className='container my-5'>
                   <p>
                     Finally, for the code, I used Next.js, and some Sass. You
-                    can check it out directly at my{' '}
+                    can check it out directly on my{' '}
                     <Link href='https://github.com/prrr17/_PORTFOLIO'>
                       <a
                         className={`fw-bold ${utilStyles.underlined}`}
