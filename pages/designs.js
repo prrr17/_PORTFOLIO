@@ -10,9 +10,9 @@ import Test from '../components/Test';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import FigmaSS from '../public/Figma_Screenshot.jpeg';
+import FavIdea from '../public/Artbar/favIdea.png';
 import RandomizeSS from '../public/RandomizeSS.jpg';
 import GoBack from '../components/GoBack';
-import UnderConstruction from '../components/UnderConstruction';
 
 const designs = () => {
   return (
@@ -44,32 +44,61 @@ const designs = () => {
               <h4></h4>
             </div>
           </div>
-          <div className='row border-bottom' id='ArtbarRow'>
-            <div className='col-sm-6 border-end' id='FigmaSS'>
-              <div
-                className={` ${utilStyles.profilePicBox} py-4 pe-3 float-end`}
-              >
+          <div className='row border-bottom' id='ArtketRow'>
+            <div className='col-sm-6 border-end' id='ArtketTitlesCel'>
+              <div className='container mt-5 '>
                 <Nav.Link href='/artbar'>
-                  {' '}
-                  <a className='' alt='link to the Artbar project'>
-                    <Image
-                      className={`${utilStyles.profilePic} ms-0`}
-                      src={FigmaSS}
-                      alt='Artbar project picture'
-                    />
-                  </a>
+                  <h2 className={`fw-bold ${utilStyles.underlined}`}>Artket</h2>
+                  <br></br>
+                </Nav.Link>
+                <Nav.Link href='/artbar'>
+                  <h4>
+                    An art community app to connect artists, collectors,
+                    galleries and anyone curious about art
+                  </h4>
                 </Nav.Link>
               </div>
             </div>
-            <div
-              className='col-sm-6 d-flex justify-center'
-              id='ArtbarLinkText'
-            >
+            <div className='col-sm-6 d-flex justify-center' id='ArtketLinkText'>
+              <div
+                className={` ${utilStyles.designsPicBox} py-4 pe-3 float-end`}
+              >
+                <Nav.Link
+                  href='/artket'
+                  className=''
+                  alt='link to the Artket project'
+                >
+                  <Image
+                    className={`${utilStyles.designsPic} ms-0`}
+                    src={FavIdea}
+                    alt='Artbar project picture'
+                  />
+                </Nav.Link>
+              </div>
+            </div>
+          </div>
+          <div className='row border-bottom' id='ArtbarRow'>
+            <div className='col-sm-6 border-end' id='ArtbaPicCel'>
+              <div
+                className={` ${utilStyles.designsPicBox} py-4 pe-3 float-end`}
+              >
+                <Nav.Link
+                  href='/artbar'
+                  className=''
+                  alt='link to the Artbar project'
+                >
+                  <Image
+                    className={`${utilStyles.designsPic} ms-0`}
+                    src={FavIdea}
+                    alt='Artbar project picture'
+                  />
+                </Nav.Link>
+              </div>
+            </div>
+            <div className='col-sm-6 d-flex justify-center' id='ArtbarLinkText'>
               <div className='container mt-5 '>
                 <Nav.Link href='/artbar'>
-                  <h2 className={`fw-bold ${utilStyles.underlined}`}>
-                    ARTBAR
-                  </h2>
+                  <h2 className={`fw-bold ${utilStyles.underlined}`}>ARTBAR</h2>
                   <br></br>
                 </Nav.Link>
                 <Nav.Link href='/artbar'>
@@ -81,17 +110,18 @@ const designs = () => {
           <div className='row border-bottom' id='PortfolioRow'>
             <div className='col-sm-6 border-end' id='FigmaSS'>
               <div
-                className={` ${utilStyles.profilePicBox} py-4 pe-3 float-end`}
+                className={` ${utilStyles.designsPicBox} py-4 pe-3 float-end`}
               >
-                <Nav.Link href='/portfoliodesign'>
-                  {' '}
-                  <a className='' alt='link to the portfolio story'>
-                    <Image
-                      className={`${utilStyles.profilePic} ms-0`}
-                      src={FigmaSS}
-                      alt='portfolio concept picture'
-                    />
-                  </a>
+                <Nav.Link
+                  href='/portfoliodesign'
+                  className=''
+                  alt='link to the portfolio story'
+                >
+                  <Image
+                    className={`${utilStyles.designsPic} ms-0`}
+                    src={FigmaSS}
+                    alt='portfolio concept picture'
+                  />
                 </Nav.Link>
               </div>
             </div>
@@ -118,53 +148,53 @@ const designs = () => {
                 <h2> Project for the Front-End course</h2>{' '}
                 <h2>
                   {' '}
-                  <Link href='https://prrr17.github.io/randomize-your-trip/'>
-                    <a
-                      className={`fw-bold ${utilStyles.underlined}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to the project repository'
-                    >
-                      {'\n'}
-                      Randomize your trip app
-                    </a>
+                  <Link
+                    href='https://prrr17.github.io/randomize-your-trip/'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt='link to the project repository'
+                  >
+                    {'\n'}
+                    Randomize your trip app
                   </Link>{' '}
                 </h2>
                 <br></br>
                 <h4>
                   Check out the code at my{' '}
-                  <Link href='https://github.com/prrr17/randomize-your-trip'>
-                    <a
-                      className={`fw-bold ${utilStyles.underlined}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to the project repository'
-                    >
-                      GitHub repository.
-                    </a>
+                  <Link
+                    href='https://github.com/prrr17/randomize-your-trip'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt='link to the project repository'
+                  >
+                    GitHub repository.
                   </Link>
                 </h4>
-                <p className="pt-4">* This was a fun project, it is unfinished, hence ready to keep improving when I feel ready. Stay tuned :) </p>
+                <p className='pt-4'>
+                  * This was a fun project, it is unfinished, hence ready to
+                  keep improving when I feel ready. Stay tuned :){' '}
+                </p>
               </div>
             </div>
             <div className='col-sm-6 border-end' id='FigmaSS'>
               <div
-                className={` ${utilStyles.profilePicBox} py-4 pe-3 float-end`}
+                className={` ${utilStyles.designsPicBox} py-4 pe-3 float-end`}
               >
                 <button>
-                  <Link href='https://prrr17.github.io/randomize-your-trip/'>
-                    <a
-                      className=''
-                      alt='link to to the project'
-                      rel='noopener noreferrer'
-                      target='_blank'
-                    >
-                      <Image
-                        className={`${utilStyles.profilePic} ms-0`}
-                        src={RandomizeSS}
-                        alt='randomize your trip picture'
-                      />
-                    </a>
+                  <Link
+                    href='https://prrr17.github.io/randomize-your-trip/'
+                    className=''
+                    alt='link to to the project'
+                    rel='noopener noreferrer'
+                    target='_blank'
+                  >
+                    <Image
+                      className={`${utilStyles.designsPic} ms-0`}
+                      src={RandomizeSS}
+                      alt='randomize your trip picture'
+                    />
                   </Link>
                 </button>
               </div>
@@ -172,7 +202,6 @@ const designs = () => {
           </div>
           <div className='row pt-5 mt-5'>
             <GoBack />
-            <UnderConstruction />
           </div>
           <Test />
         </div>

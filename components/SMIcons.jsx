@@ -15,8 +15,7 @@ const SMIcons = () => {
     <div className='d-flex justify-content-end pe-2 pt-2 align-content-end'>
       <ul className='socialMedia-list mb-0'>
         <div className={utilStyles.iconContainer}>
-          <Link href='https://www.instagram.com/inpaulasmind/'>
-            <a
+          <Link href='https://www.instagram.com/inpaulasmind/'
               className='socialMediaLinks py-2'
               target='_blank'
               alt='Instagram link @inpaulasmind'
@@ -29,12 +28,11 @@ const SMIcons = () => {
                 viewBox='-10 -10 100 100'
                 className={`rounded-circle ${utilStyles.icon}`}
               ></IgOff>
-            </a>
+             
           </Link>
         </div>
         <div className={utilStyles.iconContainer}>
-          <Link href='https://github.com/prrr17/'>
-            <a
+          <Link href='https://github.com/prrr17/'
               className='socialMediaLinks py-2'
               target='_blank'
               alt='GitHub link @prrr17'
@@ -47,12 +45,11 @@ const SMIcons = () => {
                 viewBox='-10 -10 100 100'
                 className={`rounded-circle ${utilStyles.icon}`}
               ></GhOff>
-            </a>
+             
           </Link>
         </div>
         <div className={utilStyles.iconContainer}>
-          <Link href='https://www.linkedin.com/in/paula-romero-de-blas/'>
-            <a
+          <Link href='https://www.linkedin.com/in/paula-romero-de-blas/'
               className='socialMediaLinks py-2'
               target='_blank'
               alt='LinkedIn link @paula-romero-de-blas'
@@ -65,12 +62,11 @@ const SMIcons = () => {
                 viewBox='-10 -10 100 100'
                 className={`rounded-circle ${utilStyles.icon}`}
               ></InOff>
-            </a>
+             
           </Link>
         </div>
         <div className={utilStyles.iconContainer}>
-          <Link href='https://www.behance.net/paulardb'>
-            <a
+          <Link href='https://www.behance.net/paulardb'
               className='socialMediaLinks'
               target='_blank'
               alt='Behance @paulardb'
@@ -83,7 +79,7 @@ const SMIcons = () => {
                 viewBox='-10 -10 100 100'
                 className={`rounded-circle ${utilStyles.icon}`}
               ></BeOff>
-            </a>
+             
           </Link>
         </div>
       </ul>

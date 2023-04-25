@@ -60,7 +60,7 @@ const artbar = () => {
               <div className='col py-4 pe-3 float-end'>
                 <div className='row'>
                   <Image
-                    className={`me-0`}
+                    className={`me-0 ${utilStyles.designsPic}`}
                     src={ArtbarMain}
                     alt='landing page picture'
                   />
@@ -71,7 +71,7 @@ const artbar = () => {
 
                 <div className='row'>
                   <Image
-                    className={`me-0`}
+                    className={`ms-0 ${utilStyles.designsPic}`}
                     src={ArtbarMainRed}
                     alt='landing page picture hovering the title'
                   />
@@ -96,16 +96,15 @@ const artbar = () => {
                   <p>
                     The project was a collaboration between myself, who led the
                     design process, and{' '}
-                    <Link href='https://www.nubeame.com/'>
-                      <a
-                        className={`fw-bold ${utilStyles.underlined}`}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        alt='Link to the website of Nubeame'
-                      >
-                        {' '}
-                        Nubeame
-                      </a>
+                    <Link
+                      href='https://www.nubeame.com/'
+                      className={`fw-bold ${utilStyles.underlined}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      alt='Link to the website of Nubeame'
+                    >
+                      {' '}
+                      Nubeame
                     </Link>
                     , the company responsible for creating the database and
                     back-end of the webpage. Our goal was to create a platform
@@ -123,39 +122,36 @@ const artbar = () => {
                 <h4 className={utilStyles.headingLg}>Background</h4>
                 <p>
                   The Artbar webpage was created as part of the Research Group "
-                  <Link href='http://www.ub.edu/tig/'>
-                    <a
-                      className={`fw-bold ${utilStyles.underlined}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to the Research Group'
-                    >
-                      Treballs, Institucions i Gènere de la Universitat de
-                      Barcelona
-                    </a>
+                  <Link
+                    href='http://www.ub.edu/tig/'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt='link to the Research Group'
+                  >
+                    Treballs, Institucions i Gènere de la Universitat de
+                    Barcelona
                   </Link>
                   " of The University of Barcelona, and is sponsored by{' '}
-                  <Link href='https://www.ciencia.gob.es/en/'>
-                    <a
-                      className={`fw-bold ${utilStyles.underlined}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to The Ministry on Science and Innovation of the Spanish Government'
-                    >
-                      The Ministry on Science and Innovation of the Spanish
-                      Government{' '}
-                    </a>
+                  <Link
+                    href='https://www.ciencia.gob.es/en/'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt='link to The Ministry on Science and Innovation of the Spanish Government'
+                  >
+                    The Ministry on Science and Innovation of the Spanish
+                    Government{' '}
                   </Link>{' '}
                   and{' '}
-                  <Link href='https://web.ub.edu/en/web/ub/'>
-                    <a
-                      className={`fw-bold ${utilStyles.underlined}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to The University of Barcelona'
-                    >
-                      The University of Barcelona
-                    </a>
+                  <Link
+                    href='https://web.ub.edu/en/web/ub/'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt='link to The University of Barcelona'
+                  >
+                    The University of Barcelona
                   </Link>{' '}
                   itself. The project aims to preserve the cultural heritage of
                   Barcelona's artisans and make it available to a wider
@@ -166,12 +162,14 @@ const artbar = () => {
                 </p>
               </div>
               <div className='row'>
-                {' '}
-                <Image
-                  className={`px-5 py-4`}
-                  src={CreditsPage}
-                  alt='credits page picture'
-                />
+                <div className={`${utilStyles.designsPicBox}`}>
+                  {' '}
+                  <Image
+                    className={`ms-0 px-5 py-4 ${utilStyles.designsPic}`}
+                    src={CreditsPage}
+                    alt='credits page picture'
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -233,16 +231,18 @@ const artbar = () => {
             <div className='col-sm-6' id='cel3_2'>
               {' '}
               <div className='row d-flex align-items-center'>
-                <div className='container text-end mt-5 pe-4 float-end'>
+                <div className='container text-end mt-5 pe-5 float-end'>
                   <p>
                     Choosing and pairing fonts, creating the logo, and the
                     identity background.
                   </p>
                 </div>
                 <div className='row border-button'>
-                  <div className='container text-end mb-5 pe-3 float-end'>
+                  <div
+                    className={`text-end mb-5 pe-3 float-end ${utilStyles.designsPicBox}`}
+                  >
                     <Image
-                      className={`me-0`}
+                      className={`ms-0 ${utilStyles.designsPic}`}
                       src={TestingFonts}
                       alt='Mockups picture'
                     />
@@ -254,16 +254,15 @@ const artbar = () => {
                       <p>
                         Here, displayed a few images of the topic, used for
                         inspiration, generated by{' '}
-                        <Link href='https://www.midjourney.com/home/'>
-                          <a
-                            className={`fw-bold ${utilStyles.underlined}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            alt='link to the portfolio repository'
-                          >
-                            {' '}
-                            Midjourney
-                          </a>
+                        <Link
+                          href='https://www.midjourney.com/home/'
+                          className={`fw-bold ${utilStyles.underlined}`}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          alt='link to the portfolio repository'
+                        >
+                          {' '}
+                          Midjourney
                         </Link>
                         .{' '}
                       </p>
@@ -279,24 +278,24 @@ const artbar = () => {
                       </p>
                     </div>
                   </div>
-                  <div className='col-lg-3'>
-                    <div className={`${utilStyles.reducedPic} container my-2`}>
+                  <div className='col-lg-3 gx-0'>
+                    <div className={`container my-2`}>
                       <Image
-                        className={`ms-0`}
+                        className={`ms-0 ${utilStyles.smallerPics}`}
                         src={Midjourney}
                         alt='Midjourney picture'
                       />
                     </div>
                   </div>
-                  <div className='col-lg-2'>
-                    <div className={`${utilStyles.reducedPic} container my-2`}>
+                  <div className='col-lg-2 gx-0'>
+                    <div className={`my-2`}>
                       <Image
-                        className={`ms-0`}
+                        className={`ms-0 ${utilStyles.smallerPics}`}
                         src={Grabado1}
                         alt='Engraved picture'
                       />
                       <Image
-                        className={`ms-0`}
+                        className={`ms-0 ${utilStyles.smallerPics}`}
                         src={Grabado6}
                         alt='Engraved picture'
                       />
@@ -312,22 +311,20 @@ const artbar = () => {
           >
             <div className='col-sm-6 border-end' id='cel4.1'>
               <div className='text-end py-4 pe-3 float-end'>
+                <h4 className={utilStyles.headingLg}>Webpage Features</h4>
                 <p>
-                  <h4 className={utilStyles.headingLg}>Webpage Features</h4>
-                  <p>
-                    The Artbar webpage features a landing page; a project
-                    explanation page that provides users with detailed
-                    information about the project and its purpose, as well as
-                    the information found in the database itself. The
-                    methodology page outlines the research and data collection
-                    process and sources, while the credits page recognizes the
-                    contributions of the various individuals and organizations
-                    involved in the project. Finally, users can access the
-                    database by selecting specific artisan categories or by
-                    searching for individual artisans. There is also a contact
-                    page form for any suggestions and/or inquiries.
-                  </p>{' '}
-                </p>
+                  The Artbar webpage features a landing page; a project
+                  explanation page that provides users with detailed information
+                  about the project and its purpose, as well as the information
+                  found in the database itself. The methodology page outlines
+                  the research and data collection process and sources, while
+                  the credits page recognizes the contributions of the various
+                  individuals and organizations involved in the project.
+                  Finally, users can access the database by selecting specific
+                  artisan categories or by searching for individual artisans.
+                  There is also a contact page form for any suggestions and/or
+                  inquiries.
+                </p>{' '}
               </div>
             </div>
 
@@ -349,39 +346,36 @@ const artbar = () => {
                 <p>
                   Additionally, it's worth noting that the Artbar project was
                   carried out by the Research Group "
-                  <Link href='http://www.ub.edu/tig/'>
-                    <a
-                      className={`fw-bold ${utilStyles.underlined}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to the Research Group'
-                    >
-                      Treballs, Institucions i Gènere de la Universitat de
-                      Barcelona
-                    </a>
+                  <Link
+                    href='http://www.ub.edu/tig/'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt='link to the Research Group'
+                  >
+                    Treballs, Institucions i Gènere de la Universitat de
+                    Barcelona
                   </Link>
                   ", and is sponsored by{' '}
-                  <Link href='https://www.ciencia.gob.es/en/'>
-                    <a
-                      className={`fw-bold ${utilStyles.underlined}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to The Ministry on Science and Innovation of the Spanish Government'
-                    >
-                      The Ministry on Science and Innovation of the Spanish
-                      Government{' '}
-                    </a>
+                  <Link
+                    href='https://www.ciencia.gob.es/en/'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt='link to The Ministry on Science and Innovation of the Spanish Government'
+                  >
+                    The Ministry on Science and Innovation of the Spanish
+                    Government{' '}
                   </Link>{' '}
                   and{' '}
-                  <Link href='https://web.ub.edu/en/web/ub/'>
-                    <a
-                      className={`fw-bold ${utilStyles.underlined}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to The University of Barcelona'
-                    >
-                      The University of Barcelona
-                    </a>
+                  <Link
+                    href='https://web.ub.edu/en/web/ub/'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt='link to The University of Barcelona'
+                  >
+                    The University of Barcelona
                   </Link>{' '}
                   . The project represents a collaborative effort among multiple
                   organizations to preserve the cultural heritage of Barcelona's
@@ -417,29 +411,27 @@ const artbar = () => {
                 <p>
                   To view the website and its functionality, a temporary
                   deployment has been set up on Vercel and can be accessed{' '}
-                  <Link href='https://artbar-prrr17.vercel.app/index.html'>
-                    <a
-                      className={`fw-bold ${utilStyles.underlined}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to the portfolio repository'
-                    >
-                      {' '}
-                      here
-                    </a>
+                  <Link
+                    href='https://artbar-prrr17.vercel.app/index.html'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt='link to the portfolio repository'
+                  >
+                    {' '}
+                    here
                   </Link>
                   . Additionally, the website's code is available for review on
                   GitHub
-                  <Link href='https://github.com/prrr17/Artbar'>
-                    <a
-                      className={`fw-bold ${utilStyles.underlined}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to the portfolio repository'
-                    >
-                      {' '}
-                      here
-                    </a>
+                  <Link
+                    href='https://github.com/prrr17/Artbar'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    alt='link to the portfolio repository'
+                  >
+                    {' '}
+                    here
                   </Link>
                   .
                 </p>
@@ -457,39 +449,58 @@ const artbar = () => {
               <p>Here is the original idea and some discarded mockups</p>
             </div>
             <div className='row d-flex justify-content-center'>
-              <Image
-                className={`${utilStyles.reducedPic} container`}
-                src={OriginalIdea}
-                alt='original idea pages'
-              />
+              {' '}
+              <div className='col-sm-6'>
+                <Image
+                  className={`${utilStyles.reducedPic} me-0`}
+                  src={OriginalIdea}
+                  alt='original idea pages'
+                />{' '}
+              </div>
+              <div className='col-sm-6 my-2'>
+                <Image
+                  className={`${utilStyles.reducedPic} ms-0`}
+                  src={OtherVersions}
+                  alt='other versions pictures'
+                />
+              </div>
             </div>
             <div className='row d-flex justify-content-center'>
-              {' '}
-              <Image
-                className={`${utilStyles.reducedPic} container my-2`}
-                src={OtherVersions}
-                alt='otehr versions pictures'
-              />
-              <Image
-                className={`${utilStyles.reducedPic} container`}
-                src={FavIdea}
-                alt='original idea pages'
-              />
-              <Image
-                className={`${utilStyles.reducedPic} container`}
-                src={Menus}
-                alt='original idea pages'
-              />
-              <Image
-                className={`${utilStyles.reducedPic} container`}
-                src={Menu1}
-                alt='original idea pages'
-              />
-              <Image
-                className={`${utilStyles.reducedPic} container`}
-                src={MenuRed}
-                alt='original idea pages'
-              />
+              <div className='col-sm-6 my-2'>
+                <p>This one was the one I intended to move forward with</p>
+                <Image
+                  className={`${utilStyles.reducedPic} me-0`}
+                  src={FavIdea}
+                  alt='original idea pages'
+                />{' '}
+              </div>
+              <div className='col-sm-6 my-2'>
+                <p>
+                  These were the different menu options for the different
+                  hamburger menu positions.
+                </p>
+                <Image
+                  className={`${utilStyles.artbarMenusPic} ms-0`}
+                  src={Menus}
+                  alt='original idea pages'
+                />{' '}
+              </div>
+            </div>
+            <div className='row d-flex justify-content-center'>
+              <div className='col-sm-6 my-2'>
+                <Image
+                  className={`${utilStyles.reducedPic} me-0`}
+                  src={Menu1}
+                  alt='original idea pages'
+                />
+              </div>
+              <div className='col-sm-6 my-2'>
+                <Image
+                  className={`${utilStyles.reducedPic} ms-0`}
+                  src={MenuRed}
+                  alt='original idea pages'
+                />
+              </div>
             </div>
           </div>
         </div>

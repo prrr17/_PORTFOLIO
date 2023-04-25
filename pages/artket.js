@@ -4,21 +4,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
+
 import Blobs from '../components/Blobs';
 import Test from '../components/Test';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import PFConcept from '../public/portfolio_concept.jpeg';
-import SwitchesSample from '../public/SwitchesSample.jpg';
-import PastExample from '../public/PastExample.jpeg';
-import Home_MU from '../public/Home_MU.jpeg';
-import HOME_MockUp from '../public/HOME_MockUp.jpg';
 
-const portfoliodesign = () => {
+const artket = () => {
   return (
     <div>
       <Head>
-        <title>{siteTitle} — Portfolio Design Process</title>
+        <title>{siteTitle} Artket — Art Community App</title>
         <link rel='icon' href='/p_logo.ico' />
       </Head>
       <Header />
@@ -46,11 +42,9 @@ const portfoliodesign = () => {
           </div>
           <div className='row border-bottom' id='secondrow'>
             <div className='col-sm-6 border-end' id='cel2.1'>
-              <div
-                className={`py-4 pe-3 float-end ${utilStyles.designsPicBox}`}
-              >
+              <div className='py-4 pe-3 float-end'>
                 <Image
-                  className={`ms-0 ${utilStyles.designsPic}`}
+                  className={`ms-0`}
                   src={PFConcept}
                   alt='portfolio concept picture'
                 />
@@ -106,11 +100,9 @@ const portfoliodesign = () => {
                   </div>
                 </div>
                 <div className='col-sm-3 d-flex align-items-center'>
-                  <div
-                    className={`py-4 ${utilStyles.designsPicBox}`}
-                  >
+                  <div className='container'>
                     <Image
-                      className={`${utilStyles.designsPic}`}
+                      className={utilStyles.SwitchesSample}
                       src={SwitchesSample}
                       alt='portfolio concept picture'
                     />
@@ -168,7 +160,7 @@ const portfoliodesign = () => {
             <div className='col' id='cel3.2'>
               <div className={`${utilStyles.profilePicBox} float-end`}>
                 <Image
-                  className={`ms-0 p-0 ${utilStyles.designsPic}`}
+                  className={`ms-0 p-0`}
                   src={PastExample}
                   alt='portfolio discarded concept picture'
                 />
@@ -180,9 +172,9 @@ const portfoliodesign = () => {
             id='forthrow'
           >
             <div className='col-sm-6' id='cel4.1'>
-              <div className={`${utilStyles.designsPicBox} py-4`}>
+              <div className='py-4'>
                 <Image
-                  className={`${utilStyles.designsPic}`}
+                  className={`${utilStyles.profilePic} ms-0 p-0`}
                   src={Home_MU}
                   alt='portfolio concept home picture'
                 />
@@ -198,7 +190,7 @@ const portfoliodesign = () => {
                   </p>
                 </div>
               </div>
-              <div className='row'>
+              <div className='row border-bottom'>
                 <div className='container my-5'>
                   <p>
                     Finally, for the code, I used Next.js, and some Sass. You
@@ -222,9 +214,9 @@ const portfoliodesign = () => {
               {' '}
               <h3 className='text-center'>Figma (semi)Final Mock-ups</h3>
             </div>
-            <div className={`${utilStyles.designsPicBox} my-2 mx-0`}>
+            <div className={`${utilStyles.reducedPic} container my-2`}>
               <Image
-                className={`${utilStyles.mockupPic}`}
+                className=''
                 src={HOME_MockUp}
                 alt='portfolio concept picture'
               />
@@ -238,4 +230,4 @@ const portfoliodesign = () => {
   );
 };
 
-export default portfoliodesign;
+export default artket;

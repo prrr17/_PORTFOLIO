@@ -227,13 +227,13 @@ $breakpoint-bootstraplg: 992px;
 
 /*ABOUT PAGE*/
 
-// .profilePicBox{
-//   // max-height: inherit;
-// }
+.profilePicBox {
+  max-height: inherit;
+}
 
-// .profilePic{
-// max-width: 20%;
-// }
+.profilePic {
+  max-width: 20%;
+}
 
 //from https://www.30secondsofcode.org/css/s/hover-underline-animation
 
@@ -392,8 +392,43 @@ $amount: 20;
 }
 
 /* Designs */
-.SwitchesSample {
-  max-width: 70%;
-  min-width: 70%;
+
+.designsPicBox {
+  max-height: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.designsPic {
+  width: 100%;
+  height: auto;
+  justify-content: center;
   align-self: center;
+}
+
+.mockupPic {
+  width: 70%;
+  height: auto;
+  justify-content: center;
+}
+
+.reducedPic {
+  display: flex;
+  width: 90%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.artbarMenusPic {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.smallerPics {
+  width: 100%;
+  height: auto;
 }
