@@ -21,5 +21,8 @@
     "react-icons": "^4.6.0",
     "sass": "^1.55.0",
     "use-fit-text": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0"
   }
 }

@@ -44,8 +44,41 @@ const designs = () => {
               <h4></h4>
             </div>
           </div>
-
-          <div className='row border-bottom' id='secondRow'>
+          <div className='row border-bottom' id='ArtbarRow'>
+            <div className='col-sm-6 border-end' id='FigmaSS'>
+              <div
+                className={` ${utilStyles.profilePicBox} py-4 pe-3 float-end`}
+              >
+                <Nav.Link href='/artbar'>
+                  {' '}
+                  <a className='' alt='link to the Artbar project'>
+                    <Image
+                      className={`${utilStyles.profilePic} ms-0`}
+                      src={FigmaSS}
+                      alt='Artbar project picture'
+                    />
+                  </a>
+                </Nav.Link>
+              </div>
+            </div>
+            <div
+              className='col-sm-6 d-flex justify-center'
+              id='ArtbarLinkText'
+            >
+              <div className='container mt-5 '>
+                <Nav.Link href='/artbar'>
+                  <h2 className={`fw-bold ${utilStyles.underlined}`}>
+                    ARTBAR
+                  </h2>
+                  <br></br>
+                </Nav.Link>
+                <Nav.Link href='/artbar'>
+                  <h4>A Database of Barcelona Artisans from 1814 to 1860</h4>
+                </Nav.Link>
+              </div>
+            </div>
+          </div>
+          <div className='row border-bottom' id='PortfolioRow'>
             <div className='col-sm-6 border-end' id='FigmaSS'>
               <div
                 className={` ${utilStyles.profilePicBox} py-4 pe-3 float-end`}
@@ -79,7 +112,7 @@ const designs = () => {
               </div>
             </div>
           </div>
-          <div className='row border-bottom' id='mid'>
+          <div className='row border-bottom' id='RandomRow'>
             <div className='col-sm-6 border-end text-end' id='RandomizeText'>
               <div className='container mt-5'>
                 <h2> Project for the Front-End course</h2>{' '}

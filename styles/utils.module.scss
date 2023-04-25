@@ -72,8 +72,8 @@ $breakpoint-bootstraplg: 992px;
   line-height: 1.5;
 }
 
- .textDescriptions a {
-  text-shadow: 0px 0px 50px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff; 
+.textDescriptions a {
+  text-shadow: 0px 0px 50px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff;
 }
 
 .list {
@@ -224,7 +224,6 @@ $breakpoint-bootstraplg: 992px;
   background: radial-gradient(white, rgba(255, 255, 255, 0) 55%);
   opacity: 0.7;
 }
-
 
 /*ABOUT PAGE*/
 
@@ -397,9 +396,4 @@ $amount: 20;
   max-width: 70%;
   min-width: 70%;
   align-self: center;
-}
-
-.reducedPic {
-  max-width: 40vw;
-  justify-content: center;
 }

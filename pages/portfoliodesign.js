@@ -93,7 +93,13 @@ const portfoliodesign = () => {
                   <div className='container my-5'>
                     <p>
                       {' '}
-                      As I think of the functionalities and features I want for the website, I generate new ideas and add them to the page. Several ideas were suggested for the light-dark switch, and after gathering opinions and feedback to ensure clarity and ease of use, we concluded that the most compact and clear option was the one that you can actually switch :) :)
+                      As I think of the functionalities and features I want for
+                      the website, I generate new ideas and add them to the
+                      page. Several ideas were suggested for the light-dark
+                      switch, and after gathering opinions and feedback to
+                      ensure clarity and ease of use, we concluded that the most
+                      compact and clear option was the one that you can actually
+                      switch :) :)
                     </p>
                   </div>
                 </div>
@@ -144,7 +150,13 @@ const portfoliodesign = () => {
             <div className='col-sm-6 border-end' id='cel3.1'>
               <div className='text-end py-4 pe-3 float-end'>
                 <p>
-                I began creating the holistic concept of the website by designing the homepage using Figma. At first, I planned to base it on round shapes and arches to convey a more organic, flowing feel. However, upon further consideration, I found that using straight lines as a theme resulted in a cleaner and more streamlined design that was easier to navigate and understand.
+                  I began creating the holistic concept of the website by
+                  designing the homepage using Figma. At first, I planned to
+                  base it on round shapes and arches to convey a more organic,
+                  flowing feel. However, upon further consideration, I found
+                  that using straight lines as a theme resulted in a cleaner and
+                  more streamlined design that was easier to navigate and
+                  understand.
                 </p>
               </div>
             </div>
