@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import SandrineInicio from '/public/Sandrine/SandrineInicio.png';
 import SandrineObras from '/public/Sandrine/SandrineObras.png';
-import SandrineLanding from '/public/Sandrine/sandrineLanding.png';
+import SandrineLanding from '/public/Sandrine/sandrineLanding.png'
 import SandrineContact from '/public/Sandrine/contactPage.png';
 import SandrineStickers from '/public/Sandrine/sandrineStickers.png';
 import SandrineZoomObras from '/public/Sandrine/SandrineZoomObras.png';
@@ -128,7 +128,7 @@ const sandrine = () => {
               </div>
               <div className='row d-flex align-items-center'>
                 <div className='col-sm-8 d-flex align-items-center'>
-                  <div className='container my-1'>
+                  <div className='container my-4'>
                     <Image
                       className={`${utilStyles.designsPic}`}
                       src={SandrineStickers}
@@ -203,6 +203,7 @@ const sandrine = () => {
                   alt='Details artwork overlay image'
                 />
               </div>
+              
             </div>
             <div className='col-sm-6' id='cel4.2'>
               <div className='row border-bottom'>

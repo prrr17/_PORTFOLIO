@@ -46,8 +46,7 @@ const designs = () => {
               <h4></h4>
             </div>
           </div>
-          
-          <div className='row border-bottom' id='ArtketRow'>
+          <div className='row border-bottom text-end' id='ArtketRow'>
             <div className='col-sm-6 border-end' id='ArtketTitlesCel'>
               <div className='container mt-5 '>
                 <Nav.Link href='/artket'>
