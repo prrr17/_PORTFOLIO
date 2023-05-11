@@ -37,7 +37,7 @@ const portfoliodesign = () => {
                 Portfolio
               </h2>
             </div>
-            <div className='col-sm-6 align-items-end' id='cel1.2'>
+            <div className='col-sm-6 align-items-end d-flex pb-3' id='cel1.2'>
               <h4 className={utilStyles.headingLg}>
                 {' '}
                 This is my portfolio conceptualization process
@@ -220,7 +220,7 @@ const portfoliodesign = () => {
           <div className='row d-flex justify-content-center border-bottom'>
             <div className='container my-2 pt-2'>
               {' '}
-              <h3 className='text-center'>Figma (semi)Final Mock-ups</h3>
+              <h3 className='text-center'>Figma (semi)Final Mockups</h3>
             </div>
             <div className={`${utilStyles.designsPicBox} my-2 mx-0`}>
               <Image

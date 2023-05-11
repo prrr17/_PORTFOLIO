@@ -50,14 +50,14 @@ const artbar = () => {
               </h2>
             </div>
             <div className='col-sm-6 align-items-end' id='cel1.2'>
-              <h4 className={utilStyles.headingLg}>
+              <h3 className={utilStyles.headingLg}>
                 A Database of Barcelona Artisans from 1814 to 1860
-              </h4>
+              </h3>
             </div>
           </div>
           <div className='row border-bottom' id='secondrow'>
-            <div className='col-sm-6 border-end' id='cel2_1'>
-              <div className='col py-4 pe-3 float-end'>
+            <div className='col-sm-6 border-end pe-0 me-0' id='cel2_1'>
+              <div className='container my-5'>
                 <div className='row'>
                   <Image
                     className={`me-0 ${utilStyles.designsPic}`}
@@ -68,7 +68,6 @@ const artbar = () => {
                 <div className='row'>
                   <p>Landing page</p>
                 </div>
-
                 <div className='row'>
                   <Image
                     className={`ms-0 ${utilStyles.designsPic}`}
@@ -76,16 +75,30 @@ const artbar = () => {
                     alt='landing page picture hovering the title'
                   />
                 </div>
-                <div className='row'>
+                <div className='row pt-4 border-bottom'>
                   {' '}
-                  <p>Landing page — Title on hover</p>{' '}
+                  <p className='pe-0'>Landing page — Title on hover</p>{' '}
+                </div>{' '}
+                <div className='container my-5'>
+                  <div className='row'>
+                    <div
+                      className={`align-items-center ${utilStyles.designsPicBox}`}
+                    >
+                      {' '}
+                      <Image
+                        className={`ms-0 px-5 py-4 ${utilStyles.designsPic}`}
+                        src={CreditsPage}
+                        alt='credits page picture'
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className='col' id='cel2_2'>
               <div className='row d-flex align-items-center border-bottom'>
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingLg}>Overview</h4>
+                  <h4 className={utilStyles.headingMd}>Overview</h4>
                   <p>
                     Artbar is a web-based database of artisans who worked in
                     Barcelona between 1814 and 1860. The client approached us
@@ -118,66 +131,66 @@ const artbar = () => {
                   </p>
                 </div>
               </div>
-              <div className='row d-flex align-items-center'>
-                <h4 className={utilStyles.headingLg}>Background</h4>
-                <p>
-                  The Artbar webpage was created as part of the Research Group "
-                  <Link
-                    href='http://www.ub.edu/tig/'
-                    className={`fw-bold ${utilStyles.underlined}`}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    alt='link to the Research Group'
-                  >
-                    Treballs, Institucions i Gènere de la Universitat de
-                    Barcelona
-                  </Link>
-                  " of The University of Barcelona, and is sponsored by{' '}
-                  <Link
-                    href='https://www.ciencia.gob.es/en/'
-                    className={`fw-bold ${utilStyles.underlined}`}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    alt='link to The Ministry on Science and Innovation of the Spanish Government'
-                  >
-                    The Ministry on Science and Innovation of the Spanish
-                    Government{' '}
-                  </Link>{' '}
-                  and{' '}
-                  <Link
-                    href='https://web.ub.edu/en/web/ub/'
-                    className={`fw-bold ${utilStyles.underlined}`}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    alt='link to The University of Barcelona'
-                  >
-                    The University of Barcelona
-                  </Link>{' '}
-                  itself. The project aims to preserve the cultural heritage of
-                  Barcelona's artisans and make it available to a wider
-                  audience. By creating a database of artisans and their work,
-                  the project hopes to bring the history of Barcelona's artisans
-                  accessible to researchers and other interested individuals in
-                  general.
-                </p>
-              </div>
-              <div className='row'>
-                <div className={`${utilStyles.designsPicBox}`}>
-                  {' '}
-                  <Image
-                    className={`ms-0 px-5 py-4 ${utilStyles.designsPic}`}
-                    src={CreditsPage}
-                    alt='credits page picture'
-                  />
+              <div className='row d-flex align-items-center border-bottom'>
+                <div className='container my-5'>
+                  <h4 className={utilStyles.headingMd}>Background</h4>
+                  <p>
+                    The Artbar webpage was created as part of the Research Group
+                    "
+                    <Link
+                      href='http://www.ub.edu/tig/'
+                      className={`fw-bold ${utilStyles.underlined}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      alt='link to the Research Group'
+                    >
+                      Treballs, Institucions i Gènere de la Universitat de
+                      Barcelona
+                    </Link>
+                    " of The University of Barcelona, and is sponsored by{' '}
+                    <Link
+                      href='https://www.ciencia.gob.es/en/'
+                      className={`fw-bold ${utilStyles.underlined}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      alt='link to The Ministry on Science and Innovation of the Spanish Government'
+                    >
+                      The Ministry on Science and Innovation of the Spanish
+                      Government{' '}
+                    </Link>{' '}
+                    and{' '}
+                    <Link
+                      href='https://web.ub.edu/en/web/ub/'
+                      className={`fw-bold ${utilStyles.underlined}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      alt='link to The University of Barcelona'
+                    >
+                      The University of Barcelona
+                    </Link>{' '}
+                    itself. The project aims to preserve the cultural heritage
+                    of Barcelona's artisans and make it available to a wider
+                    audience. By creating a database of artisans and their work,
+                    the project hopes to bring the history of Barcelona's
+                    artisans accessible to researchers and other interested
+                    individuals in general.
+                  </p>
                 </div>
               </div>
+              <div className='row d-flex align-items-center'>
+                    <div className='container my-5'>
+                      {' '}
+                      <h4 className={utilStyles.headingMd}>Role</h4>
+                      <p>Designer and Front-end developer</p>{' '}
+                    </div>
+                  </div>
             </div>
           </div>
           <div className='row border-bottom' id='thirdrow'>
             <div className='col-sm-6 border-end' id='cel3_1'>
               <div className='row d-flex align-items-center ms-3  border-bottom'>
                 <div className='container text-end my-5 py-4 pe-3 float-end'>
-                  <h4 className={utilStyles.headingLg}>
+                  <h4 className={utilStyles.headingMd}>
                     Design and Development Process
                   </h4>
                   <p>
@@ -442,7 +455,7 @@ const artbar = () => {
             <div className='row d-flex justify-content-center'>
               <div className='container my-2 pt-2'>
                 {' '}
-                <h3 className='text-center'>Figma First Mock-ups</h3>
+                <h3 className='text-center'>Figma First Mockups</h3>
               </div>{' '}
             </div>
             <div className='row'>
