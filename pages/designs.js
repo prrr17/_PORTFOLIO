@@ -11,6 +11,8 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import FigmaSS from '../public/Figma_Screenshot.jpeg';
 import FavIdea from '../public/Artbar/favIdea.png';
+import ArtketThumbnail from '/public/Artket/thumbnails/Thumbnail2.png';
+import SandrineLanding from '/public/Sandrine/sandrineLanding.png';
 import RandomizeSS from '../public/RandomizeSS.jpg';
 import GoBack from '../components/GoBack';
 
@@ -44,14 +46,15 @@ const designs = () => {
               <h4></h4>
             </div>
           </div>
+          
           <div className='row border-bottom' id='ArtketRow'>
             <div className='col-sm-6 border-end' id='ArtketTitlesCel'>
               <div className='container mt-5 '>
-                <Nav.Link href='/artbar'>
+                <Nav.Link href='/artket'>
                   <h2 className={`fw-bold ${utilStyles.underlined}`}>Artket</h2>
                   <br></br>
                 </Nav.Link>
-                <Nav.Link href='/artbar'>
+                <Nav.Link href='/artket'>
                   <h4>
                     An art community app to connect artists, collectors,
                     galleries and anyone curious about art
@@ -70,13 +73,45 @@ const designs = () => {
                 >
                   <Image
                     className={`${utilStyles.designsPic} ms-0`}
-                    src={FavIdea}
-                    alt='Artbar project picture'
+                    src={ArtketThumbnail}
+                    alt='Artket project picture'
                   />
                 </Nav.Link>
               </div>
             </div>
           </div>
+          <div className='row border-bottom' id='SandrineRow'>
+            <div className='col-sm-6 border-end' id='SandrineTitlesCel'>
+              <div className='container mt-5 '>
+                <Nav.Link href='/sandrine'>
+                  <h2 className={`fw-bold ${utilStyles.underlined}`}>Sandrine Molinas' Portfolio</h2>
+                  <br></br>
+                </Nav.Link>
+                <Nav.Link href='/sandrine'>
+                  <h4>
+                    A Barcelonian artist creating her online presence and showcasing her art
+                  </h4>
+                </Nav.Link>
+              </div>
+            </div>
+            <div className='col-sm-6 d-flex justify-center' id='SandrineLinkText'>
+              <div
+                className={` ${utilStyles.designsPicBox} py-4 pe-3 float-end`}
+              >
+                <Nav.Link
+                  href='/sandrine'
+                  className=''
+                  alt='link to the Sandrine Portfolio project'
+                >
+                  <Image
+                    className={`${utilStyles.designsPic} ms-0`}
+                    src={SandrineLanding}
+                    alt='Sandrine project picture'
+                  />
+                </Nav.Link>
+              </div>
+            </div>
+          </div>F
           <div className='row border-bottom' id='ArtbarRow'>
             <div className='col-sm-6 border-end' id='ArtbaPicCel'>
               <div
