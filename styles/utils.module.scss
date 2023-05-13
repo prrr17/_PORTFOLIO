@@ -72,8 +72,8 @@ $breakpoint-bootstraplg: 992px;
   line-height: 1.5;
 }
 
- .textDescriptions a {
-  text-shadow: 0px 0px 50px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff; 
+.textDescriptions a {
+  text-shadow: 0px 0px 50px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff;
 }
 
 .list {
@@ -225,16 +225,15 @@ $breakpoint-bootstraplg: 992px;
   opacity: 0.7;
 }
 
-
 /*ABOUT PAGE*/
 
-// .profilePicBox{
-//   // max-height: inherit;
-// }
+.profilePicBox {
+  max-height: inherit;
+}
 
-// .profilePic{
-// max-width: 20%;
-// }
+.profilePic {
+  max-width: 20%;
+}
 
 //from https://www.30secondsofcode.org/css/s/hover-underline-animation
 
@@ -393,13 +392,43 @@ $amount: 20;
 }
 
 /* Designs */
-.SwitchesSample {
-  max-width: 70%;
-  min-width: 70%;
+
+.designsPicBox {
+  max-height: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.designsPic {
+  width: 100%;
+  height: auto;
+  justify-content: center;
   align-self: center;
 }
 
-.reducedPic {
-  max-width: 40vw;
+.mockupPic {
+  width: 70%;
+  height: auto;
   justify-content: center;
+}
+
+.reducedPic {
+  display: flex;
+  width: 90%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.artbarMenusPic {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.smallerPics {
+  width: 100%;
+  height: auto;
 }

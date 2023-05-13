@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.scss';
 const UnderConstruction = () => {
   return (
     <div>
-      <div className='row border-bottom  border-primary'>
+      <div className='row mt-5 border-bottom  border-primary'>
         <div className='col-10 border-end border-primary'>
           <h1 className={`pt-4 ${utilStyles.heading3Xl}`}>Oops. . .</h1>
         </div>
