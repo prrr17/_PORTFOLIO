@@ -5,10 +5,12 @@ import Blobs from '../components/Blobs';
 export default function Custom404() {
   return (
     <section>
-    <GoBack />
-    <Blobs />
-      <div className='text-center mt-4'>
-        <h2 className={utilStyles.heading2Xl}>404 - Page Not Found.</h2>
+      <div className='mt-5'>
+        <GoBack />
+      </div>
+      <Blobs />
+      <div className='text-center my-5'>
+        <h2 className={`mb-5 pb-5 ${utilStyles.heading2Xl}`}>404 - Page Not Found.</h2>
       </div>
     </section>
   );
