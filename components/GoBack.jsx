@@ -6,7 +6,7 @@ import { MdArrowBackIosNew } from 'react-icons/md';
 
 const GoBack = () => {
   return (
-    <div className='row gx-0 '>
+    <div className='row gx-0'>
       <div className='col-1 text-end'>
         {' '}
         <Link href='/ ' className={utilStyles.backChevron}>

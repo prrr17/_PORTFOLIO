@@ -17,8 +17,7 @@ const IgLogo = () => {
     <div
       className='flex items-center flex-shrink-0 mr-6 cursor-pointer'
       onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
+      onMouseLeave={onMouseLeave}>
       <Link href='https://www.instagram.com/inpaulasmind/'>
         {isHovering ? (
           <IgOn width='10rem' height='inherit'></IgOn>

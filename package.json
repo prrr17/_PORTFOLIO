@@ -21,7 +21,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "sass": "^1.55.0",
-    "use-fit-text": "^2.4.0",
     "vercel": "^29.3.0"
   },
   "devDependencies": {
