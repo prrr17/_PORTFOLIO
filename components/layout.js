@@ -35,13 +35,17 @@ export default function Layout({ children, home }) {
         <main>{children}</main>
         {!home && (
           <div className={styles.backToHome}>
-            <Link href='/'>← Back to home</Link>
+            <Link href='/'>
+              <a>← Back to home</a>
+            </Link>
             <h2 className={utilStyles.heading2XL}>
-              <Link href='/'className={utilStyles.colorInherit}>{name}
+              <Link href='/'>
+                <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
             <h3 className={utilStyles.headingLg}>
-              <Link href='/' className={utilStyles.colorInherit}>{name}
+              <Link href='/'>
+                <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h3>
           </div>

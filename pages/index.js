@@ -74,13 +74,13 @@ export default function Home() {
           </div>
           <div className='row pb-4'>
             <div className={utilStyles.findOutBox}>
-              <Link href='#home'>
+              <a href='#home'>
                 <p
                   className={`animate__animated animate__fadeInDown animate__delay-1.5s ${utilStyles.verticalText}`}
                 >
                   find out more
                 </p>{' '}
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -131,13 +131,13 @@ export default function Home() {
                 </div>
                 <div className='col-md-11 g-0'>
                   <div className={utilStyles.findOutBox2}>
-                    <Link href='#about'>
+                    <a href='#about'>
                       <p
                         className={`text-end h-50 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText}`}
                       >
                         find out more
                       </p>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -168,10 +168,10 @@ export default function Home() {
             <div className='row border-bottom' id='mid'>
               <div className='col-sm-5 border-end  ' id='photoAndLife'>
                 <div
-                  className={`${utilStyles.designsPicBox} py-4 pe-3 float-end`}
+                  className={` ${utilStyles.profilePicBox} py-4 pe-3 float-end`}
                 >
                   <Image
-                    className={`${utilStyles.designsPic} ms-0`}
+                    className={` ${utilStyles.profilePic} ms-0`}
                     src={ProfilePic}
                     alt='profile picture'
                   />
@@ -215,13 +215,14 @@ export default function Home() {
                     >
                       <ul className='border-start'>
                         <li>
-                          <Link
-                            href='https://goo.gl/maps/oSugQ2YA5uL9wEeQ9'
-                            alt='open Google Maps with location'
-                            rel='noopener noreferrer'
-                            target='_blank'
-                          >
-                            Japan
+                          <Link href='https://goo.gl/maps/oSugQ2YA5uL9wEeQ9'>
+                            <a
+                              alt='open Google Maps with location'
+                              rel='noopener noreferrer'
+                              target='_blank'
+                            >
+                              Japan
+                            </a>
                           </Link>
                         </li>
                       </ul>
@@ -250,14 +251,15 @@ export default function Home() {
                     without sacrificing aesthetics. That's why I've taken it
                     upon myself to learn everything I can about coding, (UX)
                     design, and more (check out my{' '}
-                    <Link
-                      href='Romero-de-Blas_Paula-cv.pdf'
-                      className={`fw-bold ${utilStyles.textDescriptions}`}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      alt='link to my cv/resume as a pdf'
-                    >
-                      CV here
+                    <Link href='Romero-de-Blas_Paula-cv.pdf'>
+                      <a
+                        className={`fw-bold ${utilStyles.textDescriptions}`}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        alt='link to my cv/resume as a pdf'
+                      >
+                        CV here
+                      </a>
                     </Link>{' '}
                     :) !), so I can create beautiful designs that bring people
                     and tech closer together, because I believe the best designs
@@ -275,15 +277,16 @@ export default function Home() {
                   <p className='text-center'>•</p>
                   <p>
                     Let's{' '}
-                    <Link
-                      href='#findme'
-                      className={`fw-bold ${utilStyles.textDescriptions}`}
-                      rel='noopener noreferrer'
-                      alt='link to my contact page'
-                    >
-                      collaborate{' '}
-                    </Link>{' '}
-                    and create designs that will make the world a more
+                    <Link href='#findme'>
+                      <a
+                        className={`fw-bold ${utilStyles.textDescriptions}`}
+                        rel='noopener noreferrer'
+                        alt='link to my contact page'
+                      >
+                        collaborate {' '}
+                      </a>
+                    </Link>
+                    {' '} and create designs that will make the world a more
                     beautiful, functional, and fun place to be 🌻.
                   </p>
                 </div>
@@ -299,7 +302,7 @@ export default function Home() {
               <div className='col-sm-5 border-end pt-4' id='info'>
                 <h5 className={`${utilStyles.headingMd}`}>
                   {' '}
-                  <Link
+                  <a
                     href='Romero-de-Blas_Paula-cv.pdf'
                     target='_blank'
                     rel='noopener noreferrer'
@@ -309,15 +312,17 @@ export default function Home() {
                     Check out my{' '}
                     <span className={`fw-bold ${utilStyles.underlined}`}>
                       resume
-                    </span>{' '}
-                  </Link>
+                    </span>
+                  </a>{' '}
                 </h5>
                 <h5 className={`${utilStyles.headingMd}`}>
-                  <Link href='#findme' alt='link to contact-me page'>
-                    Let's{' '}
-                    <span className={`fw-bold ${utilStyles.underlined}`}>
-                      connect
-                    </span>
+                  <Link href='#findme'>
+                    <a alt='link to contact-me page'>
+                      Let's{' '}
+                      <span className={`fw-bold ${utilStyles.underlined}`}>
+                        connect
+                      </span>
+                    </a>
                   </Link>
                 </h5>
               </div>
@@ -386,13 +391,14 @@ export default function Home() {
                     <p
                       className={`align-self-center mb-0 ${utilStyles.textDescriptions} ${utilStyles.mail}`}
                     >
-                      <Link
-                        href='mailto:                      hi@paulardb.design'
-                        alt='open email provider to email'
-                        rel='noopener noreferrer'
-                        target='_blank'
-                      >
-                        hi@paulardb.design
+                      <Link href='mailto:                      hi@paulardb.design'>
+                        <a
+                          alt='open email provider to email'
+                          rel='noopener noreferrer'
+                          target='_blank'
+                        >
+                          hi@paulardb.design
+                        </a>
                       </Link>
                     </p>
                   </div>
@@ -409,13 +415,11 @@ export default function Home() {
                 </div>
               </div>
               <div className='border-top col-xs-12 col-md-5 ps-0 pe-5 pb-0 border-end border-bottom d-flex'>
-                <div className={utilStyles.designsPicBox}>
-                  <Image
-                    className={`${utilStyles.designsPic} ms-0`}
-                    src={Avatar}
-                    alt='profile picture'
-                  />
-                </div>
+                <Image
+                  className='img-fluid'
+                  src={Avatar}
+                  alt='profile picture'
+                />
               </div>
             </div>
             <Test />
