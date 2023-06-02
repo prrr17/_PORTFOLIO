@@ -64,6 +64,7 @@
   width: 10%;
   border: none;
   opacity: 0.7;
+  
 }
 
 // Check this out
@@ -72,10 +73,13 @@
   opacity: 0.8;
   backdrop-filter: blur(1px);
   filter: none;
+  height: 100%;
+  width: 100%;
 }
 
 .navbarTogglerIcon {
   border: none;
+  color: var(--font-color)
 }
 
 // .navbarTogglerIcon.close {
@@ -84,6 +88,14 @@
 
 .navbarTogglerIcon::selection {
   border: none;
+  color: var(--font-color)
+}
+
+.dropdownMenuBg {
+  background-color: var(--bg-color); 
+  padding-left: 2em;
+  padding-top: 2em;
+  margin-bottom: 2em;
 }
 
 .skip-link {

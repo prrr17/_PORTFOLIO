@@ -28,7 +28,7 @@ export default function NavItem() {
           aria-controls='responsive-navbar-nav'
         />
         <Navbar.Collapse
-          className={styles.burgerMenu}
+          className={`${styles.burgerMenu} ${styles.dropdownMenuBg}`}
           id='responsive-navbar-nav'
         >
           <Nav className='d-flex me-auto justify-content-center w-100'>
