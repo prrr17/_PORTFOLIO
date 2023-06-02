@@ -37,7 +37,7 @@ const portfoliodesign = () => {
                 Portfolio
               </h2>
             </div>
-            <div className='col-sm-6 align-items-end' id='cel1.2'>
+            <div className='col-sm-6 align-items-end d-flex pb-3' id='cel1.2'>
               <h4 className={utilStyles.headingLg}>
                 {' '}
                 This is my portfolio conceptualization process
@@ -46,9 +46,11 @@ const portfoliodesign = () => {
           </div>
           <div className='row border-bottom' id='secondrow'>
             <div className='col-sm-6 border-end' id='cel2.1'>
-              <div className='py-4 pe-3 float-end'>
+              <div
+                className={`py-4 pe-3 float-end ${utilStyles.designsPicBox}`}
+              >
                 <Image
-                  className={`ms-0`}
+                  className={`ms-0 ${utilStyles.designsPic}`}
                   src={PFConcept}
                   alt='portfolio concept picture'
                 />
@@ -93,14 +95,22 @@ const portfoliodesign = () => {
                   <div className='container my-5'>
                     <p>
                       {' '}
-                      As I think of the functionalities and features I want for the website, I generate new ideas and add them to the page. Several ideas were suggested for the light-dark switch, and after gathering opinions and feedback to ensure clarity and ease of use, we concluded that the most compact and clear option was the one that you can actually switch :) :)
+                      As I think of the functionalities and features I want for
+                      the website, I generate new ideas and add them to the
+                      page. Several ideas were suggested for the light-dark
+                      switch, and after gathering opinions and feedback to
+                      ensure clarity and ease of use, we concluded that the most
+                      compact and clear option was the one that you can actually
+                      switch :) :)
                     </p>
                   </div>
                 </div>
                 <div className='col-sm-3 d-flex align-items-center'>
-                  <div className='container'>
+                  <div
+                    className={`py-4 ${utilStyles.designsPicBox}`}
+                  >
                     <Image
-                      className={utilStyles.SwitchesSample}
+                      className={`${utilStyles.designsPic}`}
                       src={SwitchesSample}
                       alt='portfolio concept picture'
                     />
@@ -144,7 +154,13 @@ const portfoliodesign = () => {
             <div className='col-sm-6 border-end' id='cel3.1'>
               <div className='text-end py-4 pe-3 float-end'>
                 <p>
-                I began creating the holistic concept of the website by designing the homepage using Figma. At first, I planned to base it on round shapes and arches to convey a more organic, flowing feel. However, upon further consideration, I found that using straight lines as a theme resulted in a cleaner and more streamlined design that was easier to navigate and understand.
+                  I began creating the holistic concept of the website by
+                  designing the homepage using Figma. At first, I planned to
+                  base it on round shapes and arches to convey a more organic,
+                  flowing feel. However, upon further consideration, I found
+                  that using straight lines as a theme resulted in a cleaner and
+                  more streamlined design that was easier to navigate and
+                  understand.
                 </p>
               </div>
             </div>
@@ -152,7 +168,7 @@ const portfoliodesign = () => {
             <div className='col' id='cel3.2'>
               <div className={`${utilStyles.profilePicBox} float-end`}>
                 <Image
-                  className={`ms-0 p-0`}
+                  className={`ms-0 p-0 ${utilStyles.designsPic}`}
                   src={PastExample}
                   alt='portfolio discarded concept picture'
                 />
@@ -164,9 +180,9 @@ const portfoliodesign = () => {
             id='forthrow'
           >
             <div className='col-sm-6' id='cel4.1'>
-              <div className='py-4'>
+              <div className={`${utilStyles.designsPicBox} py-4`}>
                 <Image
-                  className={`${utilStyles.profilePic} ms-0 p-0`}
+                  className={`${utilStyles.designsPic}`}
                   src={Home_MU}
                   alt='portfolio concept home picture'
                 />
@@ -182,20 +198,19 @@ const portfoliodesign = () => {
                   </p>
                 </div>
               </div>
-              <div className='row border-bottom'>
+              <div className='row'>
                 <div className='container my-5'>
                   <p>
                     Finally, for the code, I used Next.js, and some Sass. You
                     can check it out directly on my{' '}
-                    <Link href='https://github.com/prrr17/_PORTFOLIO'>
-                      <a
-                        className={`fw-bold ${utilStyles.underlined}`}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        alt='link to the portfolio repository'
-                      >
-                        GitHub repository.
-                      </a>
+                    <Link
+                      href='https://github.com/prrr17/_PORTFOLIO'
+                      className={`fw-bold ${utilStyles.underlined}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      alt='link to the portfolio repository'
+                    >
+                      GitHub repository.
                     </Link>
                   </p>
                 </div>
@@ -205,11 +220,11 @@ const portfoliodesign = () => {
           <div className='row d-flex justify-content-center border-bottom'>
             <div className='container my-2 pt-2'>
               {' '}
-              <h3 className='text-center'>Figma (semi)Final Mock-ups</h3>
+              <h3 className='text-center'>Figma (semi)Final Mockups</h3>
             </div>
-            <div className={`${utilStyles.reducedPic} container my-2`}>
+            <div className={`${utilStyles.designsPicBox} my-2 mx-0`}>
               <Image
-                className=''
+                className={`${utilStyles.mockupPic}`}
                 src={HOME_MockUp}
                 alt='portfolio concept picture'
               />
