@@ -82,6 +82,9 @@ const design_template = () => {
               </div>
               <div className='row'>
                 <div className='container my-5'>
+                <h4 className={utilStyles.headingMd}>
+                   Title of the section
+                  </h4>
                   <p> Loren Ipsum</p>
                   <p> Loren Ipsum</p>
                 </div>
@@ -94,6 +97,9 @@ const design_template = () => {
           >
             <div className='col-sm-6 border-end' id='cel3.1'>
               <div className='text-end py-4 pe-3 float-end'>
+              <h4 className={utilStyles.headingMd}>
+                   Title of the section
+                  </h4>
                 <p>Loren Ipsum</p>
               </div>
             </div>

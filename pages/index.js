@@ -44,7 +44,7 @@ export default function Home() {
               </div>{' '}
             </div>
           </div>
-          <div className='mx-auto row g-0'>
+          <div className='mx-0 row g-0'>
             <div className='col-lg-6 col-12 pr-3'>
               {' '}
               <h1
@@ -133,7 +133,7 @@ export default function Home() {
                   <div className={utilStyles.findOutBox2}>
                     <Link href='#about'>
                       <p
-                        className={`text-end h-50 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText}`}
+                        className={`text-end h-50 animate__animated animate__fadeInDown animate__delay-1s ${utilStyles.verticalText} ${utilStyles.verticalText2}`}
                       >
                         find out more
                       </p>
@@ -388,9 +388,9 @@ export default function Home() {
                     >
                       <Link
                         href='mailto:                      hi@paulardb.design'
-                        alt='open email provider to email'
                         rel='noopener noreferrer'
                         target='_blank'
+                        alt='open email provider to email'
                       >
                         hi@paulardb.design
                       </Link>

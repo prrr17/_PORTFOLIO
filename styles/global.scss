@@ -5,14 +5,14 @@ html,
   --font-color: #383636;
   --color-white: #ffffff;
   --bs-border-color: var(--font-color)!important;
-  --step--2: clamp(0.33rem, calc(0.32rem + 0.07vw), 0.43rem);
-  --step--1: clamp(0.54rem, calc(0.52rem + 0.11vw), 0.7rem);
-  --step-0: clamp(0.88rem, calc(0.84rem + 0.18vw), 1.13rem);
-  --step-1: clamp(1.42rem, calc(1.36rem + 0.29vw), 1.82rem);
-  --step-2: clamp(2.29rem, calc(2.2rem + 0.47vw), 2.95rem);
-  --step-3: clamp(3.71rem, calc(3.56rem + 0.76vw), 4.76rem);
-  --step-4: clamp(6rem, calc(5.75rem + 1.22vw), 7.71rem);
-  --step-5: clamp(9.7rem, calc(9.31rem + 1.98vw), 12.48rem);
+  --step--2: clamp(0.63rem, calc(0.56rem + 0.37vw), 0.84rem);
+  --step--1: clamp(0.84rem, calc(0.75rem + 0.49vw), 1.13rem);
+  --step-0: clamp(1.13rem, calc(0.99rem + 0.65vw), 1.50rem);
+  --step-1: clamp(1.50rem, calc(1.33rem + 0.87vw), 2.00rem);
+  --step-2: clamp(2.00rem, calc(1.77rem + 1.16vw), 2.67rem);
+  --step-3: clamp(2.66rem, calc(2.36rem + 1.55vw), 3.55rem);
+  --step-4: clamp(3.55rem, calc(3.14rem + 2.06vw), 4.74rem);
+  --step-5: clamp(8.54rem, calc(7.55rem + 4.95vw), 11.39rem);
 }
 
 [data-theme='dark'] {

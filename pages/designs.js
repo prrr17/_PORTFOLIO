@@ -79,27 +79,10 @@ const designs = () => {
                 </Nav.Link>
               </div>
             </div>
-            <div>
-              {' '}
-              <h4 className={`text-end text-wrap pb-5 ${utilStyles.headingLg}`}>
-              This project showcase is now being finished. In the meantime, please check the{' '}
-                <Link
-                  href='https://www.figma.com/proto/MkwIIofd9l10kT10dVXprA/Artket?page-id=234%3A5408&type=design&node-id=322-8440&viewport=-1050%2C102%2C0.4&scaling=scale-down&starting-point-node-id=322%3A8401'
-                  className={`fw-bold ${utilStyles.underlined}`}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  alt='link to the project repository'
-                >
-                  Figma Prototype here.
-                  {'\n'}
-                </Link>{' '}
-              </h4>{' '}
-              {/* <FigmaEmbed /> */}
-            </div>
           </div>
           <div className='row border-bottom' id='SandrineRow'>
             <div className='col-sm-6 border-end' id='SandrineTitlesCel'>
-              <div className='container mt-5 '>
+              <div className='container mt-5'>
                 <Nav.Link href='/sandrine'>
                   <h2 className={`fw-bold ${utilStyles.underlined}`}>
                     Sandrine Molinas' Portfolio
