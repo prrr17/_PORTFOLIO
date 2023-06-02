@@ -19,21 +19,9 @@ jobs:
     name: 'Deploy application'
 
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-          registry-url: https://registry.npmjs.org/
-
-      - name: 'Deploy application'
-        run: |
-          prodRun=""
-          if [[ ${GITHUB_REF} == "refs/heads/main" ]]; then
-            prodRun="--prod"
-          fi
-
-          npx vercel --token ${VERCEL_TOKEN} $prodRun
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-
+- uses: actions/checkout@v3
+- uses: actions/setup-node@v3
+  with:
+    node-version: 18
+- run: npm ci
+- run: npm test
