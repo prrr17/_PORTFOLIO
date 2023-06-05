@@ -14,7 +14,7 @@ import Sticker from '../public/Artket/Sticker_sheet.png';
 import ArtketHome from '../public/Artket/Home.png';
 import ArtketMenu from '../public/Artket/Menu.png';
 import ArtketBid from '../public/Artket/Bid.png';
-import ArtketProfile from '../public/Artket/profile.png';
+import ArtketProfile from '../public/Artket/Profile.png';
 import ArtketChat from '../public/Artket/Chat.png';
 import ArtketLogin from '../public/Artket/Login.png';
 import ArtketArtists from '../public/Artket/Artists.png';
