@@ -13,6 +13,7 @@ import FigmaSS from '../public/Figma_Screenshot.jpeg';
 // import FigmaEmbed from '../components/FigmaEmbeded'
 import FavIdea from '../public/Artbar/favIdea.png';
 import ArtketThumbnail from '/public/Artket/thumbnails/Thumbnail2.png';
+import GreenupThumbnail from '/public/GreenUp/Thumbnail.png';
 import SandrineLanding from '/public/Sandrine/sandrineLanding.png';
 import RandomizeSS from '../public/RandomizeSS.jpg';
 import GoBack from '../components/GoBack';
@@ -45,6 +46,38 @@ const designs = () => {
             </div>
             <div className='col-sm-6 border-bottom' id='paulaDescription'>
               <h4></h4>
+            </div>
+          </div>
+          <div className='row border-bottom' id='GreenupRow'>
+          <div className='col-sm-6 d-flex border-end justify-center' id='GreeUpLinkText'>
+              <div
+                className={` ${utilStyles.designsPicBox} py-4 pe-3`}
+              >
+                <Nav.Link
+                  href='/greenup'
+                  className=''
+                  alt='link to the GreeUp project'
+                >
+                  <Image
+                    className={`${utilStyles.designsPic} ms-0`}
+                    src={GreenupThumbnail}
+                    alt='GreeUp project picture'
+                  />
+                </Nav.Link>
+              </div>
+            </div>
+            <div className='col-sm-6 text-start' id='GreenupTitlesCel'>
+              <div className='container mt-5'>
+                <Nav.Link href='/greenup'>
+                  <h2 className={`fw-bold ${utilStyles.underlined}`}>GreenUp</h2>
+                  <br></br>
+                </Nav.Link>
+                <Nav.Link href='/greenup'>
+                  <h4>
+                  A comprehensive platform encompassing practical tips, resources, events, and a community of like-minded individuals to support everyone’s sustainability efforts
+                  </h4>
+                </Nav.Link>
+              </div>
             </div>
           </div>
           <div className='row border-bottom text-end' id='ArtketRow'>
@@ -118,7 +151,6 @@ const designs = () => {
               </div>
             </div>
           </div>
-          F
           <div className='row border-bottom' id='ArtbarRow'>
             <div className='col-sm-6 border-end' id='ArtbaPicCel'>
               <div
@@ -138,7 +170,7 @@ const designs = () => {
               </div>
             </div>
             <div className='col-sm-6 d-flex justify-center' id='ArtbarLinkText'>
-              <div className='container mt-5 '>
+              <div className='container mt-5'>
                 <Nav.Link href='/artbar'>
                   <h2 className={`fw-bold ${utilStyles.underlined}`}>ARTBAR</h2>
                   <br></br>

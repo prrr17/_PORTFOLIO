@@ -33,5 +33,13 @@ Dark mode
     [x] P logo
     [x]  Icons
 
+_____
+
+REMEMBER HOW TO
+START -> terminal
+    cd /Users/paulardb/Documents/DesignAndIT/_Portfolio/_CODE/nextjs-blog
+    npm run dev
+(+open http://localhost:3000 )
+
 TO DEPLOY -> terminal
     npx vercel --prod

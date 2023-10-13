@@ -24,7 +24,7 @@ import ArtketSummary from '../public/Artket/Summary.png';
 import ArtketArtistAB from '../public/Artket/artist_A-B.png';
 import ArtketBidAB from '../public/Artket/bidding_A-B.png';
 import ArtketSettings from '../public/Artket/MenuSettings.png';
-import GoogleUX from '../public/Artket/GoogleUX.png';
+import GoogleUX from '../public/GoogleUX.png';
 
 const artket = () => {
   return (
@@ -133,7 +133,7 @@ const artket = () => {
                     >
                       complete PDF version here
                     </Link>{' '}
-                    . If you're eager to explore the prototype, you can do so by
+                    . If you are eager to explore the prototype, you can do so by
                     visiting this{' '}
                     <Link
                       href='https://www.figma.com/proto/MkwIIofd9l10kT10dVXprA/Artket?page-id=234%3A5408&type=design&node-id=322-8440&viewport=-1050%2C102%2C0.4&scaling=scale-down&starting-point-node-id=322%3A8401'
@@ -152,7 +152,7 @@ const artket = () => {
                   </p>{' '}
                   <p>
                     When interacting with the prototype (by clicking anywhere on
-                    the screen), you'll notice certain elements turning
+                    the screen), you will notice certain elements turning
                     blue—these represent active options on each page. Enjoy
                     exploring the app prototype!{' '}
                   </p>{' '}
@@ -248,7 +248,7 @@ const artket = () => {
                   <Image
                     className={`${utilStyles.designsPicSmaller}`}
                     src={ArtketProfile}
-                    alt='whatever'
+                    alt='Artket Profile Screen'
                   />
                 </div>
               </div>
@@ -322,7 +322,7 @@ const artket = () => {
                   <Image
                     className={`ms-0 p-0 ${utilStyles.mockupPic}`}
                     src={ArtketBid}
-                    alt='whatever'
+                    alt='Artket Bids Screen'
                   />
                 </div>
               </div>
@@ -681,7 +681,7 @@ const artket = () => {
               <Image
                 className={`${utilStyles.mockupPic}`}
                 src={ArtketThumbnail2}
-                alt='whatever'
+                alt='Artket presentation screen'
               />
             </div>
             <div
@@ -760,7 +760,7 @@ const artket = () => {
               <Image
                 className={`${utilStyles.mockupPic}`}
                 src={GoogleUX}
-                alt='whatever'
+                alt='Google UX design thinking framework'
               />
             </div>
             <div className='container text-center mb-2 mx-0'>
