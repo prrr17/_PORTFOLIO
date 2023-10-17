@@ -115,7 +115,7 @@ const GreenUp = () => {
                     <Image
                       className={`ms-0 ${utilStyles.designsPic}`}
                       src={GreenUpDashboard}
-                      alt='dashboard screen'
+                      alt='dashboard screen on iPad 11"'
                     />
                   </div>
                 </div>
@@ -371,7 +371,7 @@ const GreenUp = () => {
                   <Image
                     className={`${utilStyles.mockupPic}`}
                     src={SiteMap}
-                    alt='screen displaying log in screen'
+                    alt='site map diagram'
                   />
                 </div>
               </div>
@@ -381,14 +381,14 @@ const GreenUp = () => {
                   <Image
                     className={`${utilStyles.mockupPic}`}
                     src={GreenUpPersona1}
-                    alt='screen displaying habits in a weekly basis'
+                    alt='persona 1'
                   />
                 </div>{' '}
                 <div className={`col ${utilStyles.designsPicBox} py-2`}>
                   <Image
                     className={`${utilStyles.mockupPic}`}
                     src={GreenUpPersona2}
-                    alt='screen displaying habits in a monthly basis'
+                    alt='persona 2'
                   />
                 </div>
               </div>
@@ -397,7 +397,7 @@ const GreenUp = () => {
                   <Image
                     className={`${utilStyles.mockupPic}`}
                     src={GreenUpAims}
-                    alt='whatever'
+                    alt='aims of the platform'
                   />
                 </div>                
               </div>
@@ -406,7 +406,7 @@ const GreenUp = () => {
                   <Image
                     className={`${utilStyles.mockupPic}`}
                     src={GreenUpFeatures}
-                    alt='whatever'
+                    alt='features and future features of the platform'
                   />
                 </div>  
               </div>
@@ -438,7 +438,7 @@ const GreenUp = () => {
                     <Image
                       className={`${utilStyles.designsPic}`}
                       src={GreenUpIcons}
-                      alt='screen displaying the main design components'
+                      alt='display of some icon components'
                     />
                   </div>
                 </div>
@@ -475,7 +475,7 @@ const GreenUp = () => {
                     <Image
                       className={`${utilStyles.designsPic}`}
                       src={GreenUpMarketplace}
-                      alt=''
+                      alt='marketplace screen with the lateral bar open'
                     />
                   </div>
                 </div>
@@ -486,7 +486,7 @@ const GreenUp = () => {
                     <Image
                       className={`${utilStyles.designsPic}`}
                       src={GreenUpNotifications}
-                      alt=''
+                      alt='resources page with the notification pop-up open'
                     />
                   </div>
                 </div>
@@ -499,7 +499,7 @@ const GreenUp = () => {
                     <Image
                       className={`${utilStyles.designsPic}`}
                       src={GreenUpPhoneGoalsBA}
-                      alt='screen displaying the resources screen'
+                      alt='two screen displaying the goal screen before and after usability study'
                     />
                   </div>
                 </div>
@@ -704,7 +704,7 @@ const GreenUp = () => {
                     <Image
                       className={`${utilStyles.designsPicFitTall}`}
                       src={GreenUpPhonePassword}
-                      alt='Dashboard screen'
+                      alt='Forgot your password screen'
                     />
                   </div>
                 </div>
@@ -713,7 +713,7 @@ const GreenUp = () => {
                     <Image
                       className={`${utilStyles.designsPicFitTall}`}
                       src={GreenUpPhoneWelcome}
-                      alt='Dashboard screen'
+                      alt='Wlcome screen'
                     />
                   </div>
                 </div>
@@ -849,7 +849,7 @@ const GreenUp = () => {
                     <Image
                       className={`${utilStyles.designsPicFitTall}`}
                       src={GreenUpPhoneResources}
-                      alt='screen of all art displayed, no filters applied'
+                      alt='iPhone screen of resources'
                     />
                   </div>
                 </div>

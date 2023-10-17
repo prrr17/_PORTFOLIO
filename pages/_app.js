@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { ThemeProvider } from 'next-themes';
 import '@fontsource/italiana';
 import '@fontsource/abhaya-libre/400.css';
+import '@fontsource/poppins';
 import '../styles/global.scss';
 import '../styles/bootstrap-config.scss';
 import 'animate.css';

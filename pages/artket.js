@@ -37,8 +37,8 @@ const artket = () => {
       <Blobs />
       <section
         className='mt-2 pt-2 me-md-5 pb-3'
-        id='designTemplate'
-        alt='template for designs pages'
+        id='artketPage'
+        alt='Artket Project Page'
       >
         <div className='container-fluid'>
           <div className='row border-bottom mt-1 pt-2' id='firstrow'>
@@ -133,8 +133,8 @@ const artket = () => {
                     >
                       complete PDF version here
                     </Link>{' '}
-                    . If you are eager to explore the prototype, you can do so by
-                    visiting this{' '}
+                    . If you are eager to explore the prototype, you can do so
+                    by visiting this{' '}
                     <Link
                       href='https://www.figma.com/proto/MkwIIofd9l10kT10dVXprA/Artket?page-id=234%3A5408&type=design&node-id=322-8440&viewport=-1050%2C102%2C0.4&scaling=scale-down&starting-point-node-id=322%3A8401'
                       className={`fw-bold ${utilStyles.underlined}`}

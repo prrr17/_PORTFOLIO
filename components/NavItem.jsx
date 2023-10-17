@@ -1,6 +1,6 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { GoPrimitiveDot } from 'react-icons/go';
+import { GoDotFill } from 'react-icons/go';
 import PLogo from '../public/p_logo.svg';
 import ThemeToggle from './ThemeToggle';
 import styles from './navbar.module.scss';
@@ -20,7 +20,7 @@ export default function NavItem() {
             <PLogo width='10rem' height='inherit'></PLogo>
           </Navbar.Brand>
           <div className={`${styles.dotBox}`}>
-            <GoPrimitiveDot className={`${styles.P} ${styles.underDot}`} />
+            <GoDotFill className={`${styles.P} ${styles.underDot}`} />
           </div>
         </div>
         <Navbar.Toggle
@@ -38,7 +38,7 @@ export default function NavItem() {
                 about
               </Nav.Link>
               <div className={`d-flex justify-content-center ${styles.dotBox}`}>
-                <GoPrimitiveDot className={styles.underDot} />
+                <GoDotFill className={styles.underDot} />
               </div>
             </div>
 
@@ -48,7 +48,7 @@ export default function NavItem() {
                 designs
               </Nav.Link>
               <div className={`d-flex justify-content-center ${styles.dotBox}`}>
-                <GoPrimitiveDot className={styles.underDot} />
+                <GoDotFill className={styles.underDot} />
               </div>
             </div>
 
@@ -57,7 +57,7 @@ export default function NavItem() {
                 &co
               </Nav.Link>
               <div className={`d-flex justify-content-center ${styles.dotBox}`}>
-                <GoPrimitiveDot className={styles.underDot} />
+                <GoDotFill className={styles.underDot} />
               </div>
             </div>
           </Nav>
@@ -73,7 +73,7 @@ export default function NavItem() {
                 find me
               </Nav.Link>{' '}
               <div className={`d-flex justify-content-center ${styles.dotBox}`}>
-                <GoPrimitiveDot className={styles.underDot} />
+                <GoDotFill className={styles.underDot} />
               </div>
             </div>
           </Nav>

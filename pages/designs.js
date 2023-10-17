@@ -4,15 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Nav from 'react-bootstrap/Nav';
 import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.scss';
 import Blobs from '../components/Blobs';
 import Test from '../components/Test';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import FigmaSS from '../public/Figma_Screenshot.jpeg';
 // import FigmaEmbed from '../components/FigmaEmbeded'
+import utilStyles from '../styles/utils.module.scss';
 import FavIdea from '../public/Artbar/favIdea.png';
 import ArtketThumbnail from '/public/Artket/thumbnails/Thumbnail2.png';
+import FigmaSS from '../public/Figma_Screenshot.jpeg';
 import GreenupThumbnail from '/public/GreenUp/Thumbnail.png';
 import SandrineLanding from '/public/Sandrine/sandrineLanding.png';
 import RandomizeSS from '../public/RandomizeSS.jpg';
@@ -49,10 +50,11 @@ const designs = () => {
             </div>
           </div>
           <div className='row border-bottom' id='GreenupRow'>
-          <div className='col-sm-6 d-flex border-end justify-center' id='GreeUpLinkText'>
-              <div
-                className={` ${utilStyles.designsPicBox} py-4 pe-3`}
-              >
+            <div
+              className='col-sm-6 d-flex border-end justify-center'
+              id='GreeUpLinkText'
+            >
+              <div className={` ${utilStyles.designsPicBox} py-4 pe-3`}>
                 <Nav.Link
                   href='/greenup'
                   className=''
@@ -69,12 +71,16 @@ const designs = () => {
             <div className='col-sm-6 text-start' id='GreenupTitlesCel'>
               <div className='container mt-5'>
                 <Nav.Link href='/greenup'>
-                  <h2 className={`fw-bold ${utilStyles.underlined}`}>GreenUp</h2>
+                  <h2 className={`fw-bold ${utilStyles.underlined}`}>
+                    GreenUp
+                  </h2>
                   <br></br>
                 </Nav.Link>
                 <Nav.Link href='/greenup'>
                   <h4>
-                  A comprehensive platform encompassing practical tips, resources, events, and a community of like-minded individuals to support everyone’s sustainability efforts
+                    A comprehensive platform encompassing practical tips,
+                    resources, events, and a community of like-minded
+                    individuals to support everyone’s sustainability efforts
                   </h4>
                 </Nav.Link>
               </div>
