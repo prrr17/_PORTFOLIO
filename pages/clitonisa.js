@@ -7,22 +7,22 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-// import Clito1 from '../public/Clitonisa/clito1.png';
-// import Armario from '../public/Clitonisa/armario.png';
-// import CajeroAmor from '../public/Clitonisa/cajero_amor.png';
-// import CajeroAutocobro from '../public/Clitonisa/cajero_autocobro.png';
-// import CajeroFila from '../public/Clitonisa/cajero_flla.png';
-// import GymJagger from '../public/Clitonisa/gym_jagger.png';
-// import GymRosa from '../public/Clitonisa/gym_rosa.png';
-// import Pizza from '../public/Clitonisa/pizza_guy.png';
-// import Profecia from '../public/Clitonisa/profecia.png';
-// import Satys from '../public/Clitonisa/satys.png';
-// import Vacaciones from '../public/Clitonisa/vacaciones.png';
-// import CieloBg from '../public/Clitonisa/cielo.png';
-// // import DropsBg from '../public/Clitonisa/drops.png';
-// import FadingBg from '../public/Clitonisa/fadding.png';
-// import PizzaBg from '../public/Clitonisa/pizza.png';
-// // import NeonBg from '../public/Clitonisa/neon.png';
+import Clito1 from '../public/Clitonisa/clito1.png';
+import Armario from '../public/Clitonisa/armario.png';
+import CajeroAmor from '../public/Clitonisa/cajero_amor.png';
+import CajeroAutocobro from '../public/Clitonisa/cajero_autocobro.png';
+import CajeroFila from '../public/Clitonisa/cajero_flla.png';
+import GymJagger from '../public/Clitonisa/gym_jagger.png';
+import GymRosa from '../public/Clitonisa/gym_rosa.png';
+import Pizza from '../public/Clitonisa/pizza_guy.png';
+import Profecia from '../public/Clitonisa/profecia.png';
+import Satys from '../public/Clitonisa/satys.png';
+import Vacaciones from '../public/Clitonisa/vacaciones.png';
+import CieloBg from '../public/Clitonisa/cielo.png';
+// import DropsBg from '../public/Clitonisa/drops.png';
+import FadingBg from '../public/Clitonisa/fadding.png';
+import PizzaBg from '../public/Clitonisa/pizza.png';
+// import NeonBg from '../public/Clitonisa/neon.png';
 
 const clitonisa = () => {
   return (

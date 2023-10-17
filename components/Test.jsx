@@ -4,22 +4,23 @@ import PaulaLogo from '../public/paula_logo.svg';
 
 // `onClick`, `href`, and `ref` need to be passed to the DOM element
 // for proper handling
-const MyButton = React.forwardRef(({ onClick, href }, ref) => {
-  return (
-    <>
-      <div>
+// const MyButton = React.forwardRef(({ onClick, href }, ref) => {
+  // return (
+    // <>
+      // <div>
         {/* <a href={href} onClick={onClick} ref={ref}>
           <PaulaLogo width='10rem' height='inherit'></PaulaLogo>
         </a> */}
-      </div>
-    </>
-  );
-});
+      // </div>
+    // </>
+  // );
+// });
 
 function Test() {
   return (
     <Link href='/' passHref className='d-flex justify-content-end pt-3'>
-      <MyButton className='button' />
+      {/* <MyButton className='button' /> */}
+      <PaulaLogo width='10rem' height='inherit'></PaulaLogo>
     </Link>
   );
 }

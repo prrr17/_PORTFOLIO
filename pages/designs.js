@@ -13,7 +13,6 @@ import FigmaSS from '../public/Figma_Screenshot.jpeg';
 import utilStyles from '../styles/utils.module.scss';
 import FavIdea from '../public/Artbar/favIdea.png';
 import ArtketThumbnail from '/public/Artket/thumbnails/Thumbnail2.png';
-import FigmaSS from '../public/Figma_Screenshot.jpeg';
 import GreenupThumbnail from '/public/GreenUp/Thumbnail.png';
 import SandrineLanding from '/public/Sandrine/sandrineLanding.png';
 import RandomizeSS from '../public/RandomizeSS.jpg';
