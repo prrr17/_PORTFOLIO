@@ -3,6 +3,8 @@ import { ThemeProvider } from 'next-themes';
 import '@fontsource/italiana';
 import '@fontsource/abhaya-libre/400.css';
 import '@fontsource/poppins';
+import '@fontsource/poppins/300.css'; // Light
+import '@fontsource/poppins/600.css'; // Semi-Bold
 import '../styles/global.scss';
 import '../styles/bootstrap-config.scss';
 import 'animate.css';

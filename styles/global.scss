@@ -4,6 +4,10 @@ html,
   --bg-color: #f8eded;
   --font-color: #383636;
   --color-white: #ffffff;
+  --clito-bg-color: #f5a0c4;
+  --clito-text: #060605;
+  --clito-h2: #d2608a;
+  --clito-h3: #3a4487;
   --alpha: 0.8;
   --letterspacing: 0.08rem;
   --bs-border-color: var(--font-color) !important;
@@ -20,6 +24,10 @@ html,
 [data-theme='dark'] {
   --bg-color: #5b6876;
   --font-color: #f8eded;
+  --clito-bg-color: #232d3a;
+  --clito-text: #fdedb0;
+  --clito-h2: #f5a0c4;
+  --clito-h3: #eff0fa;
 }
 
 /* font 

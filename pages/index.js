@@ -198,6 +198,7 @@ export default function Home() {
                         <li>UK</li>
                         <li>Indonesia</li>
                         <li>Thailand</li>
+                        <li>Japan</li>
                       </ul>
                     </div>
                   </div>
@@ -216,12 +217,12 @@ export default function Home() {
                       <ul className='border-start'>
                         <li>
                           <Link
-                            href='https://goo.gl/maps/oSugQ2YA5uL9wEeQ9'
+                            href='https://maps.app.goo.gl/UpSzsqjrfH65VFUX7'
                             alt='open Google Maps with location'
                             rel='noopener noreferrer'
                             target='_blank'
                           >
-                            Japan
+                            Gran Canaria
                           </Link>
                         </li>
                       </ul>

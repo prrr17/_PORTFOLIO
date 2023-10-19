@@ -60,36 +60,35 @@ const andCo = () => {
                       </h5>
                     </div>
                   </div>
-                  <div className='col-xs-12 col-sm-7 col-lg-5 border-top d-flex py-5'>
+                  <div className='col-xs-12 col-sm-7 col-lg-5 border-top py-5 align-center'>
                     {' '}
-                    <div className='row pb-4 d-flex'>
-                      <div classame='col-6 justify-end align-center'>
-                        <h5>Paula's</h5>
+                    <div className='row pb-4'>
+                      <div className='col-6 pt-4'>
+                        <h5 className='align-center'>Paula's</h5>
                       </div>
-                      <div className='col-6 pb-4 d-flex'>
+                      <div className='col-6 pb-4 '>
                         <IGClito />{' '}
                       </div>
-                      <div className='row pt-4 d-flex'>
-                        <div className='col-6 align-center'>
-                          {' '}
-                          <h5>The Project's</h5>
-                        </div>
-                        <div className='col-6 d-flex'>
-                          <IGPaula />
-                        </div>
-                      </div>{' '}
                     </div>
-                    <div classame='col pt-0'></div>
+                    <div className='row pt-4'>
+                      <div className='col-6 align-center'>
+                        {' '}
+                        <h5>The Project's</h5>
+                      </div>
+                      <div className='col-6'>
+                        <IGPaula />
+                      </div>
+                    </div>{' '}
+                    <div className='col pt-0'></div>
                   </div>
                 </div>
                 <div className='row border-top'>
-                  <p className={` ${utilStyles.textDescriptions}`}>
+                  <p className={`pt-4 ${utilStyles.textDescriptions}`}>
                     La Clitonisa, where humor meets dating tales! In this
                     project, I contributed my artistic flair to bring ‘La
                     Clitonisa’ to life. From character design to turning
                     everyday dating anecdotes into comedic visuals, I infused a
-                    touch of fun and relatability into each post. Check out my
-                    role in crafting laughter on your Instagram feed!{' '}
+                    touch of fun and relatability into each post.{' '}
                   </p>{' '}
                   <div className={`col-lg-7 col-sm-5 border-end`}></div>
                   <div
