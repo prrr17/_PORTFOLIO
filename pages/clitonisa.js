@@ -15,7 +15,7 @@ import CajeroAutocobro from '../public/Clitonisa/cajero_autocobro.png';
 import CajeroFila from '../public/Clitonisa/cajero_flla.png';
 import GymJagger from '../public/Clitonisa/gym_jagger.png';
 import GymRosa from '../public/Clitonisa/gym_rosa.png';
-import Pizza from '../public/Clitonisa/pizza_guy.png';
+import PizzaGuy from '../public/Clitonisa/pizza_guy.png';
 import Profecia from '../public/Clitonisa/profecia.png';
 import Satys from '../public/Clitonisa/satys.png';
 import Vacaciones from '../public/Clitonisa/vacaciones.png';
@@ -152,7 +152,7 @@ const ClitonisaPage = () => {
             <div className='container px-5 py-3 d-flex align-center justify-center'>
               <Image
                 src={Clito1}
-                alt='Clito1'
+                alt='Clitonisa pitonisa'
                 className={`${utilStyles.designsPic}`}
               />
             </div>{' '}
@@ -164,14 +164,14 @@ const ClitonisaPage = () => {
             <div className='col-md-12 col-lg-6'>
               <Image
                 src={Armario}
-                alt='Gym Rosa'
+                alt='Clitonisa y un armario de exes'
                 className={`${utilStyles.designsPic}`}
               />
             </div>
             <div className='col-md-12 col-lg-6'>
               <Image
                 src={Profecia}
-                alt='Gym Jagger'
+                alt='Guardándose una blusa'
                 className={`${utilStyles.designsPic}`}
               />
             </div>
@@ -183,7 +183,7 @@ const ClitonisaPage = () => {
             <div className='col-md-12 col-lg-4'>
               <Image
                 src={CajeroAmor}
-                alt='Cajero Amor'
+                alt='Clitonisa con un cajero amoroso'
                 width={800}
                 height={600}
                 className={`${utilStyles.designsPic}`}
@@ -192,7 +192,7 @@ const ClitonisaPage = () => {
             <div className='col-md-12 col-lg-4'>
               <Image
                 src={CajeroFila}
-                alt='Cajero Fila'
+                alt='Clitonisa con un cajero Antipático'
                 width={800}
                 height={600}
                 className={`${utilStyles.designsPic}`}
@@ -201,7 +201,7 @@ const ClitonisaPage = () => {
             <div className='col-md-12 col-lg-4'>
               <Image
                 src={CajeroAutocobro}
-                alt='Cajero Autocobro'
+                alt='Clitonisa en un cajero autocobro'
                 width={800}
                 height={600}
                 className={`${utilStyles.designsPic}`}
@@ -214,8 +214,8 @@ const ClitonisaPage = () => {
               {/* Next Row - Three Images */}
               <div className='col-md-12 col-lg-4'>
                 <Image
-                  src={Pizza}
-                  alt='Pizza'
+                  src={PizzaGuy}
+                  alt='Picture of a guy as a pizza slice'
                   width={800}
                   height={600}
                   className={`${utilStyles.designsPic}`}
@@ -224,7 +224,7 @@ const ClitonisaPage = () => {
               <div className='col-md-12 col-lg-4'>
                 <Image
                   src={Satys}
-                  alt='Satys'
+                  alt='Clitonisa riding to heaven'
                   width={800}
                   height={600}
                   className={`${utilStyles.designsPic}`}
@@ -233,7 +233,7 @@ const ClitonisaPage = () => {
               <div className='col-md-12 col-lg-4'>
                 <Image
                   src={Vacaciones}
-                  alt='Vacaciones'
+                  alt='Clitonisa with an empty suicase'
                   width={800}
                   height={600}
                   className={`${utilStyles.designsPic}`}
@@ -248,7 +248,7 @@ const ClitonisaPage = () => {
               <div className='col-md-12 col-lg-6'>
                 <Image
                   src={GymRosa}
-                  alt='Gym Rosa'
+                  alt='Clitonisa con pesas rosas de 1kg'
                   width={800}
                   height={600}
                   className={`${utilStyles.designsPic}`}
@@ -257,7 +257,7 @@ const ClitonisaPage = () => {
               <div className='col-md-12 col-lg-6'>
                 <Image
                   src={GymJagger}
-                  alt='Gym Jagger'
+                  alt='Clitonisa como amazona y levantando pesas pesadas'
                   width={800}
                   height={600}
                   className={`${utilStyles.designsPic}`}
