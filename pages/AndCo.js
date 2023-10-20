@@ -46,7 +46,11 @@ const andCo = () => {
                   {' '}
                   <div className='col-xs-12 col-sm-5 col-lg-7 border-top border-end text-end py-3 px-3 d-flex flex-column justify-content-between'>
                     <div>
-                      <Nav.Link>
+                      <Nav.Link
+                        href='/clitonisa'
+                        className=''
+                        alt='link to "La Clitonisa" project'
+                      >
                         <h3
                           className={`${utilStyles.headingLg} ${utilStyles.underlined}`}
                         >
