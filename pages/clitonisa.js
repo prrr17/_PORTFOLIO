@@ -59,33 +59,44 @@ const ClitonisaPage = () => {
         <div className='container ps-0'>
           {/* First Row */}
           <div className='row'>
-            <div className='col-md-12 col-lg-6 ps-4'>
-              <h3 className={`${utilStyles.clitoTitle2}`}> Project Overview</h3>
-              <p className={`${utilStyles.clitoText}`}>
-                I collaborated with Sandra, the author of the project, to bring
-                her comedic Instagram page idea, 'La Clitonisa,' to life.
-              </p>
-              <br></br>
-              <h3 className={`${utilStyles.clitoTitle2}`}>
-                Branding and Visual Identity
-              </h3>
-              <p className={`${utilStyles.clitoText}`}>
-                I played a pivotal role in establishing the visual identity of
-                'La Clitonisa.' This included creating a distinct color palette
-                and selecting suitable fonts to ensure brand consistency.
-              </p>
-              <br></br>
-              <h3 className={`${utilStyles.clitoTitle2}`}>
-                Character Refinement and Coloring
-              </h3>
-              <p className={`${utilStyles.clitoText}`}>
-                I was responsible for designing the main character, 'La
-                Clitonisa', after Sandra's sketches, ensuring her appearance
-                matched the comedic and relatable tone of the content.
-                Additionally, I created the faces, bodies, and distinctive
-                features for other characters featured in the posts.
-              </p>
-              <br></br>
+            <div
+              className={`${utilStyles.clitoBgText} col-md-12 col-lg-6 d-grid justify-content-center align-items-center pt-3 mb-3`}
+            >
+              {' '}
+              <div>
+                <h3 className={`${utilStyles.clitoTitle2}`}>
+                  {' '}
+                  Project Overview
+                </h3>
+                <p className={`${utilStyles.clitoText}`}>
+                  I collaborated with Sandra, the author of the project, to
+                  bring her comedic Instagram page idea, 'La Clitonisa,' to
+                  life.
+                </p>
+              </div>
+              <div>
+                <h3 className={`${utilStyles.clitoTitle2}`}>
+                  Branding and Visual Identity
+                </h3>
+                <p className={`${utilStyles.clitoText}`}>
+                  I played a pivotal role in establishing the visual identity of
+                  'La Clitonisa.' This included creating a distinct color
+                  palette and selecting suitable fonts to ensure brand
+                  consistency.
+                </p>
+              </div>
+              <div>
+                <h3 className={`${utilStyles.clitoTitle2}`}>
+                  Character Refinement and Coloring
+                </h3>
+                <p className={`${utilStyles.clitoText}`}>
+                  I was responsible for designing the main character, 'La
+                  Clitonisa', after Sandra's sketches, ensuring her appearance
+                  matched the comedic and relatable tone of the content.
+                  Additionally, I created the faces, bodies, and distinctive
+                  features for other characters featured in the posts.
+                </p>
+              </div>
             </div>
             <div className='col-md-12 col-lg-6'>
               <Image
@@ -93,7 +104,7 @@ const ClitonisaPage = () => {
                 alt='Cielo Background'
                 width={800}
                 height={600}
-                className={`${utilStyles.designsPic} ${utilStyles.fullHeightPic} py-md-4`}
+                className={`${utilStyles.designsPic} ${utilStyles.fullHeightPic} pb-md-3`}
               />
             </div>
           </div>
@@ -106,36 +117,45 @@ const ClitonisaPage = () => {
                   alt='Pizza Background'
                   width={800}
                   height={600}
-                  className={`${utilStyles.designsPic} ${utilStyles.fullHeightPic} pb-md-4`}
+                  className={`${utilStyles.designsPic} ${utilStyles.fullHeightPic} pb-md-3`}
                 />
               </div>
             </div>
-            <div className='col-md-12 col-lg-6'>
-              <h3 className={`${utilStyles.clitoTitle2}`}>
-                Illustration and Artwork
-              </h3>
-              <p className={`${utilStyles.clitoText}`}>
-                Using Procreate, I transformed Sandra's sketches and concepts
-                into polished, professional illustrations. This involved
-                meticulous attention to detail and a keen understanding of the
-                desired humorous aesthetic.
-              </p>
-              <br></br>
-              <h3 className={`${utilStyles.clitoTitle2}`}>Content Creation</h3>
-              <p className={`${utilStyles.clitoText}`}>
-                I translated Sandra's ideas and explanations into visually
-                engaging vignettes, effectively bridging the gap between
-                real-world experiences and her dating life, all while infusing
-                humor into each post.
-              </p>
-              <h3 className={`${utilStyles.clitoTitle2}`}>
-                Adaptation and Creativity
-              </h3>
-              <p className={`${utilStyles.clitoText}`}>
-                Throughout the project, I demonstrated flexibility by making
-                adjustments, fine-tuning details, and occasionally suggesting
-                changes to enhance the overall quality of the content.
-              </p>
+            <div
+              className={`${utilStyles.clitoBgText} col-md-12 col-lg-6 d-grid justify-content-center align-items-center py-3 mb-3`}
+            >
+              <div>
+                <h3 className={`${utilStyles.clitoTitle2}`}>
+                  Illustration and Artwork
+                </h3>
+                <p className={`${utilStyles.clitoText}`}>
+                  Using Procreate, I transformed Sandra's sketches and concepts
+                  into polished, professional illustrations. This involved
+                  meticulous attention to detail and a keen understanding of the
+                  desired humorous aesthetic.
+                </p>
+              </div>
+              <div>
+                <h3 className={`${utilStyles.clitoTitle2}`}>
+                  Content Creation
+                </h3>
+                <p className={`${utilStyles.clitoText}`}>
+                  I translated Sandra's ideas and explanations into visually
+                  engaging vignettes, effectively bridging the gap between
+                  real-world experiences and her dating life, all while infusing
+                  humor into each post.
+                </p>
+              </div>
+              <div>
+                <h3 className={`${utilStyles.clitoTitle2}`}>
+                  Adaptation and Creativity
+                </h3>
+                <p className={`${utilStyles.clitoText}`}>
+                  Throughout the project, I demonstrated flexibility by making
+                  adjustments, fine-tuning details, and occasionally suggesting
+                  changes to enhance the overall quality of the content.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -143,7 +163,11 @@ const ClitonisaPage = () => {
 
       <section id='clitonisa_illustrations pt-5'>
         <div className='container text-center pt-5'>
-          <h3 className={`${utilStyles.clitoTitle2} pt-4`}>Illustrations</h3>
+          <h3
+            className={`${utilStyles.clitoTitle2} ${utilStyles.clitoBgText} pt-4`}
+          >
+            Illustrations
+          </h3>
         </div>
 
         <div className='container'>
@@ -178,14 +202,12 @@ const ClitonisaPage = () => {
           </div>
           {/* Third Row */}
 
-          <div className='row px-2 py-2'>
+          <div className='row py-2'>
             {/* Next Row - Three Images */}
             <div className='col-md-12 col-lg-4'>
               <Image
                 src={CajeroAmor}
                 alt='Clitonisa con un cajero amoroso'
-                width={800}
-                height={600}
                 className={`${utilStyles.designsPic}`}
               />
             </div>
@@ -193,8 +215,6 @@ const ClitonisaPage = () => {
               <Image
                 src={CajeroFila}
                 alt='Clitonisa con un cajero Antipático'
-                width={800}
-                height={600}
                 className={`${utilStyles.designsPic}`}
               />
             </div>
@@ -202,55 +222,45 @@ const ClitonisaPage = () => {
               <Image
                 src={CajeroAutocobro}
                 alt='Clitonisa en un cajero autocobro'
-                width={800}
-                height={600}
                 className={`${utilStyles.designsPic}`}
               />
             </div>{' '}
           </div>
 
-          <div className='container'>
-            <div className='row'>
+          <div className=''>
+            <div className='row px-0'>
               {/* Next Row - Three Images */}
               <div className='col-md-12 col-lg-4'>
                 <Image
                   src={PizzaGuy}
-                  alt='Picture of a guy as a pizza slice'
-                  width={800}
-                  height={600}
+                  alt='Chico como porción de pizza y Clitonisa volando hacia él'
                   className={`${utilStyles.designsPic}`}
                 />
               </div>
               <div className='col-md-12 col-lg-4'>
                 <Image
                   src={Satys}
-                  alt='Clitonisa riding to heaven'
-                  width={800}
-                  height={600}
+                  alt='Clitonisa montando hacia el cielo'
                   className={`${utilStyles.designsPic}`}
                 />
               </div>
               <div className='col-md-12 col-lg-4'>
                 <Image
                   src={Vacaciones}
-                  alt='Clitonisa with an empty suicase'
-                  width={800}
-                  height={600}
+                  alt='Clitonisa con malete vacía de ropa en habitación de hotel y amiga como Doraemon'
                   className={`${utilStyles.designsPic}`}
                 />
               </div>
             </div>
           </div>
 
-          <div className='container'>
-            <div className='row'>
+          <div className=''>
+            <div className='row py-2'>
               {/* Next Row - Two Images */}
               <div className='col-md-12 col-lg-6'>
                 <Image
                   src={GymRosa}
                   alt='Clitonisa con pesas rosas de 1kg'
-                  width={800}
-                  height={600}
                   className={`${utilStyles.designsPic}`}
                 />
               </div>
@@ -258,8 +268,6 @@ const ClitonisaPage = () => {
                 <Image
                   src={GymJagger}
                   alt='Clitonisa como amazona y levantando pesas pesadas'
-                  width={800}
-                  height={600}
                   className={`${utilStyles.designsPic}`}
                 />
               </div>
