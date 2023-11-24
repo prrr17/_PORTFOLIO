@@ -145,7 +145,7 @@ const artket = () => {
                       link.
                       {'\n'}
                     </Link>{' '}
-                    . Please note that this prototype was created using Figma,
+                     Please note that this prototype was created using Figma,
                     and while it showcases the main screens and user flow, as
                     well as some extra ones to make it more playful, not all
                     screens have been designed.{' '}

@@ -14,6 +14,7 @@ import utilStyles from '../styles/utils.module.scss';
 import FavIdea from '../public/Artbar/favIdea.png';
 import ArtketThumbnail from '/public/Artket/thumbnails/Thumbnail2.png';
 import GreenupThumbnail from '/public/GreenUp/Thumbnail.png';
+import EcoOceansThumbnail from '/public/EcoOceanHub/iPad_Home_front.png'
 import SandrineLanding from '/public/Sandrine/sandrineLanding.png';
 import RandomizeSS from '../public/RandomizeSS.jpg';
 import GoBack from '../components/GoBack';
@@ -44,9 +45,73 @@ const designs = () => {
                 Designs
               </h2>
             </div>
-            <div className='col-sm-6 border-bottom' id='paulaDescription'>
+            <div className='col-sm-6 border-bottom'>
               <h4></h4>
             </div>
+          </div>
+          <div className='row mt-1 ms-4 pt-2' id='chosing'>
+            <div
+              className='col-sm-6 border-bottom'
+              id='UXDev'
+            ><Nav.Link
+                  href='/'
+                  className=''
+                  alt='link to the XX project'
+                >
+              <h5
+                className={`text-end text-wrap pb-5 fw-bold text-decoration-underline ${utilStyles.headingSm}`}
+              >
+                UX/Dev
+              </h5></Nav.Link>
+            </div>
+            <div className='col-sm-6 border-bottom  pb-5 ' id='IllustrationChoice'>
+            <Nav.Link
+                  href='/'
+                  className=''
+                  alt='link to the XX project'
+                >
+              <h5
+                className={`text-start text-wrapfw-bold ${utilStyles.underlined} ${utilStyles.headingSm}`}
+              >
+                Illustration
+              </h5></Nav.Link>
+            </div>
+          </div>
+          <div className='row border-bottom text-end' id='EcoOceansRow'>
+          <div className='col-sm-6 border-end' id='EcoOceansCel'>
+              <div className='container mt-5'>
+                <Nav.Link href='/ecooceanshub'>
+                  <h2 className={`fw-bold ${utilStyles.underlined}`}>
+                    Eco Oceans Hub
+                  </h2>
+                  <br></br>
+                </Nav.Link>
+                <Nav.Link href='/ecooceanshub'>
+                  <h4>
+                  An immersive digital ecosystem uniting marine enthusiasts, scientists, and conservationists through curated resources, collaborative events, and a thriving community dedicated to the cause of ocean preservation.
+                  </h4>
+                </Nav.Link>
+              </div>
+            </div>
+            <div
+              className='col-sm-6 d-flex justify-center'
+              id='EcoOceansLinkText'
+            >
+              <div className={` ${utilStyles.designsPicBox} py-4 pe-3`}>
+                <Nav.Link
+                  href='/ecooceanshub'
+                  className=''
+                  alt='link to the EcoOceans Hub project'
+                >
+                  <Image
+                    className={`${utilStyles.designsPic} ms-0`}
+                    src={EcoOceansThumbnail}
+                    alt='Eco Oceans project picture'
+                  />
+                </Nav.Link>
+              </div>
+            </div>
+            
           </div>
           <div className='row border-bottom' id='GreenupRow'>
             <div
