@@ -8,7 +8,6 @@ import Blobs from '../components/Blobs';
 import Test from '../components/Test';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import Pic from '/public/EcoOceanHub/iPhone_Home_front.png';
 import iPadContribute from '/public/EcoOceanHub/iPad_contribute_R.png';
 import iPadHome from '/public/EcoOceanHub/iPad_Home_front.png';
 import iPadMenu from '/public/EcoOceanHub/iPad_Menu_R.png';
@@ -29,6 +28,7 @@ import EcoNavbar from '/public/EcoOceanHub/navbar.png';
 import StickerSheet from '/public/EcoOceanHub/stickersheet.png';
 import Contrast1 from '/public/EcoOceanHub/contrast.png';
 import Contrast2 from '/public/EcoOceanHub/contrast2.png';
+import Verified from '/public/EcoOceanHub/verified.png';
 
 const ecoOceansHub = () => {
   return (
@@ -62,17 +62,43 @@ const ecoOceansHub = () => {
           </div>
           <div className='row border-bottom' id='secondrow'>
             <div className='col-sm-6 border-end' id='cel2.1'>
-              <div
-                className={`py-4 pe-3 float-end ${utilStyles.designsPicBox}`}
-              >
-                <Image
-                  className={`ms-0 ${utilStyles.designsPic}`}
-                  src={Pic}
-                  alt='portfolio concept picture'
-                />
+              <div className='row'>
+                <div
+                  className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
+                >
+                  <Image
+                    className={`ms-0 ${utilStyles.designsPicSmaller}`}
+                    src={iPhoneHome}
+                    alt='portfolio concept picture'
+                  />
+                </div>
+              </div>
+              <div className='row'>
+                <div
+                  className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
+                >
+                  {' '}
+                  <Image
+                    className={`ms-0 p-0 ${utilStyles.designsPicSmaller}`}
+                    src={iPhoneMonthly}
+                    alt='iPhone, Monthly Cause page'
+                  />
+                </div>
+              </div>
+              <div className='row'>
+                <div
+                  className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
+                >
+                  {' '}
+                  <Image
+                    className={`ms-0 p-0 ${utilStyles.mockupPic}`}
+                    src={iPhoneCreate}
+                    alt='iPhone, Create page'
+                  />
+                </div>
               </div>
             </div>
-            <div className='col' id='cel2.2'>
+            <div className='col-sm-6' id='cel2.2'>
               <div className='row d-flex align-items-center'>
                 <div className='container my-5'>
                   <h4 className={utilStyles.headingLg}>
@@ -105,7 +131,7 @@ const ecoOceansHub = () => {
                     navigated through challenges and embraced opportunities,
                     ensuring the final product reflects a harmonious balance of
                     functionality and user delight. This case study delves into
-                    the intricacies of our design journey, presenting insights,
+                    the intricacies of this design journey, presenting insights,
                     challenges, and the collaborative efforts that shaped Eco
                     Oceans Hub.
                   </p>
@@ -114,7 +140,7 @@ const ecoOceansHub = () => {
                     If you are eager to explore the phone prototype, you can do
                     so by visiting this{' '}
                     <Link
-                      href='https://www.figma.com/proto/MkwIIofd9l10kT10dVXprA/Artket?page-id=234%3A5408&type=design&node-id=322-8440&viewport=-1050%2C102%2C0.4&scaling=scale-down&starting-point-node-id=322%3A8401'
+                      href='FALTA'
                       className={`fw-bold ${utilStyles.underlined}`}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -122,10 +148,30 @@ const ecoOceansHub = () => {
                     >
                       link.
                     </Link>{' '}
-                    Please note that this prototype was created using Figma, and
-                    while it showcases the main screens and user flow, as well
-                    as some extra ones to make it more playful, not all screens
-                    have been designed.{' '}
+                    For the tablet prototype{' '}
+                    <Link
+                      href='https://www.figma.com/proto/e5gVeg0MTbrVkAhRZYHCiH/Project-3?page-id=353%3A8050&type=design&node-id=361-10220&viewport=6576%2C3253%2C0.68&t=lTPC17LluHbrfaPl-1&scaling=scale-down&starting-point-node-id=361%3A10220&mode=design'
+                      className={`fw-bold ${utilStyles.underlined}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      alt='link to phone the Prototype on Figma of Eco Ocenas Hub'
+                    >
+                      click here;
+                    </Link>{' '}
+                    and for the Laptop version,{' '}
+                    <Link
+                      href='https://www.figma.com/proto/e5gVeg0MTbrVkAhRZYHCiH/Project-3?page-id=385%3A10579&type=design&node-id=385-15255&viewport=-1749%2C261%2C0.6&t=5aye8SgImFaVGKzx-1&scaling=scale-down&starting-point-node-id=385%3A15255&mode=design'
+                      className={`fw-bold ${utilStyles.underlined}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      alt='link to phone the Prototype on Figma of Eco Ocenas Hub'
+                    >
+                      here;
+                    </Link>
+                    . Please note that this prototype was created using Figma,
+                    and while it showcases the main screens and user flow, as
+                    well as some extra ones to make it more playful, not all
+                    screens have been designed.{' '}
                   </p>{' '}
                   <p>
                     When interacting with the prototype (by clicking anywhere on
@@ -154,20 +200,20 @@ const ecoOceansHub = () => {
             </div>
           </div>
           <div className='row d-flex align-items-center border-bottom'>
-            <div className='col-sm-6 border-end' id='cel2.2'>
+            <div className='col-sm-6 text-end border-end' id='cel2.2'>
               <div className='container my-5'>
                 <h5 className={utilStyles.headingMd}>
                   Mobile-First Design Philosophy
                 </h5>
                 <p>
                   {' '}
-                  Our design process began with a mobile-first approach,
+                  The design process began with a mobile-first approach,
                   recognizing the prevalence of mobile devices in accessing
                   digital content, especially among the “next billion users.”
                   This approach allowed us to create a foundation that
                   prioritizes a seamless and intuitive experience on smaller
                   screens while ensuring adaptability to larger screens such as
-                  iPad Pro (11”) and MacBook Pro (16”). This strategic decision
+                  iPad Pro 11” and MacBook Pro 16”. This strategic decision
                   aligns with the goal of making Eco Oceans Hub accessible to a
                   diverse and global audience, fostering inclusivity in marine
                   conservation efforts.
@@ -187,25 +233,27 @@ const ecoOceansHub = () => {
             </div>
           </div>
           <div className='row border-end border-bottom'>
-            <div className='col-sm-6'>
+            <div className='col-lg-6'>
               <div
-                className={`py-4 pe-3 float-end ${utilStyles.designsPicBox}`}
+                className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
               >
                 <Image
                   className={`ms-0 ${utilStyles.designsPic}`}
                   src={iPadHome}
                   alt='iPad, Home screen'
                 />
-              </div><div
-                className={`py-4 pe-3 float-end ${utilStyles.designsPicBox}`}
+              </div>
+              <div
+                className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
               >
                 <Image
                   className={`ms-0 ${utilStyles.designsPic}`}
                   src={iPadNotifications}
                   alt='iPad, Notifications screen'
                 />
-              </div><div
-                className={`py-4 pe-3 float-end ${utilStyles.designsPicBox}`}
+              </div>
+              <div
+                className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
               >
                 <Image
                   className={`ms-0 ${utilStyles.designsPic}`}
@@ -213,8 +261,17 @@ const ecoOceansHub = () => {
                   alt='iPad, Menu screen'
                 />
               </div>
+              <div
+                className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
+              >
+                <Image
+                  className={`ms-0 ${utilStyles.designsPic}`}
+                  src={MacbookL}
+                  alt='Macbook, Create an Event screen'
+                />
+              </div>
             </div>
-            <div className='col-sm-6'>
+            <div className='col-lg-6'>
               <div className='container my-5'>
                 <h4 className={utilStyles.headingLg}>
                   Design Process Overview
@@ -265,13 +322,13 @@ const ecoOceansHub = () => {
               </div>
             </div>
           </div>
-
           <div
             className='row d-flex align-items-center py-2 border-bottom'
             id='thirdrow'
           >
-            <div className='col-sm-6 border-end' id='cel3.1'>
-              <div className='row text-end py-4 pe-3 float-end border-bottom'>
+            <div className='col-sm-8 text-end border-end' id='cel3.1'>
+              <div className='row text-end py-4 px-3 float-end'>
+                {' '}
                 <h4 className={utilStyles.headingLg}>
                   {' '}
                   Design Decisions and User Experience Considerations
@@ -283,87 +340,41 @@ const ecoOceansHub = () => {
                   approach, then iPad and desktop were adapted afterwards.
                 </p>
               </div>
-              <div className='row pt-2'>
-                <div className='col-md-9'>
-                  <h5 className={utilStyles.headingMd}>Intuitive Navigation</h5>
-                  <p>
-                    Prioritized a clear and intuitive navigation structure,
-                    featuring a hamburger menu and prominently placing the
-                    "Contribute" feature at the top. This design allows users to
-                    effortlessly explore the platform's diverse features,
-                    emphasizing a mobile-first approach for users on various
-                    devices.
-                  </p>
-                </div>
-                <div className='col-md-3'>
-                  <div className={`${utilStyles.profilePicBox} float-end`}>
-                    {' '}
-                    <Image
-                      className={`ms-0 p-0 ${utilStyles.designsPic}`}
-                      src={iPhoneMenu}
-                      alt='iPhone, Menu Picture'
-                    />
-                  </div>
-                </div>
+              <div className='row text-end py-4 px-3 float-end'>
+                {' '}
+                <h5 className={utilStyles.headingMd}>Intuitive Navigation</h5>
+                <p>
+                  Prioritized a clear and intuitive navigation structure,
+                  featuring a hamburger menu and prominently placing the
+                  "Contribute" feature at the top. This design allows users to
+                  effortlessly explore the platform's diverse features,
+                  emphasizing a mobile-first approach for users on various
+                  devices.
+                </p>
               </div>
-              <div className='row'>
-                <div className='col-md-3'>
-                  <div className={`${utilStyles.profilePicBox} float-end`}>
-                    {' '}
-                    
-                    <Image
-                      className={`ms-0 p-0 ${utilStyles.designsPic}`}
-                      src={Contrast1}
-                      alt='WWA contrast picture'
-                    />
-                  </div>
-                  <div className={`${utilStyles.profilePicBox} float-end`}>
-                    {' '}
-                    
-                    <Image
-                      className={`ms-0 p-0 ${utilStyles.designsPic}`}
-                      src={Contrast2}
-                      alt='WWA contrast picture'
-                    />
-                  </div>
-                </div>
-                <div className='col-md-9'>
-                  <h5 className={utilStyles.headingMd}>Inclusive Design</h5>
-                  <p>
-                    Ensured inclusivity by designing features accessible to
-                    users with diverse abilities and perspectives. Prioritizing
-                    readability, clarity (including color contrast and font
-                    choice), and strict adherence to accessibility standards.
-                  </p>
-                </div>
+              <div className='row text-end py-4 px-3 float-end'>
+                {' '}
+                <h5 className={utilStyles.headingMd}>Inclusive Design</h5>
+                <p>
+                  Ensured inclusivity by designing features accessible to users
+                  with diverse abilities and perspectives. Prioritizing
+                  readability, clarity (including color contrast and font
+                  choice), and strict adherence to accessibility standards.
+                </p>
               </div>
-              <div className='row'>
-                <div className='col-sm-3'>
-                  <div className={`${utilStyles.profilePicBox} float-end`}>
-                    {' '}
-                    Pic de scientist mode
-                    <Image
-                      className={`ms-0 p-0 ${utilStyles.designsPic}`}
-                      src={Pic}
-                      alt='whatever'
-                    />
-                  </div>
-                </div>
-                <div className='col-md-9'>
-                  <h5 className={utilStyles.headingMd}>
-                    User-Centric Features
-                  </h5>
-                  <p>
-                    Integrated features tailored to the needs of both scientists
-                    and community members, fostering collaboration and knowledge
-                    sharing. The implementation of "Scientist Mode" allows
-                    verified scientists to contribute research data.
-                  </p>
-                </div>
-                <div className='row text-end py-4 pe-3 float-end'>
+              <div className='row text-end py-4 px-3 float-end'>
+                {' '}
+                <h5 className={utilStyles.headingMd}>User-Centric Features</h5>
+                <p>
+                  Integrated features tailored to the needs of both scientists
+                  and community members, fostering collaboration and knowledge
+                  sharing. The implementation of "Scientist Mode" allows
+                  verified scientists to contribute research data.
+                </p>
+                <div className='row text-end py-4 px-3 float-end'>
                   <h5 className={utilStyles.headingMd}>
                     {' '}
-                    Engagement and Gamification
+                    Engagement & Gamification
                   </h5>
                   <p>
                     Balanced the integration of gamification elements to enhance
@@ -372,7 +383,7 @@ const ecoOceansHub = () => {
                     overall credibility.
                   </p>
                 </div>
-                <div className='row text-end py-4 pe-3 float-end'>
+                <div className='row text-end py-4 px-3 float-end'>
                   <h5 className={utilStyles.headingMd}>Visual Design</h5>
                   <p>
                     Adopted a clean and visually appealing design language with
@@ -386,30 +397,19 @@ const ecoOceansHub = () => {
                   </p>
                 </div>
               </div>
-              <div className='row py-2'>
-                <div className='col-sm-3'>
-                  <div className={`${utilStyles.profilePicBox} float-end`}>
-                    {' '}
-                    Pic de edit profile
-                    <Image
-                      className={`ms-0 p-0 ${utilStyles.designsPic}`}
-                      src={Pic}
-                      alt='whatever'
-                    />
-                  </div>
-                </div>
-                <div className='col-md-9'>
-                  <h5 className={utilStyles.headingMd}>
-                    Personalized User Profiles
-                  </h5>
-                  <p>
-                    Developed user profiles with public and private sections,
-                    allowing users to showcase their contributions,
-                    affiliations, and impact. Striking a balance between
-                    transparency and individual user privacy.
-                  </p>
-                </div>
-                <div className='row py-2 text-end py-4 pe-3 float-end'>
+              <div className='row text-end py-4 px-3 float-end'>
+                {' '}
+                <h5 className={utilStyles.headingMd}>
+                  Personalized User Profiles
+                </h5>
+                <p>
+                  Developed user profiles with public and private sections,
+                  allowing users to showcase their contributions, affiliations,
+                  and impact. Striking a balance between transparency and
+                  individual user privacy.
+                </p>
+                <div className='row text-end py-4 px-3 float-end'>
+                  {' '}
                   <p>
                     These design decisions were guided by a commitment to
                     creating a platform that not only meets functional
@@ -420,28 +420,165 @@ const ecoOceansHub = () => {
               </div>
             </div>
 
-            <div className='col' id='cel3.2'>
-              <div
-                className={`py-4 pe-3 float-end ${utilStyles.designsPicBox}`}
-              >
-                <Image
-                  className={`ms-0 ${utilStyles.designsPic}`}
-                  src={StickerSheet}
-                  alt='stickersheet'
-                />{' '}
+            <div className='col-sm-4' id='cel3.2'>
+              <div className='row pb-4'>
+                <div className='col-sm-6'>
+                  <div className={`${utilStyles.profilePicBox} pt-2 float-end`}>
+                    {' '}
+                    <Image
+                      className={`ms-0 p-0 ${utilStyles.designsPic}`}
+                      src={iPhoneMenu}
+                      alt='iPhone, Menu Picture'
+                    />
+                  </div>
+                </div>
+                <div className='col-sm-6'>
+                  <div className={`${utilStyles.profilePicBox} pt-2 float-end`}>
+                    {' '}
+                    <Image
+                      className={`ms-0 p-0 ${utilStyles.designsPic}`}
+                      src={EcoNavbar}
+                      alt='iPhone, Menu Picture'
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className='row mb-4'>
+                <div className='col-md-6'>
+                  <div className={`${utilStyles.profilePicBox} float-end`}>
+                    {' '}
+                    <Image
+                      className={`ms-0 p-0 ${utilStyles.designsPic}`}
+                      src={Contrast1}
+                      alt='WCAG contrast picture'
+                    />
+                  </div>
+                </div>{' '}
+                <div className='col-md-6'>
+                  <div className={`${utilStyles.profilePicBox} float-end`}>
+                    {' '}
+                    <Image
+                      className={`ms-0 p-0 ${utilStyles.designsPic}`}
+                      src={Contrast2}
+                      alt='WCAG contrast picture'
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className='row mb-4'>
+                <div
+                  className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
+                >
+                  {' '}
+                  <Image
+                    className={`ms-0 p-0 ${utilStyles.designsPic}`}
+                    src={StickerSheet}
+                    alt='stickersheet'
+                  />
+                </div>
+              </div>
+              <div className='row mb-4'>
+                <div
+                  className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
+                >
+                  {' '}
+                  <Image
+                    className={`ms-0 p-0 ${utilStyles.designsPicFitTall}`}
+                    src={Verified}
+                    alt='verified scientist icons'
+                  />
+                </div>
+              </div>
+              <div className='row'>
+                <div
+                  className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
+                >
+                  <Image
+                    className={`ms-0 ${utilStyles.mockupPic}`}
+                    src={iPhoneProfile}
+                    alt='iPhone, Profle screen'
+                  />{' '}
+                </div>
               </div>
             </div>
           </div>
           <div
-            className='row py-2 d-flex align-items-center border-bottom border-end border-start'
+            className='row py-2 d-flex align-items-center border-end border-start'
             id='forthrow'
           >
             <div className='row border-bottom'>
               <div className='col-sm-6 border-end' id='cel4.1'>
+                <div className='row'>
+                  <div className='col-sm-6'>
+                    <div
+                      className={`py-4 float-end ${utilStyles.designsPicBox}`}
+                    >
+                      <Image
+                        className={`ms-0 ${utilStyles.mockupPic}`}
+                        src={iPhoneMarineL}
+                        alt='iPhone, Resources screen'
+                      />
+                    </div>
+                  </div>
+                  <div className='col-sm-6'>
+                    <div
+                      className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
+                    >
+                      <Image
+                        className={`ms-0 ${utilStyles.mockupPic}`}
+                        src={iPhoneMarineR}
+                        alt='iPhone, Resources screen'
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className='row'>
+                  <div className='col-sm-6'>
+                    <div
+                      className={`py-4 float-end ${utilStyles.designsPicBox}`}
+                    >
+                      <Image
+                        className={`ms-0 ${utilStyles.mockupPic}`}
+                        src={iPhoneProfileB}
+                        alt='iPhone, bottom of the Profile screen'
+                      />
+                    </div>
+                  </div>
+                  <div className='col-sm-6'>
+                    <div
+                      className={`py-4 px-3 float-end ${utilStyles.designsPicBox}`}
+                    >
+                      <Image
+                        className={`ms-0 ${utilStyles.mockupPic}`}
+                        src={iPhoneContribute}
+                        alt='iPhone, Contribute screen'
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className='row'>
+                  <div
+                    className={`py-4 pe-3 float-end ${utilStyles.designsPicBox}`}
+                  >
+                    {' '}
+                    <Image
+                      className={`ms-0 p-0 ${utilStyles.designsPicSmaller}`}
+                      src={iPhoneSubmitted}
+                      alt='iPhone, Submitted event  pop-up'
+                    />
+                  </div>
+                </div>
+                <div className={`${utilStyles.designsPicBox} my-2 mx-0`}>
+                  <Image
+                    className={`${utilStyles.designsPicSmaller}`}
+                    src={iPhoneSettings}
+                    alt='iPhone Settings Screen'
+                  />
+                </div>
                 <div className={`${utilStyles.designsPicBox} py-4`}>
                   <Image
                     className={`${utilStyles.designsPic}`}
-                    src={Pic}
+                    src={iPadContribute}
                     alt='whatever'
                   />
                 </div>
@@ -536,145 +673,142 @@ const ecoOceansHub = () => {
                 </div>{' '}
               </div>
             </div>
-            <div className='row py-2'>
-              <div className='container px-md-5 px-2 mx-5 pb-4'>
-                <div className='container px-md-5 px-0 mx-5'>
-                  {' '}
-                  <h4 className={utilStyles.headingLg}>
-                    Potential Impact & Results
-                  </h4>{' '}
-                  <p>
-                    While Eco Oceans Hub is a conceptual project that has not
-                    been developed or launched yet, its potential impact lies in
-                    fostering collaboration between marine scientists and
-                    interested communities. The platform aims to create a space
-                    where valuable scientific research can be shared with the
-                    wider community, promoting awareness and engagement in
-                    marine conservation efforts. Additionally, it serves as a
-                    means to organize scientifically-based campaigns and connect
-                    with potential organizations or individuals, fostering a
-                    collective effort in conservation. Although specific metrics
-                    and results are not available due to the project's current
-                    status, the envisioned impact is centered on the positive
-                    outcomes that could arise from a platform encouraging
-                    knowledge exchange and environmental activism.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='row py-2'>
-              <div className='container px-md-5 px-2 mx-5 pb-4'>
-                <div className='container px-md-5 px-0 mx-5'>
-                  {' '}
-                  <h4 className={utilStyles.headingLg}>Key Learnings</h4>{' '}
-                  <p>
-                    Throughout the design process, key learnings emerged,
-                    emphasizing the importance of user-centricity, inclusivity,
-                    and continuous improvement. The iterative nature of the
-                    design process allowed for adjustments based on user
-                    feedback, reinforcing the significance of usability studies
-                    and engagement with potential users. The balance between
-                    more visually captivating elements and maintaining a
-                    professional tone was a valuable lesson in creating a
-                    credible and engaging platform. The process also underscored
-                    the significance of creating a seamless experience for both
-                    scientists and community members, acknowledging the diverse
-                    needs of these user groups.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='row py-2'>
-              <div className='container px-md-5 px-2 mx-5'>
-                <div className='container px-md-5 px-0 mx-5'>
-                  <h4 className={utilStyles.headingLg}>Next Steps</h4>{' '}
-                  <p className='pb-4'>
-                    As a conceptual project, Eco Oceans Hub is poised for
-                    further development and refinement. The following steps
-                    outline the potential evolution of the platform:
-                  </p>
-                  <h5 className={utilStyles.headingMd}>
-                    User Research Iterations{' '}
-                  </h5>
-                  <p className='pb-4'>
-                    Continued user research iterations will refine the user
-                    experience based on real-world feedback, ensuring that the
-                    platform adapts to user needs and expectations.
-                  </p>
-                  <h5 className={utilStyles.headingMd}>
-                    Development of Data Privacy Features:
-                  </h5>
-                  <p className='pb-4'>
-                    The incorporation of robust data privacy features will be
-                    prioritized in the development phase, ensuring that user
-                    information is handled securely and ethically.
-                  </p>
-                  <h5 className={utilStyles.headingMd}>
-                    Integration of Additional Features
-                  </h5>
-                  <p className='pb-4'>
-                    Exploring the integration of features such as discussion
-                    forums, live streaming for marine events, and a peer-review
-                    system for scientific contributions, will enhance the
-                    platform's functionality and engagement.
-                  </p>
-                  <h5 className={utilStyles.headingMd}>
-                    Partnerships and Collaborations
-                  </h5>
-                  <p className='pb-4'>
-                    Building partnerships with marine research institutions,
-                    environmental organizations, and educators will contribute
-                    to the platform's credibility and expand its reach.
-                  </p>
-                  <h5 className={utilStyles.headingMd}>
-                    Accessibility Enhancements
-                  </h5>
-                  <p className='pb-4'>
-                    Continued efforts will focus on enhancing accessibility,
-                    making Eco Oceans Hub inclusive for users with diverse
-                    abilities and ensuring adherence to global accessibility
-                    standards.
-                  </p>
-                  <h5 className={utilStyles.headingMd}>Public Beta Testing</h5>
-                  <p className='pb-4'>
-                    Before the official launch, conducting a public beta test
-                    will allow a broader audience to interact with the platform,
-                    providing valuable insights and identifying any potential
-                    issues.
-                  </p>
-                  <p className='pb-4'>
-                    These steps reflect a commitment to continuous improvement,
-                    user-centered design, and the realization of Eco Oceans Hub
-                    as a valuable resource for marine scientists and enthusiasts
-                    alike.
-                  </p>
-                </div>
-              </div>
-            </div>{' '}
           </div>
-          <div className='row d-flex justify-content-center border-bottom'>
-            <div className='container my-2 pt-2'>
-              {' '}
-              <h4 className='text-center'>Conclusion</h4>
-              <p>
-                Eco Oceans Hub represents a vision for a collaborative platform
-                bridging the gap between marine scientists and communities.
-                While the project is currently in its conceptual stage, the
-                design decisions, considerations, and insights gained during the
-                process lay a foundation for a user-centric and impactful
-                platform. The journey from empathizing with potential users to
-                defining problems, ideating solutions, iterating and
-                re-iterating, and prototyping reflects a commitment to creating
-                a meaningful and engaging experience in the realm of marine
-                conservation.
-              </p>
+          <div className='row border-bottom py-2'>
+            <div className='container px-md-5 px-2 mx-5 pb-4'>
+              <div className='container px-md-5 px-0 mx-5'>
+                {' '}
+                <h4 className={utilStyles.headingLg}>
+                  Potential Impact & Results
+                </h4>{' '}
+                <p>
+                  While Eco Oceans Hub is a conceptual project that has not been
+                  developed or launched yet, its potential impact lies in
+                  fostering collaboration between marine scientists and
+                  interested communities. The platform aims to create a space
+                  where valuable scientific research can be shared with the
+                  wider community, promoting awareness and engagement in marine
+                  conservation efforts. Additionally, it serves as a means to
+                  organize scientifically-based campaigns and connect with
+                  potential organizations or individuals, fostering a collective
+                  effort in conservation. Although specific metrics and results
+                  are not available due to the project's current status, the
+                  envisioned impact is centered on the positive outcomes that
+                  could arise from a platform encouraging knowledge exchange and
+                  environmental activism.
+                </p>
+              </div>
             </div>
-            <div className={`${utilStyles.designsPicBox} my-2 mx-0`}>
-              <Image
-                className={`${utilStyles.mockupPic}`}
-                src={Pic}
-                alt='whatever'
-              />
+          </div>
+          <div className='row border-bottom py-2'>
+
+            <div className='container px-md-5 px-2 mx-5 pb-4'>
+              <div className='container px-md-5 px-0 mx-5'>
+                {' '}
+                <h4 className={utilStyles.headingLg}>Key Learnings</h4>{' '}
+                <p>
+                  Throughout the design process, key learnings emerged,
+                  emphasizing the importance of user-centricity, inclusivity,
+                  and continuous improvement. The iterative nature of the design
+                  process allowed for adjustments based on user feedback,
+                  reinforcing the significance of usability studies and
+                  engagement with potential users. The balance between more
+                  visually captivating elements and maintaining a professional
+                  tone was a valuable lesson in creating a credible and engaging
+                  platform. The process also underscored the significance of
+                  creating a seamless experience for both scientists and
+                  community members, acknowledging the diverse needs of these
+                  user groups.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className='row border-bottom py-2'>
+
+            <div className='container px-md-5 px-2 mx-5'>
+              <div className='container px-md-5 px-0 mx-5'>
+                <h4 className={utilStyles.headingLg}>Next Steps</h4>{' '}
+                <p className='pb-4'>
+                  As a conceptual project, Eco Oceans Hub is poised for further
+                  development and refinement. The following steps outline the
+                  potential evolution of the platform:
+                </p>
+                <h5 className={utilStyles.headingMd}>
+                  User Research Iterations{' '}
+                </h5>
+                <p className='pb-4'>
+                  Continued user research iterations will refine the user
+                  experience based on real-world feedback, ensuring that the
+                  platform adapts to user needs and expectations.
+                </p>
+                <h5 className={utilStyles.headingMd}>
+                  Development of Data Privacy Features:
+                </h5>
+                <p className='pb-4'>
+                  The incorporation of robust data privacy features will be
+                  prioritized in the development phase, ensuring that user
+                  information is handled securely and ethically.
+                </p>
+                <h5 className={utilStyles.headingMd}>
+                  Integration of Additional Features
+                </h5>
+                <p className='pb-4'>
+                  Exploring the integration of features such as discussion
+                  forums, live streaming for marine events, and a peer-review
+                  system for scientific contributions, will enhance the
+                  platform's functionality and engagement.
+                </p>
+                <h5 className={utilStyles.headingMd}>
+                  Partnerships and Collaborations
+                </h5>
+                <p className='pb-4'>
+                  Building partnerships with marine research institutions,
+                  environmental organizations, and educators will contribute to
+                  the platform's credibility and expand its reach.
+                </p>
+                <h5 className={utilStyles.headingMd}>
+                  Accessibility Enhancements
+                </h5>
+                <p className='pb-4'>
+                  Continued efforts will focus on enhancing accessibility,
+                  making Eco Oceans Hub inclusive for users with diverse
+                  abilities and ensuring adherence to global accessibility
+                  standards.
+                </p>
+                <h5 className={utilStyles.headingMd}>Public Beta Testing</h5>
+                <p className='pb-4'>
+                  Before the official launch, conducting a public beta test will
+                  allow a broader audience to interact with the platform,
+                  providing valuable insights and identifying any potential
+                  issues.
+                </p>
+                <p className='pb-4'>
+                  These steps reflect a commitment to continuous improvement,
+                  user-centered design, and the realization of Eco Oceans Hub as
+                  a valuable resource for marine scientists and enthusiasts
+                  alike.
+                </p>
+              </div>
+            </div>
+          </div>{' '}
+          <div className='row d-flex justify-content-center border-bottom'>
+            <div className='container px-md-5 px-2 py-4 mx-5'>
+              <div className='container px-md-5 px-0 mx-5 text-center'>
+                {' '}
+                <h4 className={utilStyles.headingLg}> Conclusion</h4>
+                <p>
+                  Eco Oceans Hub represents a vision for a collaborative
+                  platform bridging the gap between marine scientists and
+                  communities. While the project is currently in its conceptual
+                  stage, the design decisions, considerations, and insights
+                  gained during the process lay a foundation for a user-centric
+                  and impactful platform. The journey from empathizing with
+                  potential users to defining problems, ideating solutions,
+                  iterating and re-iterating, and prototyping reflects a
+                  commitment to creating a meaningful and engaging experience in
+                  the realm of marine conservation.
+                </p>
+              </div>
             </div>
           </div>
           {/* -------- */}
