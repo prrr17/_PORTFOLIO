@@ -140,11 +140,11 @@ const ecoOceansHub = () => {
                     If you are eager to explore the phone prototype, you can do
                     so by visiting this{' '}
                     <Link
-                      href='FALTA'
+                      href='https://www.figma.com/proto/e5gVeg0MTbrVkAhRZYHCiH/Project-3?page-id=0%3A1&type=design&node-id=476-5670&viewport=275%2C440%2C0.05&t=N9k4ces0zO5cjUeb-1&scaling=scale-down&starting-point-node-id=476%3A5670&mode=design'
                       className={`fw-bold ${utilStyles.underlined}`}
                       target='_blank'
                       rel='noopener noreferrer'
-                      alt='link to phone the Prototype on Figma of Eco Ocenas Hub'
+                      alt='link to the phone prototype on Figma of Eco Ocenas Hub'
                     >
                       link.
                     </Link>{' '}
@@ -154,7 +154,7 @@ const ecoOceansHub = () => {
                       className={`fw-bold ${utilStyles.underlined}`}
                       target='_blank'
                       rel='noopener noreferrer'
-                      alt='link to phone the Prototype on Figma of Eco Ocenas Hub'
+                      alt='link to the tablet prototype on Figma of Eco Ocenas Hub'
                     >
                       click here;
                     </Link>{' '}
@@ -164,7 +164,7 @@ const ecoOceansHub = () => {
                       className={`fw-bold ${utilStyles.underlined}`}
                       target='_blank'
                       rel='noopener noreferrer'
-                      alt='link to phone the Prototype on Figma of Eco Ocenas Hub'
+                      alt='link to the laptop Prototype on Figma of Eco Ocenas Hub'
                     >
                       here;
                     </Link>
