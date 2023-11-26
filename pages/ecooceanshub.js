@@ -137,7 +137,7 @@ const ecoOceansHub = () => {
                   </p>
                   {/* this goes somewhere else */}
                   <p>
-                    If you are eager to explore the phone prototype, you can do
+                    If you would like to explore the phone prototype, you can do
                     so by visiting this{' '}
                     <Link
                       href='https://www.figma.com/proto/e5gVeg0MTbrVkAhRZYHCiH/Project-3?page-id=0%3A1&type=design&node-id=476-5670&viewport=275%2C440%2C0.05&t=N9k4ces0zO5cjUeb-1&scaling=scale-down&starting-point-node-id=476%3A5670&mode=design'
