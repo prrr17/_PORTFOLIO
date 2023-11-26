@@ -156,7 +156,7 @@ const ecoOceansHub = () => {
                       rel='noopener noreferrer'
                       alt='link to the tablet prototype on Figma of Eco Ocenas Hub'
                     >
-                      click here;
+                      click here,
                     </Link>{' '}
                     and for the Laptop version,{' '}
                     <Link
@@ -166,7 +166,7 @@ const ecoOceansHub = () => {
                       rel='noopener noreferrer'
                       alt='link to the laptop Prototype on Figma of Eco Ocenas Hub'
                     >
-                      here;
+                      here
                     </Link>
                     . Please note that this prototype was created using Figma,
                     and while it showcases the main screens and user flow, as
