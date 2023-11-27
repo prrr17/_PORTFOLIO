@@ -34,7 +34,7 @@ const design_template = () => {
               </h2>
             </div>
             <div className='col-sm-6 align-items-end d-flex pb-3' id='cel1.2'>
-              <h3 className={utilStyles.headingLg}>
+              <h3 className={utilStyles.headingXl}>
                 {' '}
                 This is the Grid for the Design Pages I use
               </h3>
@@ -82,7 +82,7 @@ const design_template = () => {
               </div>
               <div className='row'>
                 <div className='container my-5'>
-                <h4 className={utilStyles.headingMd}>
+                <h4 className={utilStyles.headingLg}>
                    Title of the section
                   </h4>
                   <p> Loren Ipsum</p>
@@ -97,7 +97,7 @@ const design_template = () => {
           >
             <div className='col-sm-6 border-end' id='cel3.1'>
               <div className='text-end py-4 pe-3 float-end'>
-              <h4 className={utilStyles.headingMd}>
+              <h4 className={utilStyles.headingLg}>
                    Title of the section
                   </h4>
                 <p>Loren Ipsum</p>

@@ -63,7 +63,7 @@ const GreenUp = () => {
               </h2>
             </div>
             <div className='col-sm-6 align-items-end d-flex pb-3' id='cel1.2'>
-              <h3 className={utilStyles.headingLg}>
+              <h3 className={utilStyles.headingXl}>
                 {' '}
                 Empowering Sustainability Through Practical Tips, Resources, and
                 Community
@@ -127,7 +127,7 @@ const GreenUp = () => {
                 id='cel2.2.1'
               >
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}>Summary</h4>
+                  <h4 className={utilStyles.headingLg}>Summary</h4>
                   <p>
                     Welcome to <strong>GreenUp</strong>, your modern art market
                     and community. In the following paragraphs, I will take you
@@ -204,7 +204,7 @@ const GreenUp = () => {
               >
                 {' '}
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}>Introduction</h4>
+                  <h4 className={utilStyles.headingLg}>Introduction</h4>
                   <p>
                     {' '}
                     As part of my{' '}
@@ -227,7 +227,7 @@ const GreenUp = () => {
                     individuals, united to support and amplify sustainability
                     efforts.
                   </p>{' '}
-                  <h5 className={utilStyles.headingSm}>GOAL STATEMENT</h5>
+                  <h4 className={utilStyles.headingLg}>GOAL STATEMENT</h4>
                   <p>
                     Our primary objective is to develop a responsive platform
                     that serves as a comprehensive and engaging platform for
@@ -251,9 +251,9 @@ const GreenUp = () => {
                 className='row my-4 pt-2 d-flex align-items-center'
                 id='cel2.2.3'
               >
-                <h5 className={utilStyles.headingSm}>
+                <h4 className={utilStyles.headingLg}>
                   GOOGLE UX DESIGN CERTIFICATES
-                </h5>
+                </h4>
                 <p>
                   Here you can find a{' '}
                   <Link
@@ -287,7 +287,7 @@ const GreenUp = () => {
                 className='row border-top text-end py-4 pe-3 float-end'
                 id='cel3.1.2'
               >
-                <h4 className={utilStyles.headingMd}>
+                <h4 className={utilStyles.headingLg}>
                   Design Process Overview
                 </h4>
                 <p>
@@ -297,7 +297,7 @@ const GreenUp = () => {
                   The process consisted of several key steps, each contributing
                   to the overall potential success of the project.
                 </p>
-                <h5 className={utilStyles.headingSm}>EMPATHIZE</h5>
+                <h4 className={utilStyles.headingLg}>EMPATHIZE</h4>
                 <p>
                   The first phase. We need to start by understanding the target
                   users. I started by conducting extensive user research to
@@ -307,7 +307,7 @@ const GreenUp = () => {
                   into their pain points and expectations within the
                   eco-concious community.
                 </p>{' '}
-                <h5 className={utilStyles.headingSm}>DEFINE</h5>
+                <h4 className={utilStyles.headingLg}>DEFINE</h4>
                 <p>
                   Building upon the research findings, clear problem statements
                   and user stories were defined, which then guided the design
@@ -315,7 +315,7 @@ const GreenUp = () => {
                   established specific goals and deliverables to ensure the
                   platform would address their requirements effectively.
                 </p>{' '}
-                <h5 className={utilStyles.headingSm}>IDEATE</h5>
+                <h4 className={utilStyles.headingLg}>IDEATE</h4>
                 <p>
                   {' '}
                   During this phase, it is important to explore a wide range of
@@ -326,7 +326,7 @@ const GreenUp = () => {
                   their feasibility, desirability, and viability in order to
                   start discarding.{' '}
                 </p>
-                <h5 className={utilStyles.headingSm}>PROTOTYPE</h5>
+                <h4 className={utilStyles.headingLg}>PROTOTYPE</h4>
                 <p>
                   I created low-fidelity prototypes based on the findings from
                   the previous steps and conducted user testing to gather
@@ -334,7 +334,7 @@ const GreenUp = () => {
                   that allowed to validate design decisions and make necessary
                   adjustments based on user insights.{' '}
                 </p>
-                <h5 className={utilStyles.headingSm}>TEST</h5>
+                <h4 className={utilStyles.headingLg}>TEST</h4>
                 <p>
                   In the testing phase, usability studies were conducted to
                   assess user interactions and identify areas for improvement.
@@ -345,7 +345,7 @@ const GreenUp = () => {
                   changes to enhance the overall user experience —always keeping
                   the objectives and porblem satatement in mind.{' '}
                 </p>
-                <h5 className={utilStyles.headingSm}>ITERATE</h5>
+                <h4 className={utilStyles.headingLg}>ITERATE</h4>
                 <p>
                   With each iteration, I refined the design based on user
                   feedback, addressing pain points and incorporating valuable
@@ -526,7 +526,7 @@ const GreenUp = () => {
             <div className='col-sm-6' id='cel4.2'>
               <div className='row border-bottom'>
                 <div className={`container my-5 ${utilStyles.paragraph}`}>
-                  <h4 className={utilStyles.headingMd}>
+                  <h4 className={utilStyles.headingLg}>
                     Design Decisions and User Experience Considerations
                   </h4>
                   <p>
@@ -535,9 +535,9 @@ const GreenUp = () => {
                     considerations. Here are the design decisions and user
                     experience considerations I incorporated into the app:{' '}
                   </p>
-                  <h5 className={utilStyles.headingSm}>
+                  <h4 className={utilStyles.headingLg}>
                     DESIGN AESTHETICS AND GAMIFICATION
-                  </h5>
+                  </h4>
                   <p>
                     In crafting the GreenUp app, I placed a strong emphasis on
                     aesthetics and gamification to create an engaging and
@@ -550,7 +550,7 @@ const GreenUp = () => {
                     achievements. I myself draw the badges and icons in
                     Procreate to convey a coherent visual experience.
                   </p>
-                  <h5 className={utilStyles.headingSm}>TYPOGRAPHY AND FONTS</h5>
+                  <h4 className={utilStyles.headingLg}>TYPOGRAPHY AND FONTS</h4>
                   <p>
                     In crafting the visual identity of the GreenUp app,
                     typography plays a crucial role. I have carefully selected
@@ -569,9 +569,9 @@ const GreenUp = () => {
                     harmony to provide a visually pleasing and user-centric
                     typographic experience.{' '}
                   </p>
-                  <h5 className={utilStyles.headingSm}>
+                  <h4 className={utilStyles.headingLg}>
                     EFFICIENT NAVIGATION AND USERS INTERFACE
-                  </h5>
+                  </h4>
                   <p>
                     To ensure seamless navigation, the app incorporates a
                     lateral bar for users on larger screens, and a simple
@@ -591,9 +591,9 @@ const GreenUp = () => {
                     the user profile, providing added convenience and efficient
                     navigation.
                   </p>
-                  <h5 className={utilStyles.headingSm}>
+                  <h4 className={utilStyles.headingLg}>
                     FOCUSING ON SUSTAINABILITY FEATURES
-                  </h5>
+                  </h4>
                   <p>
                     The GreenUp app places a central emphasis on empowering
                     users with a comprehensive set of sustainability features.
@@ -615,7 +615,7 @@ const GreenUp = () => {
                     commitment to ongoing improvement means that more features
                     are planned for future updates.
                   </p>
-                  <h5 className={utilStyles.headingSm}>USERS NOTIFICATIONS</h5>
+                  <h4 className={utilStyles.headingLg}>USERS NOTIFICATIONS</h4>
                   <p>
                     To keep users informed and engaged, the app includes a
                     notifications button, situated at the bottom-left of each
@@ -633,7 +633,7 @@ const GreenUp = () => {
               </div>
               <div className='row' id='cel4.2.1'>
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}> Iterative Process</h4>
+                  <h4 className={utilStyles.headingLg}> Iterative Process</h4>
                   <p>
                     In the iterative design process, I placed a strong focus on
                     incorporating user feedback gathered from usability studies
@@ -729,7 +729,7 @@ const GreenUp = () => {
               </div>
             </div>
             <div className='col-sm-6' id='cel6.2'>
-              <h4 className={utilStyles.headingMd}>Challenges</h4>
+              <h4 className={utilStyles.headingLg}>Challenges</h4>
               <p>
                 User Engagement: One of the main challenges was to ensure active
                 user engagement with sustainability practices and resources.
@@ -757,7 +757,7 @@ const GreenUp = () => {
                 Limited quality and trustworthiness of peer feedback in an
                 online course.
               </p>{' '}
-              <h5 className={utilStyles.headingSm}>Solutions</h5>{' '}
+              <h4 className={utilStyles.headingLg}>Solutions</h4>{' '}
               <p>
                 User Engagement: To address the challenge of user engagement, we
                 integrated gamification elements, such as badges and
@@ -810,7 +810,7 @@ const GreenUp = () => {
               <div
                 className={`text-end py-4 pe-3 float-end ${utilStyles.paragraph}`}
               >
-                <h4 className={utilStyles.headingMd}>
+                <h4 className={utilStyles.headingLg}>
                   Potential Impact and Results
                 </h4>
                 <p>

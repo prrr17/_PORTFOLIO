@@ -372,9 +372,9 @@ export default function Home() {
                   <div className='col-xs-12 col-sm-5 col-lg-7 border-top border-end text-end py-3'>
                     {/*1 COL for the name*/}
                     <div className=''>
-                      <h5 className={`${utilStyles.headingLg}`}>
+                      <h4 className={`${utilStyles.headingLg}`}>
                         Paula Romero de Blas
-                      </h5>
+                      </h4>
                       <h5 className={`${utilStyles.headingMd}`}>/pawla/</h5>
                       <p className={` ${utilStyles.textDescriptions}`}>
                         she/her/hers

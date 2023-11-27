@@ -39,7 +39,7 @@ const sandrine = () => {
               </h2>
             </div>
             <div className='col-sm-6 align-items-end d-flex pb-3' id='cel1.2'>
-              <h3 className={utilStyles.headingLg}>
+              <h3 className={utilStyles.headingXl}>
                 {' '}
                 Sandrine Molinas Art Portfolio Website
               </h3>
@@ -75,7 +75,7 @@ const sandrine = () => {
             <div className='col' id='cel2.2'>
               <div className='row d-flex align-items-center border-bottom'>
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}>Project Overview</h4>
+                  <h4 className={utilStyles.headingLg}>Project Overview</h4>
                   <p>
                     S. Molinas is a Barcelona-based artist with a degree in Fine
                     Arts, who specializes in organic constructivism. Her new
@@ -87,7 +87,7 @@ const sandrine = () => {
               <div className='row d-flex align-items-center border-bottom'>
                 <div className='col-sm-9'>
                   <div className='container my-5'>
-                    <h4 className={utilStyles.headingMd}>Roles</h4>{' '}
+                    <h4 className={utilStyles.headingLg}>Roles</h4>{' '}
                     <p>
                       {' '}
                       As the <strong>designer</strong> and{' '}
@@ -145,7 +145,7 @@ const sandrine = () => {
           >
             <div className='col-sm-6 border-end' id='cel3.1'>
               <div className='text-end py-4 pe-3 float-end'>
-                <h4 className={utilStyles.headingMd}>Budget and Timeline</h4>
+                <h4 className={utilStyles.headingLg}>Budget and Timeline</h4>
                 <p>
                   Despite a limited budget, I was able to deliver the website on
                   time with no compromise to the quality of the work. The
@@ -153,7 +153,7 @@ const sandrine = () => {
                   focus being on creative decisions and refining the overall
                   look and feel.
                 </p>
-                <h4 className={utilStyles.headingMd}>
+                <h4 className={utilStyles.headingLg}>
                   Challenges and Solutions
                 </h4>
                 <p>
@@ -208,7 +208,7 @@ const sandrine = () => {
             <div className='col-sm-6' id='cel4.2'>
               <div className='row border-bottom'>
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}>Style Decisions</h4>
+                  <h4 className={utilStyles.headingLg}>Style Decisions</h4>
                   <p>
                     As a designer, I understand the importance of style
                     decisions when creating a website. When working with
@@ -230,7 +230,7 @@ const sandrine = () => {
               </div>
               <div className='row'>
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}>Conclusion</h4>
+                  <h4 className={utilStyles.headingLg}>Conclusion</h4>
                   <p>
                     The final result is a visually pleasant website that
                     showcases Sandra's art in the best possible way. She was

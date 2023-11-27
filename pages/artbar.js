@@ -50,7 +50,7 @@ const artbar = () => {
               </h2>
             </div>
             <div className='col-sm-6 align-items-end' id='cel1.2'>
-              <h3 className={utilStyles.headingLg}>
+              <h3 className={utilStyles.headingXl}>
                 A Database of Barcelona Artisans from 1814 to 1860
               </h3>
             </div>
@@ -98,7 +98,7 @@ const artbar = () => {
             <div className='col' id='cel2_2'>
               <div className='row d-flex align-items-center border-bottom'>
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}>Overview</h4>
+                  <h4 className={utilStyles.headingLg}>Overview</h4>
                   <p>
                     Artbar is a web-based database of artisans who worked in
                     Barcelona between 1814 and 1860. The client approached us
@@ -133,7 +133,7 @@ const artbar = () => {
               </div>
               <div className='row d-flex align-items-center border-bottom'>
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}>Background</h4>
+                  <h4 className={utilStyles.headingLg}>Background</h4>
                   <p>
                     The Artbar webpage was created as part of the Research Group
                     "
@@ -180,7 +180,7 @@ const artbar = () => {
               <div className='row d-flex align-items-center'>
                     <div className='container my-5'>
                       {' '}
-                      <h4 className={utilStyles.headingMd}>Role</h4>
+                      <h4 className={utilStyles.headingLg}>Role</h4>
                       <p>Designer and Front-end developer</p>{' '}
                     </div>
                   </div>
@@ -190,7 +190,7 @@ const artbar = () => {
             <div className='col-sm-6 border-end' id='cel3_1'>
               <div className='row d-flex align-items-center ms-3  border-bottom'>
                 <div className='container text-end my-5 py-4 pe-3 float-end'>
-                  <h4 className={utilStyles.headingMd}>
+                  <h4 className={utilStyles.headingLg}>
                     Design and Development Process
                   </h4>
                   <p>

@@ -50,7 +50,7 @@ const artket = () => {
               </h2>
             </div>
             <div className='col-sm-6 align-items-end d-flex pb-3' id='cel1.2'>
-              <h3 className={utilStyles.headingLg}>
+              <h3 className={utilStyles.headingXl}>
                 {' '}
                 Art Community App — Your modern art marketplace
               </h3>
@@ -113,7 +113,7 @@ const artket = () => {
                 id='cel2.2.1'
               >
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}>Summary</h4>
+                  <h4 className={utilStyles.headingLg}>Summary</h4>
                   <p>
                     Welcome to <strong>Artket</strong>, your modern art market
                     and community. In the following paragraphs, I will take you
@@ -179,7 +179,7 @@ const artket = () => {
               >
                 {' '}
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}>Introduction</h4>
+                  <h4 className={utilStyles.headingLg}>Introduction</h4>
                   <p>
                     {' '}
                     As part of my{' '}
@@ -202,7 +202,7 @@ const artket = () => {
                     connections and communication among artists, galleries, and
                     collectors.
                   </p>{' '}
-                  <h5 className={utilStyles.headingSm}>GOAL STATEMENT</h5>
+                  <h5 className={utilStyles.headingMd}>GOAL STATEMENT</h5>
                   <p>
                     Our primary objective is to develop an art app that offers a
                     user-friendly experience, enabling users to appreciate and
@@ -220,7 +220,7 @@ const artket = () => {
                 className='row my-4 pt-2 d-flex align-items-center'
                 id='cel2.2.3'
               >
-                <h5 className={utilStyles.headingSm}>
+                <h5 className={utilStyles.headingMd}>
                   GOOGLE UX DESIGN CERTIFICATES
                 </h5>
                 <p>
@@ -253,7 +253,7 @@ const artket = () => {
                 </div>
               </div>
               <div className='text-end py-4 pe-3 float-end' id='cel3.1.2'>
-                <h4 className={utilStyles.headingMd}>
+                <h4 className={utilStyles.headingLg}>
                   Design Process Overview
                 </h4>
                 <p>
@@ -263,7 +263,7 @@ const artket = () => {
                   process consisted of several key steps, each contributing to
                   the overall potential success of the project.
                 </p>
-                <h5 className={utilStyles.headingSm}>EMPATHIZE</h5>
+                <h5 className={utilStyles.headingMd}>EMPATHIZE</h5>
                 <p>
                   The first phase. We need to start by understanding the target
                   users. I started by conducting extensive user research to
@@ -272,7 +272,7 @@ const artket = () => {
                   me gain valuable insights into their pain points and
                   expectations within the art community.
                 </p>{' '}
-                <h5 className={utilStyles.headingSm}>DEFINE</h5>
+                <h5 className={utilStyles.headingMd}>DEFINE</h5>
                 <p>
                   Building upon the research findings, clear problem statements
                   and user stories were defined, which then guided the design
@@ -280,7 +280,7 @@ const artket = () => {
                   established specific goals and deliverables to ensure the app
                   would address their requirements effectively.
                 </p>{' '}
-                <h5 className={utilStyles.headingSm}>IDEATE</h5>
+                <h5 className={utilStyles.headingMd}>IDEATE</h5>
                 <p>
                   {' '}
                   During this phase, it is important to explore a wide range of
@@ -291,7 +291,7 @@ const artket = () => {
                   evaluating their feasibility, desirability, and viability in
                   order to start discarding.{' '}
                 </p>
-                <h5 className={utilStyles.headingSm}>PROTOTYPE</h5>
+                <h5 className={utilStyles.headingMd}>PROTOTYPE</h5>
                 <p>
                   I created low-fidelity prototypes based on the findings from
                   the previous steps and conducted user testing to gather
@@ -299,7 +299,7 @@ const artket = () => {
                   that allowed to validate design decisions and make necessary
                   adjustments based on user insights.{' '}
                 </p>
-                <h5 className={utilStyles.headingSm}>TEST</h5>
+                <h5 className={utilStyles.headingMd}>TEST</h5>
                 <p>
                   I conducted usability studies to evaluate the usability and
                   user experience of the app. By observing and analyzing user
@@ -307,7 +307,7 @@ const artket = () => {
                   iterative design changes to enhance the overall user
                   experience.{' '}
                 </p>
-                <h5 className={utilStyles.headingSm}>ITERATE</h5>
+                <h5 className={utilStyles.headingMd}>ITERATE</h5>
                 <p>
                   With each iteration, I refined the design based on user
                   feedback, addressing pain points and incorporating valuable
@@ -429,7 +429,7 @@ const artket = () => {
             <div className='col-sm-6' id='cel4.2'>
               <div className='row border-bottom'>
                 <div className={`container my-5 ${utilStyles.paragraph}`}>
-                  <h4 className={utilStyles.headingMd}>
+                  <h4 className={utilStyles.headingLg}>
                     Design Decisions and User Experience Considerations
                   </h4>
                   <p>
@@ -438,7 +438,7 @@ const artket = () => {
                     considerations. Here are the design decisions and user
                     experience considerations I incorporated into the app:{' '}
                   </p>
-                  <h5 className={utilStyles.headingSm}>
+                  <h5 className={utilStyles.headingMd}>
                     PLAYFUL YET MINIMALISTIC VISUAL DESIGN
                   </h5>
                   <p>
@@ -450,7 +450,7 @@ const artket = () => {
                     branding logo, resembling a brush stroke, to add a
                     distinctive artistic element.
                   </p>
-                  <h5 className={utilStyles.headingSm}>TYPOGRAPHY AND FONTS</h5>
+                  <h5 className={utilStyles.headingMd}>TYPOGRAPHY AND FONTS</h5>
                   <p>
                     I carefully selected fonts to complement the overall
                     aesthetic and enhance readability. Arsenica Trial was chosen
@@ -459,7 +459,7 @@ const artket = () => {
                     elegant, and modern feel. I utilized small caps for buttons
                     and labels, creating a consistent visual hierarchy.{' '}
                   </p>
-                  <h5 className={utilStyles.headingSm}>
+                  <h5 className={utilStyles.headingMd}>
                     INTUITIVE NAVIGATION AND FAMILIAR UI PATTERNS
                   </h5>
                   <p>
@@ -470,7 +470,7 @@ const artket = () => {
                     provided quick access to essential features such as search
                     and chat, improving navigation efficiency.
                   </p>
-                  <h5 className={utilStyles.headingSm}>
+                  <h5 className={utilStyles.headingMd}>
                     CATEGORIZATION AND PERSONALIZATION
                   </h5>
                   <p>
@@ -483,7 +483,7 @@ const artket = () => {
                     define their interests in their profiles and connect with
                     others who share similar artistic tastes.
                   </p>
-                  <h5 className={utilStyles.headingSm}>MENU AND SETTINGS</h5>
+                  <h5 className={utilStyles.headingMd}>MENU AND SETTINGS</h5>
                   <p>
                     The app's menu structure was designed to provide easy access
                     to key features and options. The menu included sections such
@@ -504,7 +504,7 @@ const artket = () => {
               </div>
               <div className='row' id='cel4.2.1'>
                 <div className='container my-5'>
-                  <h4 className={utilStyles.headingMd}> Iterative Process</h4>
+                  <h4 className={utilStyles.headingLg}> Iterative Process</h4>
                   <p>
                     In the iterative process, I incorporated user feedback
                     through usability studies to enhance the user experience of
@@ -561,7 +561,7 @@ const artket = () => {
               </div>
             </div>
             <div className='col-sm-6' id='cel6.2'>
-              <h4 className={utilStyles.headingMd}>Challenges</h4>
+              <h4 className={utilStyles.headingLg}>Challenges</h4>
               <p>
                 Limited participant recruitment for usability studies. Designing
                 a complex app with a large number of screens. Limited quality
@@ -569,7 +569,7 @@ const artket = () => {
                 Ensuring a seamless and intuitive payment process. Addressing
                 data security and privacy concerns.
               </p>{' '}
-              <h5 className={utilStyles.headingSm}>Solutions</h5>{' '}
+              <h5 className={utilStyles.headingMd}>Solutions</h5>{' '}
               <p>
                 Overcoming participant recruitment limitations: Leveraging
                 personal networks, online communities, and social media
@@ -620,7 +620,7 @@ const artket = () => {
               <div
                 className={`text-end py-4 pe-3 float-end ${utilStyles.paragraph}`}
               >
-                <h4 className={utilStyles.headingMd}>
+                <h4 className={utilStyles.headingLg}>
                   Potential Impact and Results
                 </h4>
                 <p>

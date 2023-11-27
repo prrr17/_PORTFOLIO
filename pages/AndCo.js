@@ -59,7 +59,7 @@ const andCo = () => {
                       </Nav.Link>
                     </div>
                     <div className='mt-auto'>
-                      <h5 className={`${utilStyles.headingSm}`}>
+                      <h5 className={`${utilStyles.headingMd}`}>
                         Character Design and Humorous Visual Storytelling
                       </h5>
                     </div>
