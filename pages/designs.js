@@ -59,7 +59,7 @@ const designs = () => {
                   alt='link to the XX project'
                 >
               <h5
-                className={`text-end text-wrap pb-5 fw-bold text-decoration-underline ${utilStyles.headingSm}`}
+                className={`text-end text-wrap pb-5 fw-bold text-decoration-underline ${utilStyles.headingMd}`}
               >
                 UX/Dev
               </h5></Nav.Link>
@@ -71,7 +71,7 @@ const designs = () => {
                   alt='link to the XX project'
                 >
               <h5
-                className={`text-start text-wrapfw-bold ${utilStyles.underlined} ${utilStyles.headingSm}`}
+                className={`text-start text-wrapfw-bold ${utilStyles.underlined} ${utilStyles.headingMd}`}
               >
                 Illustration
               </h5></Nav.Link>
