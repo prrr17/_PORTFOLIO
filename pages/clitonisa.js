@@ -6,6 +6,7 @@ import Test from '../components/Test';
 import Nav from 'react-bootstrap/Nav';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
+import GoBack from '../components/GoBack';
 import Footer from '../components/Footer';
 import HeaderClito from '../components/HeaderClito';
 import Clito1 from '../public/Clitonisa/clito1.png';
@@ -39,28 +40,37 @@ const ClitonisaPage = () => {
         alt='Explanation of the project'
       >
         <div className={`container pt-2 ${utilStyles.textCenter}`}>
-          <h2 className={`${utilStyles.clitoTitle1}`}>La Clitonisa</h2>
-
+          <div className='row'>
+            <div className='col-1 pe-0'>
+              <div className='d-flex pt-5 mb-0'>
+                <GoBack />
+              </div>
+            </div>
+            <div className='col-11 ps-0'>
+              <h2 className={`${utilStyles.clitoTitle1}`}>La Clitonisa</h2>
+            </div>
+          </div>
           <Nav.Link href='#clitonisa_illustrations'>
             <div className='d-flex'>
               <h4
-                className={`${utilStyles.clitoText} ${utilStyles.clitoLink} ${utilStyles.underlined}`}
+                className={`ps-3 ${utilStyles.clitoText} ${utilStyles.clitoLink} ${utilStyles.underlined}`}
               >
+                {' '}
                 Scroll to Pictures{' '}
               </h4>{' '}
               <p
-                className={`${utilStyles.arrowDown} d-flex justify-text-end`}
+                className={`${utilStyles.arrowDown}  d-flex justify-text-end`}
               ></p>
             </div>
             <br></br>
           </Nav.Link>
         </div>
 
-        <div className='container ps-0'>
+        <div className='container px-0 px-md-4'>
           {/* First Row */}
           <div className='row'>
             <div
-              className={`${utilStyles.clitoBgText} col-md-12 col-lg-6 d-grid justify-content-center align-items-center pt-3 mb-3`}
+              className={`${utilStyles.clitoBgText} col-md-12 col-lg-6 d-grid justify-content-center align-items-center px-5 pt-3 mb-3`}
             >
               {' '}
               <div>
@@ -70,7 +80,7 @@ const ClitonisaPage = () => {
                 </h3>
                 <p className={`${utilStyles.clitoText}`}>
                   I collaborated with Sandra, the author of the project, to
-                  bring her comedic Instagram page idea, 'La Clitonisa,' to
+                  bring her comedic Instagram page idea, 'La Clitonisa', to
                   life.
                 </p>
               </div>
@@ -122,7 +132,7 @@ const ClitonisaPage = () => {
               </div>
             </div>
             <div
-              className={`${utilStyles.clitoBgText} col-md-12 col-lg-6 d-grid justify-content-center align-items-center py-3 mb-3`}
+              className={`${utilStyles.clitoBgText} col-md-12 col-lg-6 d-grid justify-content-center align-items-center px-5 py-3 mb-3`}
             >
               <div>
                 <h3 className={`${utilStyles.clitoTitle2}`}>
@@ -162,7 +172,7 @@ const ClitonisaPage = () => {
       </section>
 
       <section id='clitonisa_illustrations pt-5'>
-        <div className='container text-center pt-5'>
+        <div className='px-0 mx-5 text-center pt-5'>
           <h3
             className={`${utilStyles.clitoTitle2} ${utilStyles.clitoBgText} pt-4`}
           >
@@ -277,7 +287,6 @@ const ClitonisaPage = () => {
         <Test />
       </section>
       <Footer />
-      {/* Add more image sections for the rest of the pictures */}
     </div>
   );
 };
