@@ -35,12 +35,12 @@ export default function Home() {
             <div className='col'>
               <div className={`text-center text-lg-end ${utilStyles.uxBox}`}>
                 {' '}
-                <h4
-                  className={` ${utilStyles.headingLg} ${utilStyles.uxWord}`}
+                <h2
+                  className={`${utilStyles.headingXl} ${utilStyles.uxWord}`}
                   alt='ux'
                 >
                   UX
-                </h4>
+                </h2>
               </div>{' '}
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function Home() {
             <div className='col-lg-6 col-12 pr-3'>
               {' '}
               <h1
-                className={`text-lg-end ${utilStyles.heading3Xl} ${utilStyles.visualText}`}
+                className={`text-lg-end ${utilStyles.heading4Xl} ${utilStyles.visualText}`}
               >
                 <span className={`ms-0 ps-0 ${utilStyles.underV}`}>
                   Visual&nbsp;
@@ -62,7 +62,7 @@ export default function Home() {
               <div>
                 {' '}
                 <h1
-                  className={`${utilStyles.heading3Xl} ${utilStyles.designerText}`}
+                  className={`${utilStyles.heading4Xl} ${utilStyles.designerText}`}
                 >
                   <span className={`text-nowrap ${utilStyles.underD}`}>
                     Desi
