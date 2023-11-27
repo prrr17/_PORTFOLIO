@@ -50,7 +50,7 @@ const ClitonisaPage = () => {
               <h2 className={`${utilStyles.clitoTitle1}`}>La Clitonisa</h2>
             </div>
           </div>
-          <Nav.Link href='#clitonisa_illustrations'>
+          <Link href='#clitonisaIllustrations'>
             <div className='d-flex'>
               <h4
                 className={`ps-3 ${utilStyles.clitoText} ${utilStyles.clitoLink} ${utilStyles.underlined}`}
@@ -63,7 +63,7 @@ const ClitonisaPage = () => {
               ></p>
             </div>
             <br></br>
-          </Nav.Link>
+          </Link>
         </div>
 
         <div className='container px-0 px-md-4'>
@@ -171,7 +171,7 @@ const ClitonisaPage = () => {
         </div>
       </section>
 
-      <section id='clitonisa_illustrations pt-5'>
+      <section className='pt-5' id='clitonisaIllustrations'>
         <div className='px-0 mx-5 text-center pt-5'>
           <h3
             className={`${utilStyles.clitoTitle2} ${utilStyles.clitoBgText} pt-4`}
