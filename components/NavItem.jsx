@@ -11,7 +11,7 @@ export default function NavItem() {
       <Navbar
         collapseOnSelect
         expand='sm'
-        className={`px-5 ${styles.navBar}`}
+        className={`ps-2 pe-4 px-sm-5 pt-sm-0 ${styles.navBar} `}
         fixed='top'
       >
         <div>
@@ -28,7 +28,7 @@ export default function NavItem() {
           aria-controls='responsive-navbar-nav'
         />
         <Navbar.Collapse
-          className={`${styles.burgerMenu} ${styles.dropdownMenuBg}`}
+          className={`pt-0 mt-0 pt-sm-4 mt-sm-4 ${styles.burgerMenu} ${styles.dropdownMenuBg}`}
           id='responsive-navbar-nav'
         >
           <Nav className='d-flex me-auto justify-content-center w-100'>
@@ -82,7 +82,7 @@ export default function NavItem() {
           href='#'
           id='ThemeSwitch'
           alt='switch between light and dark mode'
-          className='text-nowrap d-flex justify-content-center align-items-center pb-3 ps-4'
+          className='text-nowrap d-flex justify-content-center align-items-center pb-sm-3 ps-sm-4'
         >
           <ThemeToggle />{' '}
         </Nav.Link>{' '}

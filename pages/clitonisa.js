@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import Test from '../components/Test';
-import Nav from 'react-bootstrap/Nav';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
 import GoBack from '../components/GoBack';

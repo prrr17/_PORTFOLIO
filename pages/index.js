@@ -252,7 +252,7 @@ export default function Home() {
                     upon myself to learn everything I can about coding, (UX)
                     design, and more (check out my{' '}
                     <Link
-                      href='Romero-de-Blas_Paula-cv.pdf'
+                      href='cv_Paula-rdb.pdf'
                       className={`fw-bold ${utilStyles.textDescriptions}`}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -301,7 +301,7 @@ export default function Home() {
                 <h5 className={`${utilStyles.headingMd}`}>
                   {' '}
                   <Link
-                    href='Romero-de-Blas_Paula-cv.pdf'
+                    href='cv_Paula-rdb.pdf'
                     target='_blank'
                     rel='noopener noreferrer'
                     alt='link to my cv/resume as a pdf'
