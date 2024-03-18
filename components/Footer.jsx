@@ -10,7 +10,7 @@ const Footer = () => {
       <div className='row'>
         <div className='col d-flex align-content-center'>
           <p
-            className={`align-self-center mb-0 px-4 border-end ${utilStyles.textDescriptions} ${utilStyles.mail}`}
+            className={`align-self-center mb-0 px-5 border-end ${utilStyles.textDescriptions} ${utilStyles.mail}`}
           >
             <Link
               href='mailto:                      hi@paulardb.design'
