@@ -515,6 +515,10 @@ $amount: 20;
   height: 100%;
 }
 
+
+/*FOOTER*/
+/*SM ICONS*/
+
 .footerBox{
   display: flex;
   justify-content: center;
@@ -522,4 +526,28 @@ $amount: 20;
   margin: 3em 0 5em 0;
   padding-top: 5em; 
   background-color: var(--bg-color);
+}
+
+.iconFooter {
+  width: 3rem;
+  padding: 0.2%;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
+  transform: scale(0.6);
+  margin: -1rem;
+  padding-bottom: 0.25em;
+  color: var(--font-color);
+}
+
+.iconFooter:nth-child(2) {
+  display: none;
+}
+
+.iconContainer:hover .iconFooter:nth-child(1) {
+  display: none;
+}
+
+.iconContainer:hover .iconFooter:nth-child(2) {
+  display: block;
 }

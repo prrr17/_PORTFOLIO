@@ -350,7 +350,7 @@ export default function Home() {
         </section>
 
         <section
-          className={`min-vh-100 w-100 pt-5 mt-5 ps-2 mx-auto ${utilStyles.scrollingPage}`}
+          className={`min-vh-100 w-100 pt-5 ps-2 mx-auto ${utilStyles.scrollingPage}`}
           id='findme'
           alt='find me contact page'
         >
