@@ -12,8 +12,8 @@ const GoBack = () => {
 
   return (
     <div className='row gx-0'>
-      <div className='col-1 text-end' onClick={handleGoBack} style={{ cursor: 'pointer' }}>
-        <MdArrowBackIosNew style={{ fontSize: '2rem' }} />
+      <div className={`col-1 text-end ${utilStyles.headingXl}`} onClick={handleGoBack} style={{ cursor: 'pointer' }}>
+        <MdArrowBackIosNew style={{ fontSize: '2rem', color: 'var(--font-color)'}} />
       </div>
       <div className='col-6'>
         <p className={`text-start ${utilStyles.headingMd} ${utilStyles.goBackText}`}>
