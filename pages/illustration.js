@@ -63,7 +63,7 @@ const illustration = () => {
                       <h5 className='align-center'>Paula's</h5>
                     </div>
                     <div className='col-6 pb-4 '>
-                      <IGClito />{' '}
+                      <IGPaula  />{' '}
                     </div>
                   </div>
                   <div className='row px-md-2 pt-4'>
@@ -72,7 +72,7 @@ const illustration = () => {
                       <h5>The Project's</h5>
                     </div>
                     <div className='col-6'>
-                      <IGPaula />
+                      <IGClito />
                     </div>
                   </div>{' '}
                   <div className='col pt-0'></div>
