@@ -51,7 +51,7 @@ const illustration = () => {
                     </Nav.Link>
                   </div>
                   <div className='mt-auto'>
-                    <h5 className={`${utilStyles.headingMd}`}>
+                    <h5 className={`${utilStyles.headingSm}`}>
                       Character Design & Humorous Visual Storytelling
                     </h5>
                   </div>
