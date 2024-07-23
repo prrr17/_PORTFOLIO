@@ -20,7 +20,7 @@ function Test() {
   return (
     <Link href='/' passHref className='d-flex justify-content-end pt-3'>
       {/* <MyButton className='button' /> */}
-      <PaulaLogo width='10rem' height='inherit'></PaulaLogo>
+      <PaulaLogo width='10rem' height='100%'></PaulaLogo>
     </Link>
   );
 }

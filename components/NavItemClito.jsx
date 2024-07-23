@@ -17,7 +17,7 @@ export default function NavItem() {
         <div>
           {' '}
           <Navbar.Brand href='/' className='' alt='Paula logo'>
-            <PLogo width='10rem' height='inherit'></PLogo>
+            <PLogo width='10rem' height='100%'></PLogo>
           </Navbar.Brand>
           <div className={`${styles.dotBox}`}>
             <GoDotFill className={`${styles.P} ${styles.underDot}`} />

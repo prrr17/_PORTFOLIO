@@ -1,12 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import Nav from 'react-bootstrap/Nav';
 import { useRouter } from 'next/router';
 import Layout, { siteTitle } from '../components/layout';
 import Blobs from '../components/Blobs';
-import Test from '../components/Test';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import utilStyles from '../styles/utils.module.scss';

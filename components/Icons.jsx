@@ -20,9 +20,9 @@ const IgLogo = () => {
       onMouseLeave={onMouseLeave}>
       <Link href='https://www.instagram.com/inpaulasmind/'>
         {isHovering ? (
-          <IgOn width='10rem' height='inherit'></IgOn>
+          <IgOn width='10rem' height='auto'></IgOn>
         ) : (
-          <IgOff width='10rem' height='inherit'></IgOff>
+          <IgOff width='10rem' height='auto'></IgOff>
         )}
       </Link>
       <IgLogo></IgLogo>

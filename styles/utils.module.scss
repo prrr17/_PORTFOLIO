@@ -227,7 +227,6 @@ $breakpoint-bootstraplg: 992px;
 .bigMoon {
   filter: drop-shadow(0 0 5rem rgba(252, 255, 200, 0.9));
   background: radial-gradient(white, rgba(255, 255, 255, 0) 5%);
-
   position: static;
 }
 
@@ -240,7 +239,7 @@ $breakpoint-bootstraplg: 992px;
 /*ABOUT PAGE*/
 
 .profilePicBox {
-  max-height: inherit;
+  max-height: 100%;
 }
 
 .profilePic {
@@ -332,7 +331,7 @@ $breakpoint-bootstraplg: 992px;
 }
 
 .iconContainer {
-  width: inherit;
+  width: 100%;
   height: auto;
 }
 
@@ -412,7 +411,7 @@ $amount: 20;
 /* Designs */
 
 .designsPicBox {
-  max-height: inherit;
+  max-height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -520,12 +519,13 @@ $amount: 20;
 /*SM ICONS*/
 
 .footerBox{
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 3em 0 5em 0;
   padding-top: 5em; 
   background-color: var(--bg-color);
+  width: 100%;
+  border: none;
 }
 
 .iconFooter {

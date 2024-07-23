@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import Chatbot from '../components/Chatbot';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
 import ProfilePic from '../public/images/profile.jpeg';
@@ -22,8 +23,8 @@ export default function Home() {
 
       <div className={`mt-5 w-100 ${utilStyles.allPages}`}>
         <div className='background'>
-          {' '}
           <Blobs />
+          <Chatbot />
         </div>
 
         <section
@@ -99,8 +100,8 @@ export default function Home() {
               >
                 {/* not convinced */}
                 <BigMoonSwitch
-                  width='inherit'
-                  height='inherit'
+                  width='100px'
+                  height='100px'
                   // objectFit='contain'
                 ></BigMoonSwitch>
               </button>

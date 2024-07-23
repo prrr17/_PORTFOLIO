@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
     <div className=''>
       <div className={styles.container}>
         <Head>
-          <link rel='icon' href='/public/p_logo.ico' />
+          <link rel='icon' href='/p_logo.ico' />
           <meta name='description' content='Portfolio' />
           <meta
             name='viewport'
