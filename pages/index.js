@@ -34,15 +34,7 @@ export default function Home() {
         >
           <div className='row'>
             <div className='col'>
-              <div className={`text-center text-lg-end ${utilStyles.uxBox}`}>
-                {' '}
-                <h2
-                  className={`${utilStyles.headingXl} ${utilStyles.uxWord}`}
-                  alt='ux'
-                >
-                  UX
-                </h2>
-              </div>{' '}
+            
             </div>
           </div>
           <div className='mx-0 row g-0'>
@@ -52,7 +44,7 @@ export default function Home() {
                 className={`text-lg-end ${utilStyles.heading4Xl} ${utilStyles.visualText}`}
               >
                 <span className={`ms-0 ps-0 ${utilStyles.underV}`}>
-                  Visual&nbsp;
+                  UX&nbsp;
                 </span>
               </h1>
             </div>
@@ -68,7 +60,7 @@ export default function Home() {
                   <span className={`text-nowrap ${utilStyles.underD}`}>
                     Desi
                   </span>
-                  gner
+                  gn
                 </h1>
               </div>
             </div>
