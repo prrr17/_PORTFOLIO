@@ -15,6 +15,7 @@ import FavIdea from '../public/Artbar/favIdea.png';
 import ArtketThumbnail from '/public/Artket/thumbnails/Thumbnail2.png';
 import GreenupThumbnail from '/public/GreenUp/Thumbnail.png';
 import EcoOceansThumbnail from '/public/EcoOceanHub/iPad_Home_front.png';
+import LauraHolmesThumbnail from '/public/LauraHolmes/mainPicture.png';
 import SandrineLanding from '/public/Sandrine/sandrineLanding.png';
 import RandomizeSS from '../public/RandomizeSS.jpg';
 import DesignsHeader from '../components/DesignsHeader';
@@ -29,6 +30,43 @@ const designs = () => {
         alt='designs page'
       >
         <Blobs />
+        <div className='row border-bottom text-end' id='LauraHolmesRow'>
+          <div className='col-sm-6 border-end' id='LauraHolmesCel'>
+            <div className='container mt-5'>
+              <Nav.Link href='/laura-holmes'>
+                <h2 className={`fw-bold ${utilStyles.underlined}`}>
+                  Laura Holmes's Creative Portfolio
+                </h2>
+                <br></br>
+              </Nav.Link>
+              <Nav.Link href='/laura-holmes'>
+                <h4>
+                  The portfolio of a Fashion Creative Director and Stylist.
+                  Welcome to Laura Holme's portfolio, where fashion meets
+                  artistry and imagination takes centre stage.
+                </h4>
+              </Nav.Link>
+            </div>
+          </div>
+          <div
+            className='col-sm-6 d-flex justify-center'
+            id='LauraHolmesLinkText'
+          >
+            <div className={` ${utilStyles.designsPicBox} py-4 pe-3`}>
+              <Nav.Link
+                href='/laura-holmes'
+                className=''
+                alt="link to Laura Holmes's portfolio project"
+              >
+                <Image
+                  className={`${utilStyles.designsPic} ms-0`}
+                  src={LauraHolmesThumbnail}
+                  alt='Laura Holmes project picture'
+                />
+              </Nav.Link>
+            </div>
+          </div>
+        </div>
         <div className='row border-bottom text-end' id='EcoOceansRow'>
           <div className='col-sm-6 border-end' id='EcoOceansCel'>
             <div className='container mt-5'>
@@ -283,8 +321,7 @@ const designs = () => {
             </div>
           </div>
         </div>
-        <div className='row pt-5 mt-5'>
-        </div>
+        <div className='row pt-5 mt-5'></div>
         <Test />
       </section>
       <Footer />
