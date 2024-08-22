@@ -270,7 +270,7 @@ const design_template = () => {
                       className={`fw-bold ${utilStyles.underlined}`}
                       target='_blank'
                       rel='noopener noreferrer'
-                      alt='link to whatever'
+                      alt='link to the portfolio of Laura Holmes'
                     >
                       here.
                     </Link>

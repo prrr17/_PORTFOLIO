@@ -10,6 +10,9 @@ import IGPaula from '../components/IGPaula';
 import Footer from '../components/Footer';
 import Test from '../components/Test';
 import DesignsHeader from '../components/DesignsHeader';
+import { BsTypeH5 } from 'react-icons/bs';
+import BeOn from '../public/BeOn.svg';
+import BeOff from '../public/BeOff.svg';
 
 const illustration = () => {
   return (
@@ -24,10 +27,63 @@ const illustration = () => {
         <Blobs />
 
         <div className='container mt-2 mx-lg-5 mx-md-4'>
-          <div className={`row  mx-5 border-end text-end`}>
+          <div className={`row mx-5 border-end text-end`}>
             <h3 className={`pe-5 text-end ${utilStyles.headingXl}`}>
               Visual Artistry and Illustration{' '}
             </h3>
+          </div>
+          <div className='row mx-5 border-top'>
+            {' '}
+            <div className='my-4 px-md-5 text-center'>
+              <div>
+                {' '}
+                <h5>
+                  Don't forget to check my{' '}
+                  <Link
+                    href='https://www.behance.net/paulardb'
+                    className={`fw-bold ${utilStyles.underlined}`}
+                    target='_blank'
+                    alt='Behance @paulardb'
+                  >
+                    {' '}
+                    Behance {' '}
+                  </Link>
+                  to explore more of my illustration work
+                </h5>
+                <div
+                  className={`d-flex justify-content-center text-center pb-4 ${utilStyles.iconContainer}`}
+                >
+                  <Link
+                    href='https://www.behance.net/paulardb'
+                    className='socialMediaLinks'
+                    target='_blank'
+                    alt='Behance @paulardb'
+                  >
+                    <BeOn
+                      viewBox='-10 -10 100 100'
+                      className={`rounded-circle ${utilStyles.icon}`}
+                    ></BeOn>
+                    <BeOff
+                      viewBox='-10 -10 100 100'
+                      className={`rounded-circle align-center ${utilStyles.icon}`}
+                    ></BeOff>
+                  </Link>
+                </div>
+              </div>
+              <h5>
+                {' '}
+                You can buy my designs at my{' '}
+                <Link
+                  href='https://www.redbubble.com/people/inpaulasmind/shop?asc=u'
+                  className={`fw-bold ${utilStyles.underlined}`}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  alt='link to whatever'
+                >
+                  Redbubble shop.
+                </Link>
+              </h5>
+            </div>
           </div>
           <div className='row mx-5'>
             {' '}
@@ -63,7 +119,7 @@ const illustration = () => {
                       <h5 className='align-center'>Paula's</h5>
                     </div>
                     <div className='col-6 pb-4 '>
-                      <IGPaula  />{' '}
+                      <IGPaula />{' '}
                     </div>
                   </div>
                   <div className='row px-md-2 pt-4'>
